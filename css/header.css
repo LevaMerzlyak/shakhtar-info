@@ -1,0 +1,35 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 94%;
+  height: 11vh;
+  padding-left: 2%;
+  padding-right: 2%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  left: 3%;
+  top: 3%;
+  background-color: #242527; }
+
+.main__logo {
+  width: 16%;
+  text-indent: -9999px; }
+
+.main__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.nav__link {
+  color: #f1f1f1;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.header__user {
+  color: #f1f1f1;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase; }
