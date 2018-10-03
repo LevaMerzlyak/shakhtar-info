@@ -2,6 +2,8 @@
 
 .header {
 	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	width: 94%;
 	height: 11vh;
 	padding-left: 2%;
@@ -13,14 +15,27 @@
 	background-color: $darkGrey;
 }
 .main__logo {
-
 	width: 16%;
+	height: 35%;
+	margin-right: 9%;
 	text-indent: -9999px;
 }
 .main__nav {
 	display: flex;
+	justify-content: space-between;
+	width: 54%;
+}
+.nav__item {
+	&_active {
+		background-color: $red;
+	}
 }
 .nav__link {
+	display: inline-block;
+	padding-top: 0.5em;
+	padding-right: 1.25em;
+	padding-bottom: 0.5em;
+	padding-left: 1.25em;
 	color: $wht;
 	font-weight: 700;
 	text-decoration: none;
