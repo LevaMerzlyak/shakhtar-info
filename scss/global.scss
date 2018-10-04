@@ -28,6 +28,7 @@ $max_font: 20px;
 
 body {
 	font-family: 'ProximaNova', sans-serif;
+  background-color: #242424;
 }
 body {
   @include fluid-type($min_width, $max_width, $min_font, $max_font);
