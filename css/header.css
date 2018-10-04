@@ -19,20 +19,20 @@
   top: 3%;
   background-color: #242527; }
 
-.main__logo {
+.logo {
   width: 16%;
   height: 35%;
   margin-right: 9%;
   text-indent: -9999px; }
 
-.main__nav {
+.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 54%; }
+  width: 50%; }
 
 .nav__item_active {
   background-color: #e11203; }
@@ -44,12 +44,78 @@
   padding-bottom: 0.5em;
   padding-left: 1.25em;
   color: #f1f1f1;
+  font-size: 1em;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase; }
 
-.header__user {
+.search {
+  position: relative;
+  height: 100%;
+  width: 1.2em;
+  margin-left: 1em;
+  margin-right: 1em; }
+  .search .icon_search_header {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+.search__block {
+  position: absolute;
+  top: 100%;
+  right: -1em;
+  background-color: #242424;
+  z-index: -1;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%); }
+  .search__block form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+.search__block_open {
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%); }
+
+.search__input {
+  padding: 1em;
   color: #f1f1f1;
+  font-size: 0.9em;
+  background-color: #131313;
+  border: none; }
+  .search__input:focus {
+    outline: none;
+    background-color: #3a3e3f; }
+
+.search__submit {
+  padding: 1em;
+  font-size: 0.9em;
+  background-color: #131313;
+  border: none;
+  cursor: pointer; }
+
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.login__link {
+  color: #f1f1f1;
+  font-size: 0.9em;
   font-weight: 400;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-right: 1em; }
+  .login__link_log:after {
+    content: "|";
+    margin-left: 1em; }
+
+.icon_user {
+  height: 1.4em; }

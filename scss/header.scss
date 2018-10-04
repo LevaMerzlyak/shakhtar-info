@@ -14,16 +14,16 @@
 	top: 3%;
 	background-color: $darkGrey;
 }
-.main__logo {
+.logo {
 	width: 16%;
 	height: 35%;
 	margin-right: 9%;
 	text-indent: -9999px;
 }
-.main__nav {
+.nav {
 	display: flex;
 	justify-content: space-between;
-	width: 54%;
+	width: 50%;
 }
 .nav__item {
 	&_active {
@@ -37,13 +37,73 @@
 	padding-bottom: 0.5em;
 	padding-left: 1.25em;
 	color: $wht;
+	font-size: 1em;
 	font-weight: 700;
 	text-decoration: none;
 	text-transform: uppercase;
 }
-.header__user {
+.search {
+	position: relative;
+	height: 100%;
+	width: 1.2em;
+	margin-left: 1em;
+	margin-right: 1em;
+	.icon_search_header {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+.search__block {
+	position: absolute;
+	top: 100%;
+	right: -1em;
+	background-color: $bg;
+	z-index: -1;
+	transform: translateY(-100%);
+	form {
+		display: flex;
+	}
+}
+.search__block_open {
+	transform: translateY(0%);
+}
+.search__input {
+	padding: 1em;
 	color: $wht;
+	font-size: 0.9em;
+	background-color: $blk;
+	border: none;
+	&:focus {
+		outline: none;
+		background-color: $lightGrey;
+	}
+}
+.search__submit {
+	padding: 1em;	
+	font-size: 0.9em;
+	background-color: $blk;
+	border: none;
+	cursor: pointer;
+}
+.login {
+	display: flex;
+	align-items: center;
+}
+.login__link {
+	color: $wht;
+	font-size: 0.9em;
 	font-weight: 400;
 	text-decoration: none;
 	text-transform: uppercase;
+	margin-right: 1em;
+	&_log {
+		&:after {
+			content: "|";
+			margin-left: 1em;
+		}
+	}
+}
+.icon_user {
+	height: 1.4em;
 }
