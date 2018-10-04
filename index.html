@@ -3,21 +3,53 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width" />
+
 	<title>ФК ШАХТАР INFO</title>
+
+	<!-- Reset CSS -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<!-- Fonts -->
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<!-- Global CSS -->
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<!-- Icons CSS -->
+	<link rel="stylesheet" type="text/css" href="css/icons.css">
+	<!-- Header CSS -->
+	<link rel="stylesheet" type="text/css" href="css/header.css">
 </head>
 <body>
 	<header class="header">
-		<a href="#" class="main__logo">ФК ШАХТАР INFO</a>
-		<ul class="main__nav">
-			<li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
-			<li class="nav__item"><a href="#" class="nav__link">Команда</a></li>
-			<li class="nav__item"><a href="#" class="nav__link">Новости</a></li>
-			<li class="nav__item"><a href="#" class="nav__link">Сезон</a></li>
-			<li class="nav__item"><a href="#" class="nav__link">Клуб</a></li>
-			<li class="nav__item"><a href="#" class="nav__link">Видео</a></li>
-			<li class="nav__item"><a href="#" class="nav__link"><i class="icon icon__search"></i></a></li>
+		<a href="#" class="logo icon icon_logo">ШАХТАР.INFO</a>
+		<ul class="nav">
+			<li class="nav__item nav__item_active">
+				<a href="#" class="nav__link">Главная</a>
+			</li>
+			<li class="nav__item">
+				<a href="#" class="nav__link">Команда</a>
+			</li>
+			<li class="nav__item">
+				<a href="#" class="nav__link">Новости</a>
+			</li>
+			<li class="nav__item">
+				<a href="#" class="nav__link">Сезон</a>
+			</li>
+			<li class="nav__item">
+				<a href="#" class="nav__link">Клуб</a>
+			</li>
+			<li class="nav__item">
+				<a href="#" class="nav__link">Видео</a>
+			</li>
 		</ul>
-		<a href="" class="header__user"><i class="icon icon_user"></i></a>		
+		<a href="#" class="search">
+			<i class="icon icon_search icon_search_header"></i>
+			<div class="search__block">
+				<form action="">
+					<input type="text" name="search" placeholder="Поиск..." class="search__input">
+					<button type="submit" class="search__submit"><i class="icon icon_search"></i></button>
+				</form>
+			</div>
+		</a>
+		<div class="login"><a href="#" class="login__link login__link_log">ВХОД</a><a href="#" class="login__link">регистрация</a><i class="icon icon_user"></i></div>		
 	</header>
 	<main class="main">
 		<div class="main__video">

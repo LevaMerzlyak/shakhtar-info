@@ -1,0 +1,109 @@
+@import 'variables';
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 94%;
+	height: 11vh;
+	padding-left: 2%;
+	padding-right: 2%;
+	box-sizing: border-box;
+	position: absolute;
+	left: 3%;
+	top: 3%;
+	background-color: $darkGrey;
+}
+.logo {
+	width: 16%;
+	height: 35%;
+	margin-right: 9%;
+	text-indent: -9999px;
+}
+.nav {
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+}
+.nav__item {
+	&_active {
+		background-color: $red;
+	}
+}
+.nav__link {
+	display: inline-block;
+	padding-top: 0.5em;
+	padding-right: 1.25em;
+	padding-bottom: 0.5em;
+	padding-left: 1.25em;
+	color: $wht;
+	font-size: 1em;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.search {
+	position: relative;
+	height: 100%;
+	width: 1.2em;
+	margin-left: 1em;
+	margin-right: 1em;
+	.icon_search_header {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+.search__block {
+	position: absolute;
+	top: 100%;
+	right: -1em;
+	background-color: $bg;
+	z-index: -1;
+	transform: translateY(-100%);
+	form {
+		display: flex;
+	}
+}
+.search__block_open {
+	transform: translateY(0%);
+}
+.search__input {
+	padding: 1em;
+	color: $wht;
+	font-size: 0.9em;
+	background-color: $blk;
+	border: none;
+	&:focus {
+		outline: none;
+		background-color: $lightGrey;
+	}
+}
+.search__submit {
+	padding: 1em;	
+	font-size: 0.9em;
+	background-color: $blk;
+	border: none;
+	cursor: pointer;
+}
+.login {
+	display: flex;
+	align-items: center;
+}
+.login__link {
+	color: $wht;
+	font-size: 0.9em;
+	font-weight: 400;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-right: 1em;
+	&_log {
+		&:after {
+			content: "|";
+			margin-left: 1em;
+		}
+	}
+}
+.icon_user {
+	height: 1.4em;
+}
