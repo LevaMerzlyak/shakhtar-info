@@ -19,8 +19,8 @@
 </head>
 <body>
 	<header class="header">
-		<a href="#" class="main__logo icon icon_logo">ШАХТАР.INFO</a>
-		<ul class="main__nav">
+		<a href="#" class="logo icon icon_logo">ШАХТАР.INFO</a>
+		<ul class="nav">
 			<li class="nav__item nav__item_active">
 				<a href="#" class="nav__link">Главная</a>
 			</li>
@@ -40,8 +40,16 @@
 				<a href="#" class="nav__link">Видео</a>
 			</li>
 		</ul>
-		<a href="#" class="header__search"><i class="icon icon_search"></i></a>
-		<a href="" class="header__user">ВХОД  |  регистрация <i class="icon icon_user"></i></a>		
+		<a href="#" class="search">
+			<i class="icon icon_search icon_search_header"></i>
+			<div class="search__block">
+				<form action="">
+					<input type="text" name="search" placeholder="Поиск..." class="search__input">
+					<button type="submit" class="search__submit"><i class="icon icon_search"></i></button>
+				</form>
+			</div>
+		</a>
+		<div class="login"><a href="#" class="login__link login__link_log">ВХОД</a><a href="#" class="login__link">регистрация</a><i class="icon icon_user"></i></div>		
 	</header>
 	<main class="main">
 		<div class="main__video">
