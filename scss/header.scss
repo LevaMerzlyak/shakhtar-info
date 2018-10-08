@@ -13,6 +13,7 @@
 	left: 3%;
 	top: 3%;
 	background-color: $darkGrey;
+	z-index: 1;
 }
 .logo {
 	width: 16%;
@@ -36,7 +37,7 @@
 	padding-right: 1.25em;
 	padding-bottom: 0.5em;
 	padding-left: 1.25em;
-	color: $wht;
+	color: $menuClr;
 	font-size: 1em;
 	font-weight: 700;
 	text-decoration: none;
@@ -55,22 +56,23 @@
 	}
 }
 .search__block {
+	height: 0;
 	position: absolute;
 	top: 100%;
 	right: -1em;
 	background-color: $bg;
+	overflow: hidden;
 	z-index: -1;
-	transform: translateY(-100%);
 	form {
 		display: flex;
 	}
 }
 .search__block_open {
-	transform: translateY(0%);
+	height: auto;
 }
 .search__input {
 	padding: 1em;
-	color: $wht;
+	color: $menuClr;
 	font-size: 0.9em;
 	background-color: $blk;
 	border: none;
@@ -91,7 +93,7 @@
 	align-items: center;
 }
 .login__link {
-	color: $wht;
+	color: $menuClr;
 	font-size: 0.9em;
 	font-weight: 400;
 	text-decoration: none;

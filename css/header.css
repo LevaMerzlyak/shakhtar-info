@@ -17,7 +17,8 @@
   position: absolute;
   left: 3%;
   top: 3%;
-  background-color: #242527; }
+  background-color: #242527;
+  z-index: 1; }
 
 .logo {
   width: 16%;
@@ -63,23 +64,20 @@
     transform: translateY(-50%); }
 
 .search__block {
+  height: 0;
   position: absolute;
   top: 100%;
   right: -1em;
   background-color: #242424;
-  z-index: -1;
-  -webkit-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  transform: translateY(-100%); }
+  overflow: hidden;
+  z-index: -1; }
   .search__block form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
 
 .search__block_open {
-  -webkit-transform: translateY(0%);
-  -ms-transform: translateY(0%);
-  transform: translateY(0%); }
+  height: auto; }
 
 .search__input {
   padding: 1em;
