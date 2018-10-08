@@ -21,25 +21,25 @@
 </head>
 <body>
 	<header class="header">
-		<a href="#" class="logo icon icon_logo">ШАХТАР.INFO</a>
+		<a href="index.html" class="logo icon icon_logo">ШАХТАР.INFO</a>
 		<ul class="nav">
 			<li class="nav__item nav__item_active">
-				<a href="#" class="nav__link">Главная</a>
+				<a href="index.html" class="nav__link">Главная</a>
 			</li>
 			<li class="nav__item">
-				<a href="#" class="nav__link">Команда</a>
+				<a href="team.html" class="nav__link">Команда</a>
 			</li>
 			<li class="nav__item">
-				<a href="#" class="nav__link">Новости</a>
+				<a href="news.html" class="nav__link">Новости</a>
 			</li>
 			<li class="nav__item">
-				<a href="#" class="nav__link">Сезон</a>
+				<a href="season.html" class="nav__link">Сезон</a>
 			</li>
 			<li class="nav__item">
-				<a href="#" class="nav__link">Клуб</a>
+				<a href="club.html" class="nav__link">Клуб</a>
 			</li>
 			<li class="nav__item">
-				<a href="#" class="nav__link">Видео</a>
+				<a href="video.html" class="nav__link">Видео</a>
 			</li>
 		</ul>
 		<a href="#" class="search">
@@ -55,27 +55,34 @@
 	</header>
 	<main class="main">
 		<div class="main__highlight">
-			<div class="mainInfo">
-				<img src="" class="mainVideo__img">
-				<h5 class="mainVideo__head">Обзор голов (Шахрет - Динамо)</h5>
+			<div class="highligh__info">
+				<a href="#" class="highlightVideo block__bg">
+					<img src="images/video-cover/shakhtar_dynamo.jpg" alt="">
+					<h5 class="highlightVideo__head">Обзор голов (Шахрет - Динамо)</h5>
+				</a>			
 			</div>
 			<h3 class="main__head">&laquo;Шахтер&raquo; в 12-й раз выиграл Кубок Украины</h3>
 		</div>
 		<div class="main__news">
+			<div class="newsMenu">
+				<a href="#" class="newsMenu__link newsMenu__link_top">ТОП НОВОСТИ</a>
+				<a href="news.html" class="newsMenu__link">ВСЕ НОВОСТИ</a>
+				<span class="newsMenu__line"></span>
+			</div>
 			<ul class="news">
-				<li class="news__item">
+				<li class="news__item news__item_video">
 					<a href="#" class="news__link">
 						<div class="news__dateTime">
-							<time datetime="">
+							<time datetime="2018-05-20 15:08">
 								<p class="news__date">20.05.2018</p>
 								<p class="news__time">15:08</p>
 							</time>
 						</div>
-						<div class="news__img">
-							<img src="" class="newsImg" alt="">
+						<div class="news__img block__bg">
+							<img src="images/news-cover/shaktar_verder.jpg" alt="">
 						</div>
-						<div class="news__txt">
-							<h4 class="news__head">Шахтер — Вердер 2:1. ВИДЕО</h4>
+						<div class="news__head">
+							<h4 class="newsHead">Шахтер — Вердер 2:1. ВИДЕО</h4>
 						</div>
 					</a>
 				</li>
@@ -87,15 +94,15 @@
 								<p class="news__time">10:58</p>
 							</time>
 						</div>
-						<div class="news__img">
-							<img src="" class="newsImg" alt="">
+						<div class="news__img block__bg">
+							<img src="images/news-cover/fereira.jpg" alt="">
 						</div>
-						<div class="news__txt">
-							<h4 class="news__head">Факундо Феррейра: &laquo;Это мой последний матч за &laquo;Шахтер&raquo;</h4>
+						<div class="news__head">
+							<h4 class="newsHead">Факундо Феррейра: &laquo;Это мой последний матч за &laquo;Шахтер&raquo;</h4>
 						</div>
 					</a>
 				</li>
-				<li class="news__item">
+				<li class="news__item news__item_top">
 					<a href="#" class="news__link">
 						<div class="news__dateTime">
 							<time datetime="2018-05-19 21:15">
@@ -103,11 +110,11 @@
 								<p class="news__time">21:15</p>
 							</time>
 						</div>
-						<div class="news__img">
-							<img src="" class="newsImg" alt="">
+						<div class="news__img block__bg">
+							<img src="images/news-cover/dynamo_wins.jpg" alt="">
 						</div>
-						<div class="news__txt">
-							<h4 class="news__head">Динамо победило полурезервный состав Шахтера</h4>
+						<div class="news__head">
+							<h4 class="newsHead">Динамо победило полурезервный состав Шахтера</h4>
 						</div>
 					</a>
 				</li>
@@ -119,15 +126,15 @@
 								<p class="news__time">14:02</p>
 							</time>
 						</div>
-						<div class="news__img">
-							<img src="" class="newsImg" alt="">
+						<div class="news__img block__bg">
+							<img src="images/news-cover/akhmetov.jpg" alt="">
 						</div>
-						<div class="news__txt">
-							<h4 class="news__head">Ринат Ахметов: &laquo;Мы будем обходить Динамо дальше&raquo;</h4>
+						<div class="news__head">
+							<h4 class="newsHead">Ринат Ахметов: &laquo;Мы будем обходить Динамо дальше&raquo;</h4>
 						</div>
 					</a>
 				</li>
-				<li class="news__item">
+				<li class="news__item news__item_video">
 					<a href="#" class="news__link">
 						<div class="news__dateTime">
 							<time datetime="2018-05-19 16:20">
@@ -135,16 +142,22 @@
 								<p class="news__time">16:20</p>
 							</time>
 						</div>
-						<div class="news__img">
-							<img src="" class="newsImg" alt="">
+						<div class="news__img block__bg">
+							<img src="images/video-cover/fereira.jpg" alt="">
 						</div>
-						<div class="news__txt">
-							<h4 class="news__head">Факундо Феррейра: Хотел бы попробовать себя в другом, более сильном чемпионате</h4>
+						<div class="news__head">
+							<h4 class="newsHead">Факундо Феррейра: Хотел бы попробовать себя в другом, более сильном чемпионате</h4>
 						</div>
 					</a>
 				</li>
 			</ul>
 		</div>
 	</main>
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/bgInit.js"></script>
+	<script>
+		b1 = new BgInit('body');
+	</script>
 </body>
 </html>
