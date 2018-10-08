@@ -3,10 +3,10 @@ body {
   background-color: #242424; }
 
 body {
-  font-size: 14px; }
+  font-size: 12px; }
   @media screen and (min-width: 1280px) {
     body {
-      font-size: calc(14px + 6 * ((100vw - 1280px) / 640)); } }
+      font-size: calc(12px + 8 * ((100vw - 1280px) / 640)); } }
   @media screen and (min-width: 1920px) {
     body {
       font-size: 20px; } }
