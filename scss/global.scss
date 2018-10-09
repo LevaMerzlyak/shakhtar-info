@@ -33,6 +33,11 @@ body {
 body {
     @include fluid-type($min_width, $max_width, $min_font, $max_font);
 }
+.loading {
+    height: 100vh;
+    overflow: hidden;
+}
+
 .block__bg {
     background-position: center;
     background-repeat: no-repeat;

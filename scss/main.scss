@@ -1,4 +1,9 @@
 @import 'variables';
+.main__wrap {
+	height: 0;
+	overflow: hidden;
+	transition: height 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+}
 .main {
 	display: flex;
 	height: 100vh;
@@ -6,6 +11,7 @@
 	padding-right: 3%;
 	padding-top: 23vh;
 	box-sizing: border-box;
+	position: relative;
 	background-image: url('../images/main-cover.jpg');
 	background-position: center;
 	background-size: cover;
@@ -27,13 +33,32 @@
 }
 .highligh__info {
 	width: 40%;
+	margin-top: 0.5em;
+	&_video {
+		overflow: hidden;
+		position: relative;
+		&:before {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: $lightGrey;
+			opacity: 0;
+			transform: translateX(-100%);
+			z-index: 1;	
+		}
+	}
 }
 .highlightVideo {
 	display: block;
 	width: 100%;
 	padding-bottom: 66%;
-	margin-top: 0.5em;
 	position: relative;
+	opacity: 0;
+	transition: opacity 0.01s cubic-bezier(0.5, 0, 0.5, 1) 0.95s;
 	&:before {
 		content: "";
 		display: block;
@@ -75,6 +100,9 @@
 	font-weight: 800;
 	line-height: 1em;
 	margin-top: 20vh;
+	transform: scale(0.8);
+	opacity: 0;
+	transition: transform 0.1s cubic-bezier(0.5, 0, 0.5, 1) 0.4s, opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.4s;
 }
 
 .main__news {
@@ -97,15 +125,39 @@
 	font-weight: 800;
 	text-decoration: none;
 	text-transform: uppercase;
-	&_top {
+	position: relative;
+	opacity: 0;
+	transform: scale(0.8);
+	transition: transform 0.2s cubic-bezier(0.5, 0, 0.5, 1) 0.4s, opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.4s;;
+	&:before {
+		content: "";
+		display: block;
+		width: 0%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
 		background-color: $red;
+		z-index: -1;
+		transition: width 0.2s cubic-bezier(0.5, 0, 0.5, 1);
+	}
+	&_top {
+		&:before{
+			transition: width 0.2s cubic-bezier(0.5, 0, 0.5, 1) 0.7s;
+		}
+	}
+	&:hover {
+		&:before {
+			width: 100%;
+		}
 	}
 }
 .newsMenu__line {
 	display: inline-block;
-	width: 50%;
+	width: 0%;
 	height: 4px;
 	background-color: $red;
+	transition: width 0.2s cubic-bezier(0.5, 0, 0.5, 1) 0.2s;
 }
 .news__item {
 	position: relative;
@@ -147,14 +199,17 @@
 	text-decoration: none;
 }
 .news__dateTime {
-	width: 15%;
+	width: 0%;
 	position: relative;
 	background-color: $darkGrey;
+	transition: width 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.2s;
 	time {
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%,-50%);
+		opacity: 0;
+		transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1.7s;
 	}
 }
 .news__date {
@@ -169,15 +224,23 @@
 	font-weight: 400;
 	line-height: 1.2em;
 }
+.newsImg {
+	width: 0%;
+	background-color: $blk;
+	transition: width 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.7s;
+}
 .news__img {
-	width: 15%;
+	width: 100%;
+	height: 100%;
 	position: relative;
-	background-color: $lightGrey;
+	opacity: 0;
+	transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1.7s;
 }
 .news__head {
-	width: 70%;
+	width: 0%;
 	position: relative;
 	background-color: $lightGrey;
+	transition: width 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1.2s;
 }
 .newsHead {
 	position: absolute;
@@ -188,4 +251,68 @@
 	font-size: 1.3em;
 	font-weight: 700;
 	line-height: 0.9em;
+	opacity: 0;
+	transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1.7s;
+}
+
+.loaded {
+	.main__wrap {
+		height: 100vh;
+	}
+	.highligh__info {
+		&_video {
+			&:before {
+				animation: shader 1s cubic-bezier(0.5, 0, 0.5, 1) 0.4s;
+			}
+		}		
+	}
+	.highlightVideo {
+		opacity: 1;
+	}
+	.main__head {
+		transform: scale(1);
+		opacity: 1;
+	}
+	.newsMenu__link {
+		transform: scale(1);
+		opacity: 1;
+		&_top {
+			&:before {
+				width: 100%;
+			}
+		}
+	}
+	.newsMenu__line {
+		width: 50%;
+	}
+	.news__dateTime,
+	.newsImg {
+		width: 15%;
+	}
+	.news__head {
+		width: 70%;
+	}
+	.newsHead,
+	.news__img,
+	.news__dateTime time {
+		opacity: 1;
+	}
+}
+@keyframes shader {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    40% {
+        transform: translateX(0%);
+        opacity: 0.75;
+    }
+    60% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
 }
