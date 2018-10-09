@@ -1,6 +1,6 @@
 $min_width: 1280px;
 $max_width: 1920px;
-$min_font: 14px;
+$min_font: 12px;
 $max_font: 20px;
 
 @function strip-unit($value) {
@@ -33,6 +33,11 @@ body {
 body {
     @include fluid-type($min_width, $max_width, $min_font, $max_font);
 }
+.loading {
+    height: 100vh;
+    overflow: hidden;
+}
+
 .block__bg {
     background-position: center;
     background-repeat: no-repeat;
