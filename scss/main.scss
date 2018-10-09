@@ -197,12 +197,39 @@
 	display: flex;
 	height: 11vh;
 	text-decoration: none;
+	&:hover {
+		.news__dateTime {
+			&:before {
+				width: 100%;
+				transition: width 0.2s cubic-bezier(0.5, 0, 0.5, 1);
+			}
+		}
+		.news__head {
+			color: $darkGrey;
+			transition: color 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.3s;
+			&:before {
+				width: 100%;
+				transition: width 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.3s;
+			}
+		}
+	}
 }
 .news__dateTime {
 	width: 0%;
 	position: relative;
 	background-color: $darkGrey;
 	transition: width 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.2s;
+	&:before {
+		content: "";
+		display: block;
+		width: 0%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: $red;
+		transition: width 0.2s cubic-bezier(0.5, 0, 0.5, 1) 0.6s;
+	}
 	time {
 		position: absolute;
 		top: 50%;
@@ -241,18 +268,30 @@
 	position: relative;
 	background-color: $lightGrey;
 	transition: width 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1.2s;
+	&:before {
+		content: "";
+		display: block;
+		width: 0%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: $menuClr;
+		transition: width 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+	}
 }
 .newsHead {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 	padding: 1em;
+	box-sizing: border-box;
 	color: $newsClr;
 	font-size: 1.3em;
 	font-weight: 700;
 	line-height: 0.9em;
 	opacity: 0;
-	transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1.7s;
+	transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1.7s, color 0.5s cubic-bezier(0.5, 0, 0.5, 1);
 }
 
 .loaded {
@@ -296,6 +335,26 @@
 	.news__img,
 	.news__dateTime time {
 		opacity: 1;
+	}
+	.news__link {
+		&:hover {
+			.news__dateTime {
+				&:before {
+					width: 100%;
+					transition: width 0.2s cubic-bezier(0.5, 0, 0.5, 1);
+				}
+			}
+			.news__head {
+				&:before {
+					width: 100%;
+					transition: width 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.3s;
+				}
+			}
+			.newsHead {
+				color: $darkGrey;
+				transition: color 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.3s;
+			}
+		}
 	}
 }
 @keyframes shader {
