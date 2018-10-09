@@ -322,10 +322,6 @@
   -webkit-transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1.7s, color 0.5s cubic-bezier(0.5, 0, 0.5, 1);
   -o-transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1.7s, color 0.5s cubic-bezier(0.5, 0, 0.5, 1);
   transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1.7s, color 0.5s cubic-bezier(0.5, 0, 0.5, 1); }
-  .newsHead_hover {
-    color: #242527;
-    left: 0;
-    width: 100%; }
 
 .loaded .main__wrap {
   height: 100vh; }

@@ -37,6 +37,9 @@ body {
     height: 100vh;
     overflow: hidden;
 }
+section {
+    display: none;
+}
 
 .block__bg {
     background-position: center;
@@ -46,3 +49,4 @@ body {
         display: none;
     }
 }
+
