@@ -57,6 +57,11 @@ section {
         top: 0;
         background-color: $overlay;
     }
+    &_light {
+        &:before {
+            background-color: $overlayLight;
+        }
+    }
 }
 .videoBtn__bg {
     &:after {

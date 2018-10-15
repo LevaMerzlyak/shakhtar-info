@@ -35,6 +35,9 @@ section {
   top: 0;
   background-color: rgba(0, 0, 0, 0.6); }
 
+.bg__overlay_light:before {
+  background-color: rgba(0, 0, 0, 0.2); }
+
 .videoBtn__bg:after {
   content: "";
   display: block;

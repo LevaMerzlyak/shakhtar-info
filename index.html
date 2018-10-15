@@ -22,6 +22,8 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!-- Video Block CSS -->
 	<link rel="stylesheet" type="text/css" href="css/video-block.css">
+	<!-- Matches Block CSS -->
+	<link rel="stylesheet" type="text/css" href="css/matches-block.css">
 </head>
 <body class="loading">
 	<div class="loader">
@@ -183,11 +185,11 @@
 	<section class="video">
 		<h2 class="section__head section__head_video">ВИДЕО</h2>
 		<div class="videos__wrap">
-			<a href="#" class="video__link block__bg bg__overlay videoBtn__bg">
+			<a href="#" class="video__link block__bg bg__overlay bg__overlay_light videoBtn__bg">
 				<img src="images/video-cover/shakhtar_roma.jpg" alt="">
 				<div class="video__txt">
 					<div class="video__dateTime">
-						<time>
+						<time datetime="2018-05-19 16:20">
 							<p class="video__date">19.05.2018</p>
 							<p class="video__time">16:20</p>
 						</time>
@@ -197,11 +199,11 @@
 					</div>
 				</div>
 			</a>
-			<a href="#" class="video__link block__bg bg__overlay videoBtn__bg">
+			<a href="#" class="video__link block__bg bg__overlay bg__overlay_light videoBtn__bg">
 				<img src="images/video-cover/shakhtar_verder.jpg" alt="">
 				<div class="video__txt">
 					<div class="video__dateTime">
-						<time>
+						<time datetime="2018-05-23 18:20">
 							<p class="video__date">23.05.2018</p>
 							<p class="video__time">18:20</p>
 						</time>
@@ -211,11 +213,11 @@
 					</div>
 				</div>
 			</a>
-			<a href="#" class="video__link block__bg bg__overlay videoBtn__bg">
+			<a href="#" class="video__link block__bg bg__overlay bg__overlay_light videoBtn__bg">
 				<img src="images/video-cover/shakhtar_dynamo.jpg" alt="">
 				<div class="video__txt">
 					<div class="video__dateTime">
-						<time>
+						<time datetime="2018-05-23 18:20">
 							<p class="video__date">23.05.2018</p>
 							<p class="video__time">18:20</p>
 						</time>
@@ -228,6 +230,96 @@
 		</div>
 		<a href="video.html" class="more__btn more__btn_video">все видео</a>
 	</section>
+
+	<section class="matches">
+		<h2 class="section__head">МАТЧИ</h2>
+		<div class="matches__wrap">
+			<div class="matches__col">
+				<h4 class="matches__head">Предыдущие матчи</h4>
+				<div class="match__wrap">
+					<time class="match__date" datetime="2018-10-07">07.10.2018</time>
+					<i class="team__logo block__bg"><img src="images/teams/Shakhtar.png"></i>
+					<p class="match__result">1:1</p>
+					<i class="team__logo block__bg"><img src="images/teams/Zorya.png"></i>
+				</div>
+				<div class="match__wrap">
+					<time class="match__date" datetime="2018-10-02">02.10.2018</time>
+					<i class="team__logo block__bg"><img src="images/teams/Olympique_Lyonnais.png"></i>
+					<p class="match__result">2:2</p>
+					<i class="team__logo block__bg"><img src="images/teams/Shakhtar.png"></i>
+				</div>
+				<a href="results.html" class="more__btn">ИТОГИ МАТЧЕЙ</a>
+			</div>
+			<div class="matches__col matches__col_next">
+				<h4 class="matches__head">Следующие матчи</h4>
+				<div class="match__wrap">
+					<time class="match__date" datetime="2018-10-19">19.10.2018</time>
+					<i class="team__logo block__bg"><img src="images/teams/Shakhtar.png"></i>
+					<p class="match__result">-:-</p>
+					<i class="team__logo block__bg"><img src="images/teams/Desna.png"></i>
+					<div class="match__broadcast">
+						<p class="broadcast__chanel">Смотреть на канале Футбол 1</p>
+						<time class="broadcast__time" datetime="19:00">19:00</time>
+					</div>
+				</div>
+				<div class="match__wrap">
+					<time class="match__date" datetime="2018-10-23">23.10.2018</time>
+					<i class="team__logo block__bg"><img src="images/teams/Shakhtar.png"></i>
+					<p class="match__result">-:-</p>
+					<i class="team__logo block__bg"><img src="images/teams/Manchester_City.png"></i>
+					<div class="match__broadcast">
+						<p class="broadcast__chanel">Смотреть на канале Украина</p>
+						<time class="broadcast__time" datetime="22:00">22:00</time>
+					</div>
+				</div>
+				<a href="following.html" class="more__btn">СЛЕДУЮЩИЕ МАТЧИ</a>
+			</div>
+			<div class="matches__col">
+				<h4 class="matches__head">Турнирная таблица</h4>
+				<table class="matchesTable">
+					<tr>
+						<th>Место</th>
+						<th>Команда</th>
+						<th>Игры</th>
+						<th>Очки</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td><i class="team__logo block__bg"><img src="images/teams/Shakhtar.png"></i>Шахтер</td>
+						<td>11</td>
+						<td>28</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td><i class="team__logo block__bg"><img src="images/teams/Dynamo.png"></i>Динамо</td>
+						<td>11</td>
+						<td>26</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td><i class="team__logo block__bg"><img src="images/teams/Oleksandria.png"></i>Александрия</td>
+						<td>11</td>
+						<td>22</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td><i class="team__logo block__bg"><img src="images/teams/Vorskla.png"></i>Ворскла</td>
+						<td>11</td>
+						<td>18</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td><i class="team__logo block__bg"><img src="images/teams/Zorya.png"></i>Заря</td>
+						<td>11</td>
+						<td>14</td>
+					</tr>
+				</table>
+				<a href="table.html" class="more__btn">Вся таблица</a>
+			</div>
+		</div>
+	</section>
+
+	
 
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script>
