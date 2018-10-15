@@ -1,1 +1,78 @@
 @import 'variables';
+.matches {
+	padding-left: 3%;
+	padding-right: 3%;
+	box-sizing: border-box;
+}
+.matches__wrap {
+	display: flex;
+
+}
+.matches__col {
+	width: calc(100% / 3);
+}
+.matches__head {
+	color: #fff;
+	font-size: 1.3em;
+	font-weight: 700;
+	text-transform: uppercase;
+	background-color: $lightGrey;
+	text-align: center;
+	&_next {
+		background-color: $matchHeadEven;
+	}
+}
+.match__date {
+	color: $sectionHead;
+	font-size: 0.9em;
+	font-weight: 700;
+}
+.match__result {
+	color: #fff;
+	font-size: 3em;
+	font-weight: 700;
+}
+.matchesTable {
+	width: 100%;
+	th,
+	td {
+		width: 17%;
+		color: #fff;
+		font-size: 1.2em;
+		font-weight: 400;
+		line-height: 3.2em;
+		text-align: left;
+		&:first-child {
+			padding-left: 1em;
+			width: 28%;
+		}
+		&:nth-of-type(2) {
+			width: 40%;
+		}
+		&:last-child {
+			width: 15%;
+		}
+	}
+	td {
+		&:nth-of-type(2) {
+			display: flex;
+			align-items: center;
+		}
+	}
+	tr {
+		&:nth-of-type(odd) {
+			background-color: $trOdd;
+		}
+		&:nth-of-type(even) {
+			background-color: $trEven;
+		}
+		&:nth-of-type(1) {
+			background-color: $tr-th;
+		}
+	}
+	.team__logo {
+		display: inline-block;
+		width: 2em;
+		height: 1.2em;
+	}
+}
