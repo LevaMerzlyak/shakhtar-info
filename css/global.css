@@ -15,7 +15,8 @@ body {
   height: 100vh;
   overflow: hidden; }
 
-section {
+section,
+footer {
   display: none; }
 
 .block__bg {
