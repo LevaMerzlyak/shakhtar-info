@@ -37,10 +37,11 @@
 	th,
 	td {
 		width: 17%;
+		box-sizing: border-box;
 		color: #fff;
 		font-size: 1.2em;
 		font-weight: 400;
-		line-height: 3.2em;
+		line-height: 3em;
 		text-align: left;
 		&:first-child {
 			padding-left: 1em;
@@ -55,8 +56,17 @@
 	}
 	td {
 		&:nth-of-type(2) {
-			display: flex;
-			align-items: center;
+			position: relative;
+			padding-left: 2em;
+			.team__logo {
+				display: inline-block;
+				width: 2em;
+				height: 1.2em;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
+			}
 		}
 	}
 	tr {
@@ -69,10 +79,5 @@
 		&:nth-of-type(1) {
 			background-color: $tr-th;
 		}
-	}
-	.team__logo {
-		display: inline-block;
-		width: 2em;
-		height: 1.2em;
 	}
 }
