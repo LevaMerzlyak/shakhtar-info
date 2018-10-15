@@ -1,0 +1,43 @@
+@import 'variables';
+.allNews {
+	padding-left: 3%;
+	padding-right: 3%;
+	margin-top: 15vh;
+	margin-bottom: 15vh;
+	box-sizing: border-box;
+	.more__btn {
+		margin-top: 5vh;
+	}
+}
+.news__wrap {
+	display: flex;
+	margin-top: 5vh;
+}
+.news {
+	&_allNews {
+		width: 63%;
+		margin-right: 7%;
+		.news__item {
+			&_top {
+				&:before {
+					width: 0.9%;
+				}
+			}
+		}
+		.news__dateTime {
+			background-color: $blk;
+		}
+		.news__dateTime,
+		.newsImg {
+			width: 12.5%;
+		}
+		.news__head {
+			width: 75%;
+		}
+	}
+}
+.news__aside {
+	width: 30%;
+	height: 80vh;
+	margin-top: 1em;
+}
