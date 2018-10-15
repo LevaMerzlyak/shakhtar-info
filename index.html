@@ -16,6 +16,8 @@
 	<link rel="stylesheet" type="text/css" href="css/global.css">
 	<!-- Icons CSS -->
 	<link rel="stylesheet" type="text/css" href="css/icons.css">
+	<!-- Teams Logos CSS -->
+	<link rel="stylesheet" type="text/css" href="css/teams-logo.css">
 	<!-- Header CSS -->
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<!--Main Block CSS -->
@@ -234,10 +236,8 @@
 	<section class="matches">
 		<h2 class="section__head">МАТЧИ</h2>
 		<div class="matches__wrap">
-			<div class="matches__next">
-				<div class="matches__head">
-					<h4 class="matchesHead">Предыдущие матчи</h4>
-				</div>
+			<div class="matches__col">
+				<h4 class="matches__head">Предыдущие матчи</h4>
 				<div class="match__wrap">
 					<time class="match__date"> 19.05.2018</time>
 					<i class="team__logo"></i>
@@ -252,29 +252,25 @@
 				</div>
 				<a href="results.html" class="more__btn">ИТОГИ МАТЧЕЙ</a>
 			</div>
-			<div class="matches__next">
-				<div class="matches__head">
-					<h4 class="matchesHead">Следующие матчи</h4>
-				</div>
+			<div class="matches__col">
+				<h4 class="matches__head matches__head_next">Следующие матчи</h4>
 				<div class="match__wrap">
 					<time class="match__date">12.07.2018</time>
 					<i class="team__logo"></i>
-					<p class="match__result">-:-</p>
+					<p class="match__result">- : -</p>
 					<i class="team__logo"></i>
 				</div>
 				<div class="match__wrap">
 					<time class="match__date">19.08.2018</time>
 					<i class="team__logo"></i>
-					<p class="match__result">-:-</p>
+					<p class="match__result">- : -</p>
 					<i class="team__logo"></i>
 				</div>
 				<a href="following.html" class="more__btn">СЛЕДУЮЩИЕ МАТЧИ</a>
 			</div>
-			<div class="matches__next">
-				<div class="matches__head">
-					<h4 class="matchesHead">Турнирная таблица</h4>
-				</div>
-				<table>
+			<div class="matches__col">
+				<h4 class="matches__head">Турнирная таблица</h4>
+				<table class="matchesTable">
 					<tr>
 						<th>Место</th>
 						<th>Команда</th>
@@ -283,31 +279,31 @@
 					</tr>
 					<tr>
 						<td>1</td>
-						<td><i class="team__logo"></i>Шахтер</td>
+						<td><i class="team__logo team__logo_shakhtar"></i>Шахтер</td>
 						<td>11</td>
 						<td>28</td>
 					</tr>
 					<tr>
 						<td>2</td>
-						<td><i class="team__logo"></i>Динамо</td>
+						<td><i class="team__logo team__logo_dynamo"></i>Динамо</td>
 						<td>11</td>
 						<td>26</td>
 					</tr>
 					<tr>
 						<td>3</td>
-						<td><i class="team__logo"></i>Александрия</td>
+						<td><i class="team__logo team__logo_olelsanriya"></i>Александрия</td>
 						<td>11</td>
 						<td>24</td>
 					</tr>
 					<tr>
 						<td>4</td>
-						<td><i class="team__logo"></i>Ворскла</td>
+						<td><i class="team__logo team__logo_vorskla"></i>Ворскла</td>
 						<td>11</td>
 						<td>22</td>
 					</tr>
 					<tr>
 						<td>5</td>
-						<td><i class="team__logo"></i>Заря</td>
+						<td><i class="team__logo team__logo_zorya"></i>Заря</td>
 						<td>11</td>
 						<td>20</td>
 					</tr>
@@ -315,6 +311,21 @@
 				<a href="table.html" class="more__btn">Вся таблица</a>
 			</div>
 		</div>
+	</section>
+
+	<section class="teamsLogos">
+		<i class="team__logo team__logo_arsenal"></i>
+		<i class="team__logo team__logo_desna"></i>
+		<i class="team__logo"></i>
+		<i class="team__logo team__logo_karpati"></i>
+		<i class="team__logo team__logo_lviv"></i>
+		<i class="team__logo team__logo_mariupol"></i>
+		<i class="team__logo"></i>
+		<i class="team__logo team__logo_olimpik"></i>
+		<i class="team__logo"></i>
+		<i class="team__logo"></i>
+		<i class="team__logo"></i>
+		<i class="team__logo team__logo_chornomorec"></i>
 	</section>
 
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
