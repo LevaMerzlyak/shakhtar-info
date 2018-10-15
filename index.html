@@ -25,6 +25,7 @@
 	<!-- Matches Block CSS -->
 	<link rel="stylesheet" type="text/css" href="css/matches-block.css">
 	<!-- News Block CSS -->
+	<link rel="stylesheet" type="text/css" href="css/news-block.css">
 </head>
 <body class="loading">
 	<div class="loader">
@@ -323,7 +324,7 @@
 	<section class="allNews">
 		<h2 class="section__head">ВСЕ НОВОСТИ</h2>
 		<div class="news__wrap">
-			<ul class="news">
+			<ul class="news news_allNews">
 				<li class="news__item news__item_video">
 					<a href="#" class="news__link">
 						<div class="news__dateTime">
@@ -505,8 +506,11 @@
 					</a>
 				</li>
 			</ul>
+			<aside class="news__aside">
+				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FShakhtarFun&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+			</aside>
 		</div>
-		<aside class="news__aside"></aside>
+		<a href="#" class="more__btn">ВСЕ НОВОСТИ</a>
 	</section>
 
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
@@ -523,6 +527,7 @@
 			}, 510);
 
 		}, time);
+
 	</script>
 	<script type="text/javascript" src="js/bgInit.js"></script>
 	<script>
