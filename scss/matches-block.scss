@@ -2,10 +2,18 @@
 .matches {
 	padding-left: 3%;
 	padding-right: 3%;
+	margin-top: 15vh;
+	margin-bottom: 15vh;
 	box-sizing: border-box;
 }
 .matches__wrap {
 	display: flex;
+	margin-top: 8vh;
+}
+.matches__col {
+	.more__btn {
+		margin-top: 5vh;
+	}
 }
 .matches__head {
 	color: #fff;
@@ -23,8 +31,23 @@
 	height: 24vh;
 	background-color: $tr-th;
 	position: relative;
+	overflow: hidden;
 	&:first-of-type {
-		border-bottom: 2px solid rgba(200,200,200, 0.2);
+		&:after {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 2px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background-color: rgba(200,200,200, 0.2);
+		}
+	}
+	&:hover {
+		.match__broadcast {
+			transform: translateY(0%);
+		}
 	}
 }
 .match__date {
@@ -34,6 +57,7 @@
 	color: $sectionHead;
 	font-size: 0.9em;
 	font-weight: 700;
+	z-index: 10;
 	&:before {
 		content: "";
 		display: block;
@@ -57,11 +81,27 @@
 }
 .match__broadcast {
 	width: 100%;
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 2em;
+	box-sizing: border-box;
 	height: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
+	transform: translateY(-100%);
 	background-color: #fff;
+	transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+	&:before {
+		content: "";
+		display: block;
+		height: 100%;
+		width: 1.5%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: $red;
+	}
 }
 .broadcast__chanel {
 	color: #000;
@@ -131,6 +171,11 @@
 		}
 		.match__wrap {
 			background-color: $vidDate;
+			&:first-of-type {
+				&:after {
+					background-color: rgba(255,255,255, 0.2);
+				}
+			}
 		}
 	}
 }
