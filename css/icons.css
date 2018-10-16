@@ -1,3 +1,5 @@
+/*-----------------------------------------------------------------*/
+/*-- Icons --*/
 .icon {
   display: inline-block;
   height: 1.2em;
@@ -29,3 +31,5 @@
 
 .icon_googlePlus {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCgkgdmlld0JveD0iLTUwIDIzNiA1MTQgMzIyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IC01MCAyMzYgNTE0IDMyMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cG9seWdvbiBzdHlsZT0iZmlsbDojRDBEMEQwOyIgcG9pbnRzPSI0NjMsMzY1IDM5OSwzNjUgMzk5LDMwMSAzNjcsMzAxIDM2NywzNjUgMzAzLDM2NSAzMDMsMzk3IDM2NywzOTcgMzY3LDQ2MSAzOTksNDYxIDM5OSwzOTcgCgk0NjMsMzk3ICIvPgo8cGF0aCBzdHlsZT0iZmlsbDojRDBEMEQwOyIgZD0iTTExMSw0MjloOTAuNTI4Yy0xMy4yMTYsMzcuMjQ4LTQ4LjgsNjQtOTAuNTI4LDY0Yy01Mi45MjgsMC05Ni00My4wNzItOTYtOTZzNDMuMDcyLTk2LDk2LTk2CgljMjIuOTQ0LDAsNDUuMDI0LDguMjI0LDYyLjE3NiwyMy4xNjhsNDIuMDQ4LTQ4LjI1NkMxODYuNDI0LDI1MC44MjQsMTQ5LjQzMiwyMzcsMTExLDIzN2MtODguMjI0LDAtMTYwLDcxLjc3Ni0xNjAsMTYwCglzNzEuNzc2LDE2MCwxNjAsMTYwczE2MC03MS43NzYsMTYwLTE2MHYtMzJIMTExVjQyOXoiLz4KPC9zdmc+); }
+
+/*-- /Icons --*/
