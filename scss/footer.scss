@@ -65,11 +65,9 @@
 	}
 }
 .footer__aside {
-	background-color: $bg;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	padding: 10px;
-	div {
-		&:not(:last-child) {
-			margin-bottom: 10px;
-		}
-	}
+	background-color: $bg;
 }
