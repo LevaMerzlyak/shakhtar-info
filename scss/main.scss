@@ -24,9 +24,9 @@
 .highligh__info {
 	width: 40%;
 	margin-top: 0.5em;
+	position: relative;
+	overflow: hidden;
 	&_video {
-		overflow: hidden;
-		position: relative;
 		&:before {
 			content: "";
 			display: block;
@@ -39,6 +39,33 @@
 			opacity: 0;
 			transform: translateX(-100%);
 			z-index: 1;	
+		}
+	}
+	&_match {
+		width: 50%;
+		.matches__head {
+			line-height: 8vh;
+			position: relative;
+			z-index: 10;
+			color: $lightGrey;
+			transform: translateY(-100%);
+			transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.5s, color 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1s;
+		}
+		.match__wrap {
+			height: 22vh;
+			transform: translateY(-30vh);
+			transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1s;
+			.match__date,
+			.team__logo,
+			.match__result {
+				opacity: 0;
+				transition: opacity 0.3s cubic-bezier(0.5, 0, 0.5, 1) 1.5s;
+			}
+
+		}
+		.match__broadcast {
+			padding-left: 10%;
+			padding-right: 10%;
 		}
 	}
 }
@@ -272,6 +299,20 @@
 		&_video {
 			&:before {
 				animation: shader 1s cubic-bezier(0.5, 0, 0.5, 1) 0.4s;
+			}
+		}
+		&_match {
+			.matches__head {
+				transform: translateY(0%);
+				color: #fff;
+			}
+			.match__wrap {
+				transform: translateY(0%);
+				.match__date,
+				.team__logo,
+				.match__result {
+					opacity: 1;
+				}
 			}
 		}		
 	}

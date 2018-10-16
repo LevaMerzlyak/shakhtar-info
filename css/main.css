@@ -27,24 +27,58 @@
 
 .highligh__info {
   width: 40%;
-  margin-top: 0.5em; }
-  .highligh__info_video {
-    overflow: hidden;
-    position: relative; }
-    .highligh__info_video:before {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: #3a3e3f;
-      opacity: 0;
-      -webkit-transform: translateX(-100%);
-      -ms-transform: translateX(-100%);
-      transform: translateX(-100%);
-      z-index: 1; }
+  margin-top: 0.5em;
+  position: relative;
+  overflow: hidden; }
+  .highligh__info_video:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #3a3e3f;
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    z-index: 1; }
+  .highligh__info_match {
+    width: 50%; }
+    .highligh__info_match .matches__head {
+      line-height: 8vh;
+      position: relative;
+      z-index: 10;
+      color: #3a3e3f;
+      -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+      transform: translateY(-100%);
+      -webkit-transition: color 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1s, -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.5s;
+      transition: color 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1s, -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.5s;
+      -o-transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.5s, color 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1s;
+      transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.5s, color 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1s;
+      transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.5s, color 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1s, -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.5s; }
+    .highligh__info_match .match__wrap {
+      height: 22vh;
+      -webkit-transform: translateY(-30vh);
+      -ms-transform: translateY(-30vh);
+      transform: translateY(-30vh);
+      -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1s;
+      transition: -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1s;
+      -o-transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1s;
+      transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1s;
+      transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1s, -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1s; }
+      .highligh__info_match .match__wrap .match__date,
+      .highligh__info_match .match__wrap .team__logo,
+      .highligh__info_match .match__wrap .match__result {
+        opacity: 0;
+        -webkit-transition: opacity 0.3s cubic-bezier(0.5, 0, 0.5, 1) 1.5s;
+        -o-transition: opacity 0.3s cubic-bezier(0.5, 0, 0.5, 1) 1.5s;
+        transition: opacity 0.3s cubic-bezier(0.5, 0, 0.5, 1) 1.5s; }
+    .highligh__info_match .match__broadcast {
+      padding-left: 10%;
+      padding-right: 10%; }
 
 .highlightVideo {
   display: block;
@@ -300,6 +334,21 @@
 .loaded .highligh__info_video:before {
   -webkit-animation: shader 1s cubic-bezier(0.5, 0, 0.5, 1) 0.4s;
   animation: shader 1s cubic-bezier(0.5, 0, 0.5, 1) 0.4s; }
+
+.loaded .highligh__info_match .matches__head {
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+  color: #fff; }
+
+.loaded .highligh__info_match .match__wrap {
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%); }
+  .loaded .highligh__info_match .match__wrap .match__date,
+  .loaded .highligh__info_match .match__wrap .team__logo,
+  .loaded .highligh__info_match .match__wrap .match__result {
+    opacity: 1; }
 
 .loaded .highlightVideo {
   opacity: 1; }
