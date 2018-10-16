@@ -3,9 +3,16 @@
 .footer {
 	padding-left: 3%;
 	padding-right: 3%;
+	padding-top: 3vh;
+	padding-bottom: 5vh;
 	background-color: $blk;
 	.logo {
 		margin-right: 2%;
+	}
+	.nav__item {
+		&:before {
+			display: none;
+		}
 	}
 }
 .nav__wrap {
@@ -28,5 +35,41 @@
 	line-height: 1.5em;
 	a {
 		color: #fff;
+	}
+}
+.socials {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.socials__item {
+	&:not(:last-child) {
+		margin-bottom: 1em;
+	}
+}
+.socials__link {
+	position: relative;
+	padding-left: 2.5em;
+	color: #fff;
+	font-size: 0.9em;
+	font-weight: 400;
+	text-decoration: none;
+	line-height: 1.7em;
+	.icon {
+		width: 1.5em;
+		height: 1.5em;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+	}
+}
+.footer__aside {
+	background-color: $bg;
+	padding: 10px;
+	div {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
 	}
 }
