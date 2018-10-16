@@ -1,5 +1,5 @@
-@import 'variables';
-
+/*-----------------------------------------------------------------*/
+/*-- Header Style --*/
 .header {
 	display: flex;
 	align-items: center;
@@ -14,7 +14,7 @@
 	top: 3%;
 	background-color: $darkGrey;
 	z-index: 1;
-	transform: translateY(-200%);
+	transform: translateY(-200%);/* unloaded state */
 	transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.2s;
 }
 .logo {
@@ -23,48 +23,8 @@
 	margin-right: 9%;
 	text-indent: -9999px;
 }
-.nav {
-	display: flex;
-	justify-content: space-between;
-	width: 50%;
-}
-.nav__item {
-	position: relative;
-	&:before {
-		content: "";
-		display: block;
-		width: 0%;
-		height: 100%;
-		position: absolute;
-		top: 0;
-		left: 0;
-		background-color: $red;
-		z-index: -1;
-		transition: width 0.2s cubic-bezier(0.5, 0, 0.5, 1);
-	}
-	&_active {
-		&:before{
-			transition: width 0.2s cubic-bezier(0.5, 0, 0.5, 1) 0.7s;
-		}
-	}
-	&:hover {
-		&:before {
-			width: 100%;
-		}
-	}
-}
-.nav__link {
-	display: inline-block;
-	padding-top: 0.5em;
-	padding-right: 1.25em;
-	padding-bottom: 0.5em;
-	padding-left: 1.25em;
-	color: $menuClr;
-	font-size: 1em;
-	font-weight: 700;
-	text-decoration: none;
-	text-transform: uppercase;
-}
+/*-----------------------------------------------------------------*/
+/*-- Search Block --*/
 .search {
 	position: relative;
 	height: 100%;
@@ -110,6 +70,9 @@
 	border: none;
 	cursor: pointer;
 }
+/*-- /Search Block --*/
+/*-----------------------------------------------------------------*/
+/*-- Log In Block --*/
 .login {
 	display: flex;
 	align-items: center;
@@ -131,6 +94,9 @@
 .icon_user {
 	height: 1.4em;
 }
+/*-- /Log In Block --*/
+/*-----------------------------------------------------------------*/
+/*-- Loaded State --*/
 .loaded {
 	.header {
 		transform: translateY(0%);
@@ -141,3 +107,5 @@
 		}
 	}
 }
+/*-- /Loaded State --*/
+/*-- /Header CSS --*/

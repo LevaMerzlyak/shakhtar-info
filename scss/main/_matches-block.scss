@@ -1,0 +1,20 @@
+/*-----------------------------------------------------------------*/
+/*-- Matches Block --*/
+.matches {
+	padding-left: 3%;
+	padding-right: 3%;
+	margin-top: 15vh;
+	margin-bottom: 15vh;
+	box-sizing: border-box;
+}
+.matches__wrap {
+	display: flex;
+	margin-top: 8vh;
+}
+.matches__col {
+	width: calc(100% / 3);
+	.more__btn {
+		margin-top: 5vh;
+	}
+}
+/*-- /Matches Block --*/

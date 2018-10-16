@@ -1,20 +1,5 @@
-@import 'variables';
-.matches {
-	padding-left: 3%;
-	padding-right: 3%;
-	margin-top: 15vh;
-	margin-bottom: 15vh;
-	box-sizing: border-box;
-}
-.matches__wrap {
-	display: flex;
-	margin-top: 8vh;
-}
-.matches__col {
-	.more__btn {
-		margin-top: 5vh;
-	}
-}
+/*-----------------------------------------------------------------*/
+/*---- Matches Tables --*/
 .matches__head {
 	color: #fff;
 	font-size: 1.3em;
@@ -23,6 +8,9 @@
 	text-transform: uppercase;
 	background-color: $lightGrey;
 	text-align: center;
+	&_next {
+		background-color: $matchHeadEven;
+	}
 }
 .match__wrap {	
 	display: flex;
@@ -44,15 +32,23 @@
 			background-color: rgba(200,200,200, 0.2);
 		}
 	}
-	&:hover {
-		.match__broadcast {
-			transform: translateY(0%);
-			transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+	&_next {
+		background-color: $vidDate;
+		&:first-of-type {
+			&:after {
+				background-color: rgba(255,255,255, 0.2);
+			}
 		}
-		.broadcast__chanel,
-		.broadcast__time {
-			opacity: 1;
-			transition: opacity 0.2s cubic-bezier(0.5, 0, 0.5, 1) 0.3s;
+		&:hover {
+			.match__broadcast {
+				transform: translateY(0%);
+				transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+			}
+			.broadcast__chanel,
+			.broadcast__time {
+				opacity: 1;
+				transition: opacity 0.2s cubic-bezier(0.5, 0, 0.5, 1) 0.3s;
+			}
 		}
 	}
 }
@@ -173,19 +169,4 @@
 		}
 	}
 }
-.matches__col {
-	width: calc(100% / 3);
-	&_next {
-		.matches__head {
-			background-color: $matchHeadEven;
-		}
-		.match__wrap {
-			background-color: $vidDate;
-			&:first-of-type {
-				&:after {
-					background-color: rgba(255,255,255, 0.2);
-				}
-			}
-		}
-	}
-}
+/*-- /Matches Tables --*/
