@@ -59,7 +59,20 @@
 				</form>
 			</div>
 		</a>
-		<div class="login"><a href="#" class="login__link login__link_log">ВХОД</a><a href="#" class="login__link">регистрация</a><i class="icon icon_user"></i></div>		
+		<div class="login"><!-- class="login login_loged" -->	
+			<div class="login__block">
+				<a href="#" class="login__link login__link_log">ВХОД</a>
+				<a href="#" class="login__link">регистрация</a>
+				<i class="icon icon_user"></i>
+			</div>
+			<div class="user__block">
+				<p class="user__name">User Name</p>
+				<i class="icon user__photo user__photo_none"><!-- class="icon user__photo" -->
+					<i class="icon icon_user"></i>
+					<img src="images/users/user.png" alt="">
+				</i>
+			</div>
+		</div>		
 	</header>
 	<div class="main__wrap">
 		<main class="main block__bg bg__overlay">
@@ -627,6 +640,22 @@
 			</aside>
 		</div>
 	</footer>
+
+	<div class="loginMenu__wrap">
+		<div class="loginMenu">
+			<form>
+				<input type="name" class="loginMenu__name">
+				<input type="email" class="loginMenu__email">
+				<input type="password" class="loginMenu__password">
+				<input type="password" class="loginMenu__password loginMenu__password_confirm">
+				<input type="submit" class="loginMenu__enter">
+				<input type="submit" class="loginMenu__enter_reg">
+			</form>
+			<a href="#" class="loginMenu__link">Регистрация</a>
+			<a href="#" class="loginMenu__link">Забыли пароль?</a>
+			<p class="loginMenu__txt">Войти с помощью: <a href="#" class="loginMenu__fb icon"></a></p>
+		</div>
+	</div>
 
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script>
