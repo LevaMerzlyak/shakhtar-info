@@ -13,10 +13,6 @@
 	padding-top: 23vh;
 	box-sizing: border-box;
 	position: relative;
-	background-image: url('../images/main-cover.jpg');
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;	
 }
 /*-----------------------------------------------------------------*/
 /*-- Highlight Block --*/
@@ -99,7 +95,7 @@
 	position: absolute;
 	bottom: 0;
 	color: #ffffff;
-	font-weight: 700;
+	@extend %proxi-bld;
 	line-height: 2em;
 	text-align: center;
 	background-color: $overlay;
@@ -107,7 +103,7 @@
 .main__head {
 	color: #ffffff;
 	font-size: 3.5em;
-	font-weight: 800;
+	@extend %proxi-eXbld;
 	line-height: 1em;
 	margin-top: 20vh;
 	transform: scale(0.8);/* unloaded state */
@@ -134,7 +130,7 @@
 	padding-left: 1.25em;
 	color: $newsClr;
 	font-size: 1em;
-	font-weight: 800;
+	@extend %proxi-eXbld;
 	text-decoration: none;
 	text-transform: uppercase;
 	position: relative;

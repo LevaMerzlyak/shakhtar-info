@@ -38,7 +38,7 @@
 	padding-left: 1.25em;
 	color: $menuClr;
 	font-size: 1em;
-	font-weight: 700;
+	@extend %proxi-bld;
 	text-decoration: none;
 	text-transform: uppercase;
 }

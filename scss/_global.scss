@@ -29,6 +29,22 @@ body {
 body {
     @include fluid-type($min_width, $max_width, $min_font, $max_font);
 }
+%gotham-med {
+    font-family: 'GothamPro', sans-serif;
+    font-weight: 500;
+}
+%proxi-reg {
+    font-family: 'ProximaNova', sans-serif;
+    font-weight: 400;
+}
+%proxi-bld {
+    font-family: 'ProximaNova', sans-serif;
+    font-weight: 700;
+}
+%proxi-eXbld {
+    font-family: 'ProximaNova', sans-serif;
+    font-weight: 800;
+}
 /*-- /Font Style --*/
 /*-----------------------------------------------------------------*/
 /*-- Global Styles --*/
@@ -56,6 +72,14 @@ body {
             background-color: $overlayLight;
         }
     }
+    &_grad {
+        &:before {
+            background: -moz-linear-gradient(45deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 35%, rgba(0,0,0,0.7) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(45deg, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.6) 35%,rgba(0,0,0,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(45deg, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.6) 35%,rgba(0,0,0,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33000000', endColorstr='#b3000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        }
+    }
 }
 .videoBtn__bg {
     &:after {
@@ -74,18 +98,17 @@ body {
 }
 .section__head {
     color: $sectionHead;
+    @extend %proxi-bld;
     font-size: 1.8em;
-    font-weight: 700;
 }
 .more__btn {
     display: inline-block;
-    padding-top: 0.5em;
     padding-right: 1.25em;
-    padding-bottom: 0.5em;
     padding-left: 1.25em;
     color: #fff;
+    @extend %proxi-bld;
     font-size: 1em;
-    font-weight: 700;
+    line-height: 2em;
     text-decoration: none;
     text-transform: uppercase;
     position: relative;

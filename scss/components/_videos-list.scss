@@ -60,13 +60,13 @@
 .video__date {
 	color: #fff;
 	font-size: 0.9em;
-	font-weight: 700;
+	@extend %gotham-med;
 	line-height: 1.5em;
 }
 .video__time {
 	color: #fff;
 	font-size: 1.25em;
-	font-weight: 400;
+	@extend %proxi-reg;
 	line-height: 1.2em;
 }
 .video__head {
@@ -93,7 +93,7 @@
 	transform: translateY(-50%);
 	color: #fff;
 	font-size: 1.1em;
-	font-weight: 700;
+	@extend %gotham-med;
 	line-height: 1.5em;
 	transition: color 0.5s cubic-bezier(0.5, 0, 0.5, 1);
 }

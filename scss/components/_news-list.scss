@@ -75,13 +75,13 @@
 .news__date {
 	color: #fff;
 	font-size: 0.9em;
-	font-weight: 700;
+	@extend %gotham-med;
 	line-height: 1.5em;
 }
 .news__time {
 	color: #fff;
 	font-size: 1.25em;
-	font-weight: 400;
+	@extend %proxi-reg;
 	line-height: 1.2em;
 }
 .newsImg {
@@ -121,8 +121,8 @@
 	box-sizing: border-box;
 	color: $newsClr;
 	font-size: 1.3em;
-	font-weight: 700;
-	line-height: 0.9em;
+	@extend %gotham-med;
+	line-height: 1.1em;
 	opacity: 1;
 	transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1.7s, color 0.5s cubic-bezier(0.5, 0, 0.5, 1);
 }
