@@ -114,7 +114,7 @@ body {
 
 section,
 footer {
-  display: none; }
+  visibility: hidden; }
 
 /*-----------------------------------------------------------------*/
 /*-- Navigation Style --*/

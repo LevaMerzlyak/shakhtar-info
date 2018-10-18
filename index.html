@@ -638,8 +638,9 @@
 
 			$('body').removeClass('loading').addClass('loaded');
 			setTimeout(function () {
-				$('section').show();
-				$('footer').show();
+				$('section').css('visibility', 'visible');
+				$('footer').css('visibility', 'visible');
+				$('.loader').hide();
 			}, 510);
 
 		}, time);

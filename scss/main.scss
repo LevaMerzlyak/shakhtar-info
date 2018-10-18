@@ -7,7 +7,7 @@
 }
 section,
 footer {
-    display: none;
+    visibility: hidden;
 }
 
 @import 'components/navigation';
