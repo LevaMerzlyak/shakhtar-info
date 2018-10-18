@@ -643,16 +643,29 @@
 
 	<div class="loginMenu__wrap">
 		<div class="loginMenu">
-			<form>
-				<input type="name" class="loginMenu__name">
-				<input type="email" class="loginMenu__email">
-				<input type="password" class="loginMenu__password">
-				<input type="password" class="loginMenu__password loginMenu__password_confirm">
-				<input type="submit" class="loginMenu__enter">
-				<input type="submit" class="loginMenu__enter_reg">
-			</form>
-			<a href="#" class="loginMenu__link">Регистрация</a>
-			<a href="#" class="loginMenu__link">Забыли пароль?</a>
+			<div class="loginMenu__enter">
+				<h4 class="loginMenu__head">Вход</h4>
+				<form>
+					<input type="email">
+					<input type="password">
+					<input type="submit">
+				</form>
+				<a href="#" class="loginMenu__link">Регистрация</a>
+				<a href="#" class="loginMenu__link">Забыли пароль?</a>
+			</div>
+			<div class="loginMenu__reg">
+				<h4 class="loginMenu__head">Регистрация</h4>
+				<form>				
+					<input type="email">
+					<input type="text">
+					<input type="password">
+					<input type="password">
+					<input type="file" name="">
+					<input type="submit">
+				</form>
+				<a href="#" class="loginMenu__link">Вход</a>
+			</div>
+			
 			<p class="loginMenu__txt">Войти с помощью: <a href="#" class="loginMenu__fb icon"></a></p>
 		</div>
 	</div>
