@@ -114,7 +114,7 @@ body {
 
 section,
 footer {
-  visibility: hidden; }
+  display: none; }
 
 /*-----------------------------------------------------------------*/
 /*-- Navigation Style --*/
@@ -434,6 +434,9 @@ footer {
     .matchesTable th:last-child,
     .matchesTable td:last-child {
       width: 15%; }
+    .matchesTable th.shakhtar,
+    .matchesTable td.shakhtar {
+      color: #e11203; }
   .matchesTable td:nth-of-type(2) {
     position: relative;
     padding-left: 2em; }

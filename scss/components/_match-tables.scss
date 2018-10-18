@@ -140,6 +140,9 @@
 		}
 		&:last-child {
 			width: 15%;
+		}		
+		&.shakhtar {
+			color: $red;
 		}
 	}
 	td {

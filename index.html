@@ -290,10 +290,10 @@
 						<th>Очки</th>
 					</tr>
 					<tr>
-						<td>1</td>
-						<td><i class="team__logo block__bg"><img src="images/teams/Shakhtar.png"></i>Шахтер</td>
-						<td>11</td>
-						<td>28</td>
+						<td class="shakhtar">1</td>
+						<td class="shakhtar"><i class="team__logo block__bg"><img src="images/teams/Shakhtar.png"></i>Шахтер</td>
+						<td class="shakhtar">11</td>
+						<td class="shakhtar">28</td>
 					</tr>
 					<tr>
 						<td>2</td>
@@ -637,11 +637,11 @@
 		setTimeout(function(){
 
 			$('body').removeClass('loading').addClass('loaded');
+
 			setTimeout(function () {
-				$('section').css('visibility', 'visible');
-				$('footer').css('visibility', 'visible');
-				$('.loader').hide();
-			}, 510);
+				$('section').show();
+				$('footer').show();
+			}, 2000);
 
 		}, time);
 
