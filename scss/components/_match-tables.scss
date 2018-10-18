@@ -93,6 +93,7 @@
 	left: 0;
 	transform: translateY(-100%);
 	background-color: #fff;
+	cursor: default;
 	transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.1s;
 	&:before {
 		content: "";
