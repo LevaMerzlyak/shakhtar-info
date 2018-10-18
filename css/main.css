@@ -26,7 +26,7 @@ body {
   font-family: 'ProximaNova', sans-serif;
   font-weight: 700; }
 
-.main__head, .newsMenu__link {
+.user__name, .main__head, .newsMenu__link {
   font-family: 'ProximaNova', sans-serif;
   font-weight: 800; }
 
@@ -251,7 +251,7 @@ footer {
 /*-- /Search Block --*/
 /*-----------------------------------------------------------------*/
 /*-- Log In Block --*/
-.login {
+.login__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -271,6 +271,57 @@ footer {
 
 .icon_user {
   height: 1.4em; }
+
+.user__block {
+  display: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.user__name {
+  color: #e11203;
+  font-size: 1em;
+  margin-right: 1em; }
+
+.user__photo {
+  width: 3.5em;
+  height: 3.5em;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .user__photo img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  .user__photo .icon {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  .user__photo_none {
+    border: 2px solid #fff;
+    border-radius: 50%; }
+    .user__photo_none img {
+      display: none; }
+    .user__photo_none .icon {
+      display: inline-block; }
+
+.login_loged .login__block {
+  display: none; }
+
+.login_loged .user__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 /*-- /Log In Block --*/
 /*-----------------------------------------------------------------*/

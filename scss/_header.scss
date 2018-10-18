@@ -73,7 +73,7 @@
 /*-- /Search Block --*/
 /*-----------------------------------------------------------------*/
 /*-- Log In Block --*/
-.login {
+.login__block {
 	display: flex;
 	align-items: center;
 }
@@ -93,6 +93,56 @@
 }
 .icon_user {
 	height: 1.4em;
+}
+.user__block {
+	display: none;
+	align-items: center;
+}
+.user__name {
+	color: $red;
+	font-size: 1em;
+	@extend %proxi-eXbld;
+	margin-right: 1em;
+}
+.user__photo {
+	width: 3.5em;
+	height: 3.5em;
+	position: relative;
+	overflow: hidden;
+	box-sizing: border-box;
+	img {
+		width: 100%;
+		height: auto;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.icon {
+		display: none;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	&_none {
+		border: 2px solid #fff;
+		border-radius: 50%;
+		img {
+			display: none;
+		}
+		.icon {
+			display: inline-block;
+		}
+	}
+}
+.login_loged {
+	.login__block {
+		display: none;
+	}
+	.user__block {
+		display: flex;
+	}
 }
 /*-- /Log In Block --*/
 /*-----------------------------------------------------------------*/
