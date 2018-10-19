@@ -79,7 +79,7 @@
 			<img src="images/facundo-ferreyra-6.jpg">
 			<div class="main__highlight">
 				<div class="highligh__info highligh__info_video">
-					<a href="#" class="highlightVideo block__bg videoBtn__bg">
+					<a href="#" class="highlightVideo block__bg videoBtn__bg  bg__overlay">
 						<img src="images/video-cover/shakhtar_dynamo.jpg" alt="">
 						<h5 class="highlightVideo__head">Обзор голов (Шахтер - Динамо)</h5>
 					</a>			
@@ -115,7 +115,7 @@
 								</time>
 							</div>
 							<div class="newsImg">
-								<div class="news__img block__bg videoBtn__bg">
+								<div class="news__img block__bg videoBtn__bg bg__overlay bg__overlay_light">
 									<img src="images/news-cover/shaktar_verder.jpg" alt="">
 								</div>
 							</div>
@@ -187,7 +187,7 @@
 								</time>
 							</div>
 							<div class="newsImg">
-								<div class="news__img block__bg videoBtn__bg">
+								<div class="news__img block__bg videoBtn__bg bg__overlay bg__overlay_light">
 									<img src="images/video-cover/fereira.jpg" alt="">
 								</div>
 							</div>
@@ -351,7 +351,7 @@
 							</time>
 						</div>
 						<div class="newsImg">
-							<div class="news__img block__bg videoBtn__bg">
+							<div class="news__img block__bg videoBtn__bg bg__overlay bg__overlay_light">
 								<img src="images/news-cover/shaktar_verder.jpg" alt="">
 							</div>
 						</div>
@@ -423,7 +423,7 @@
 							</time>
 						</div>
 						<div class="newsImg">
-							<div class="news__img block__bg videoBtn__bg">
+							<div class="news__img block__bg videoBtn__bg bg__overlay bg__overlay_light">
 								<img src="images/video-cover/fereira.jpg" alt="">
 							</div>
 						</div>
@@ -441,7 +441,7 @@
 							</time>
 						</div>
 						<div class="newsImg">
-							<div class="news__img block__bg videoBtn__bg">
+							<div class="news__img block__bg videoBtn__bg bg__overlay  bg__overlay_light">
 								<img src="images/news-cover/shaktar_verder.jpg" alt="">
 							</div>
 						</div>
@@ -513,7 +513,7 @@
 							</time>
 						</div>
 						<div class="newsImg">
-							<div class="news__img block__bg videoBtn__bg">
+							<div class="news__img block__bg videoBtn__bg bg__overlay bg__overlay_light">
 								<img src="images/video-cover/fereira.jpg" alt="">
 							</div>
 						</div>
@@ -641,32 +641,39 @@
 		</div>
 	</footer>
 
-	<div class="loginMenu__wrap">
-		<div class="loginMenu">
-			<div class="loginMenu__enter">
-				<h4 class="loginMenu__head">Вход</h4>
-				<form>
-					<input type="email">
-					<input type="password">
-					<input type="submit">
-				</form>
-				<a href="#" class="loginMenu__link">Регистрация</a>
-				<a href="#" class="loginMenu__link">Забыли пароль?</a>
+	<div class="login__wrap">
+		<div class="loginMenu__wrap">
+			<div class="loginMenu__close">
+				<a href="#" class="close__btn"></a>				
 			</div>
-			<div class="loginMenu__reg">
-				<h4 class="loginMenu__head">Регистрация</h4>
-				<form>				
-					<input type="email">
-					<input type="text">
-					<input type="password">
-					<input type="password">
-					<input type="file" name="">
-					<input type="submit">
-				</form>
-				<a href="#" class="loginMenu__link">Вход</a>
+			<div class="loginMenu__head">
+				<h4 class="loginMenuHead loginMenuHead_enter">Вход</h4>
+				<h4 class="loginMenuHead loginMenuHead_reg">Регистрация</h4>
 			</div>
-			
-			<p class="loginMenu__txt">Войти с помощью: <a href="#" class="loginMenu__fb icon"></a></p>
+			<div class="login__menu">
+					<form class="loginMenu">
+						<input type="email" placeholder="E-mail">
+						<input type="password" placeholder="Пароль">
+						<div class="more__btn">
+							<input type="submit" value="вход">
+						</div>
+					</form>
+					<form class="loginMenu loginMenu_reg">			
+						<input type="email" placeholder="E-mail">
+						<input type="text" placeholder="Логин">
+						<input type="password" placeholder="Пароль">
+						<input type="password" placeholder="Подтвердите пароль">
+						<div class="more__btn">
+							<input type="submit" value="Регистрация">
+						</div>
+					</form>
+				<div class="loginMenu__links">
+					<a href="#" class="loginMenu__link">Регистрация</a>
+					<a href="#" class="loginMenu__link">Забыли пароль?</a>
+					<a href="#" class="loginMenu__link loginMenu__link_enter">Вход</a>
+				</div>
+			</div>			
+			<p class="loginMenu__txt">Войти с помощью: <a href="#" class="icon icon_fbBox"></a></p>
 		</div>
 	</div>
 
