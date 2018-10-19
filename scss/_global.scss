@@ -130,4 +130,27 @@ body {
         }
     }
 }
+.close__btn {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    position: relative;
+    &:before,
+    &:after {
+        content: "";
+        display: block;
+        width: 2px;
+        height: 30px;
+        position: absolute;
+        top: 7px;
+        left: 22px;
+        background-color: #fff;
+    }
+    &:before {
+        transform: rotate(45deg);
+    }
+    &:after {
+        transform: rotate(-45deg);
+    }
+}
 /*-- /Global Styles --*/
