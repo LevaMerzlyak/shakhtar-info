@@ -59,10 +59,10 @@
 				</form>
 			</div>
 		</a>
-		<div class="login"><!-- class="login login_loged" -->	
+		<div class="login" id="login"><!-- class="login login_loged" -->	
 			<div class="login__block">
 				<a href="#" class="login__link login__link_log">ВХОД</a>
-				<a href="#" class="login__link">регистрация</a>
+				<a href="#" class="login__link login__link_reg">регистрация</a>
 				<i class="icon icon_user"></i>
 			</div>
 			<div class="user__block">
@@ -641,7 +641,7 @@
 		</div>
 	</footer>
 
-	<div class="login__wrap">
+	<div class="login__wrap" id="loginMenu">
 		<div class="loginMenu__wrap">
 			<div class="loginMenu__close">
 				<a href="#" class="close__btn"></a>				
@@ -651,7 +651,7 @@
 				<h4 class="loginMenuHead loginMenuHead_reg">Регистрация</h4>
 			</div>
 			<div class="login__menu">
-					<form class="loginMenu">
+					<form class="loginMenu loginMenu_enter">
 						<input type="email" placeholder="E-mail">
 						<input type="password" placeholder="Пароль">
 						<div class="more__btn">
@@ -668,9 +668,9 @@
 						</div>
 					</form>
 				<div class="loginMenu__links">
-					<a href="#" class="loginMenu__link">Регистрация</a>
-					<a href="#" class="loginMenu__link">Забыли пароль?</a>
-					<a href="#" class="loginMenu__link loginMenu__link_enter">Вход</a>
+					<a href="#" class="loginMenu__link loginMenu__link_enter" id="reg-menu">Регистрация</a>
+					<a href="#" class="loginMenu__link loginMenu__link_enter">Забыли пароль?</a>
+					<a href="#" class="loginMenu__link loginMenu__link_reg" id="login-menu">Вход</a>
 				</div>
 			</div>			
 			<p class="loginMenu__txt">Войти с помощью: <a href="#" class="icon icon_fbBox"></a></p>
@@ -698,6 +698,10 @@
 	<script type="text/javascript" src="js/bgInit.js"></script>
 	<script>
 		b1 = new BgInit('body');
+	</script>
+	<script type="text/javascript" src="js/loginPopUp.js"></script>
+	<script>
+		l1 = new LoginPopUp('#login', '#loginMenu');
 	</script>
 </body>
 </html>
