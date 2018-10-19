@@ -349,14 +349,17 @@ footer {
 /*-----------------------------------------------------------------*/
 /*-- Log In Menu --*/
 .login__wrap {
-  /*display: none;*/
   width: 100%;
-  height: 100vh;
+  height: 0;
+  /* login menu close 100vh */
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.2);
-  z-index: 100; }
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  -webkit-transition: height 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1s;
+  -o-transition: height 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1s;
+  transition: height 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1s; }
 
 .loginMenu__wrap {
   display: -webkit-box;
@@ -370,8 +373,10 @@ footer {
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 30%;
-  height: 75vh;
-  padding: 3%;
+  height: 0;
+  /* login menu close 75vh */
+  padding: 0;
+  /* login menu close 3% */
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: absolute;
@@ -380,12 +385,20 @@ footer {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background-color: #131313; }
+  background-color: #131313;
+  -webkit-transition: all 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.5s;
+  -o-transition: all 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.5s;
+  transition: all 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.5s; }
 
 .loginMenu__close {
   position: absolute;
   top: 3px;
-  right: 3px; }
+  right: 3px;
+  opacity: 0;
+  /* login menu close */
+  -webkit-transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s;
+  -o-transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s;
+  transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s; }
 
 .loginMenu__head {
   position: relative;
@@ -395,9 +408,15 @@ footer {
   color: #fff;
   font-size: 2.4em;
   text-align: center;
-  -webkit-transform: translateY(0%);
-  -ms-transform: translateY(0%);
-  transform: translateY(0%); }
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+  /* login menu close */
+  opacity: 0;
+  /* login menu close */
+  -webkit-transition: all 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s;
+  -o-transition: all 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s;
+  transition: all 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s; }
   .loginMenuHead_reg {
     width: 100%;
     position: absolute;
@@ -405,7 +424,10 @@ footer {
     left: 0;
     -webkit-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
-    transform: translateY(-100%); }
+    transform: translateY(-100%);
+    /* login menu close */
+    opacity: 0;
+    /* login menu close */ }
 
 .login__menu {
   position: relative;
@@ -417,14 +439,17 @@ footer {
   height: 100%;
   -webkit-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
-  transform: translateY(-100%); }
+  transform: translateY(-100%);
+  /* login menu close */
+  opacity: 0;
+  /* login menu close */
+  -webkit-transition: all 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s;
+  -o-transition: all 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s;
+  transition: all 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s; }
   .loginMenu_reg {
     position: absolute;
     top: 0;
-    left: 0;
-    -webkit-transform: translateY(0%);
-    -ms-transform: translateY(0%);
-    transform: translateY(0%); }
+    left: 0; }
   .loginMenu input[type=text], .loginMenu input[type=email], .loginMenu input[type=password] {
     width: 100%;
     padding: 0.5em 1.25em;
@@ -464,18 +489,31 @@ footer {
 
 .loginMenu__link {
   color: #fff;
-  font-size: 0.9em; }
-  .loginMenu__link_enter {
-    position: absolute;
-    -webkit-transform: translateY(-100%);
-    -ms-transform: translateY(-100%);
-    transform: translateY(-100%); }
+  font-size: 0.9em;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  /* login menu close */
+  opacity: 0;
+  /* login menu close */
+  -webkit-transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s, -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s;
+  transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s, -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s;
+  -o-transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s, opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s;
+  transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s, opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s;
+  transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s, opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s, -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s; }
+  .loginMenu__link_reg {
+    position: absolute; }
 
 .loginMenu__txt {
   color: #fff;
   font-size: 1.2em;
   line-height: 2em;
-  position: relative; }
+  position: relative;
+  opacity: 0;
+  /* login menu close */
+  -webkit-transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s;
+  -o-transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s;
+  transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s; }
   .loginMenu__txt .icon {
     width: 2em;
     height: 2em;
@@ -486,7 +524,65 @@ footer {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%); }
 
-/*-- Log In Menu --*/
+/* login menu open */
+.login__wrap_open {
+  height: 100vh;
+  -webkit-transition: height 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s;
+  -o-transition: height 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s;
+  transition: height 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s; }
+  .login__wrap_open .loginMenu__wrap {
+    height: 75vh;
+    padding: 3%;
+    -webkit-transition: all 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.5s;
+    -o-transition: all 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.5s;
+    transition: all 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.5s; }
+  .login__wrap_open .loginMenu__close,
+  .login__wrap_open .loginMenu__txt {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1s;
+    -o-transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1s;
+    transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1s; }
+  .login__wrap_open.login__wrap_enter .loginMenuHead_enter,
+  .login__wrap_open.login__wrap_enter .loginMenu_enter,
+  .login__wrap_open.login__wrap_enter .loginMenu__link_enter {
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 1;
+    -webkit-transition: all 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.75s;
+    -o-transition: all 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.75s;
+    transition: all 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.75s; }
+  .login__wrap_open.login__wrap_enter .loginMenu_enter {
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 1;
+    -webkit-transition: opacity 1s cubic-bezier(0.5, 0, 0.5, 1) 1s, -webkit-transform 1s cubic-bezier(0.5, 0, 0.5, 1) 0.75s;
+    transition: opacity 1s cubic-bezier(0.5, 0, 0.5, 1) 1s, -webkit-transform 1s cubic-bezier(0.5, 0, 0.5, 1) 0.75s;
+    -o-transition: transform 1s cubic-bezier(0.5, 0, 0.5, 1) 0.75s, opacity 1s cubic-bezier(0.5, 0, 0.5, 1) 1s;
+    transition: transform 1s cubic-bezier(0.5, 0, 0.5, 1) 0.75s, opacity 1s cubic-bezier(0.5, 0, 0.5, 1) 1s;
+    transition: transform 1s cubic-bezier(0.5, 0, 0.5, 1) 0.75s, opacity 1s cubic-bezier(0.5, 0, 0.5, 1) 1s, -webkit-transform 1s cubic-bezier(0.5, 0, 0.5, 1) 0.75s; }
+  .login__wrap_open.login__wrap_reg .loginMenuHead_reg,
+  .login__wrap_open.login__wrap_reg .loginMenu__link_reg {
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 1;
+    -webkit-transition: all 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.75s;
+    -o-transition: all 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.75s;
+    transition: all 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.75s; }
+  .login__wrap_open.login__wrap_reg .loginMenu_reg {
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 1;
+    -webkit-transition: opacity 1s cubic-bezier(0.5, 0, 0.5, 1) 1s, -webkit-transform 1s cubic-bezier(0.5, 0, 0.5, 1) 0.75s;
+    transition: opacity 1s cubic-bezier(0.5, 0, 0.5, 1) 1s, -webkit-transform 1s cubic-bezier(0.5, 0, 0.5, 1) 0.75s;
+    -o-transition: transform 1s cubic-bezier(0.5, 0, 0.5, 1) 0.75s, opacity 1s cubic-bezier(0.5, 0, 0.5, 1) 1s;
+    transition: transform 1s cubic-bezier(0.5, 0, 0.5, 1) 0.75s, opacity 1s cubic-bezier(0.5, 0, 0.5, 1) 1s;
+    transition: transform 1s cubic-bezier(0.5, 0, 0.5, 1) 0.75s, opacity 1s cubic-bezier(0.5, 0, 0.5, 1) 1s, -webkit-transform 1s cubic-bezier(0.5, 0, 0.5, 1) 0.75s; }
+
+/*-- /Log In Menu --*/
 /*-----------------------------------------------------------------*/
 /*-- Loaded State --*/
 .loaded .header {
