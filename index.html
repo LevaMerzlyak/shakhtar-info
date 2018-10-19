@@ -28,7 +28,7 @@
 		  	</div>
 		</div>
 	</div>
-	<header class="header">
+	<header class="header" id="header">
 		<a href="index.html" class="logo icon icon_logo">ШАХТАР.INFO</a>
 		<ul class="nav">
 			<li class="nav__item nav__item_active">
@@ -59,7 +59,7 @@
 				</form>
 			</div>
 		</a>
-		<div class="login" id="login"><!-- class="login login_loged" -->	
+		<div class="login"><!-- class="login login_loged" -->	
 			<div class="login__block">
 				<a href="#" class="login__link login__link_log">ВХОД</a>
 				<a href="#" class="login__link login__link_reg">регистрация</a>
@@ -67,12 +67,47 @@
 			</div>
 			<div class="user__block">
 				<p class="user__name">User Name</p>
-				<i class="icon user__photo user__photo_none"><!-- class="icon user__photo" -->
+				<div class="user__photo user__photo_def"><!-- class="icon user__photo" -->
 					<i class="icon icon_user_def"></i>
-					<img src="images/users/user.png" alt="">
-				</i>
+					<img src="images/users/user.png" alt="User Name">
+				</div>
 			</div>
-		</div>		
+		</div>
+		<div class="avatar__menu">
+			<div class="avatarMenu">
+				<div class="avatarMenu__user">
+					<p class="user__name">User Name</p>
+					<div class="user__photo user__photo_avatarMenu user__photo_def">
+						<i class="icon icon_user_def"></i>
+						<img src="images/users/user.png" alt="User Name">
+					</div>
+				</div>
+				<p class="avatarMenu__txt">Загризите фотографию или выберете из предложенных</p>		
+				<form class="avatarMenu__form">
+					<label class="avatar__file">
+						<input type="file">
+						<p>Загрузить аватар</p>
+					</label>
+					<div class="avatarMenu__radios">
+						<label class="avatar__label">
+							<input type="radio" name="avatar" value="def">
+							<i class="icon icon_user_def"></i>
+						</label>
+						<label class="avatar__label">
+							<input type="radio" name="avatar" value="def2">
+							<i class="icon icon_user_def2"></i>
+						</label>
+						<label class="avatar__label">
+							<input type="radio" name="avatar" value="def3">
+							<i class="icon icon_user_def3"></i>
+						</label>
+					</div>
+					<div class="more__btn more__btn_avatarMenu">
+						<input type="submit" value="Подтвердить">
+					</div>
+				</form>
+			</div>
+		</div>
 	</header>
 	<div class="main__wrap">
 		<main class="main block__bg bg__overlay">
@@ -644,7 +679,7 @@
 	<div class="login__wrap" id="loginMenu">
 		<div class="loginMenu__wrap">
 			<div class="loginMenu__close">
-				<a href="#" class="close__btn"></a>				
+				<a href="#" class="close__btn"></a>
 			</div>
 			<div class="loginMenu__head">
 				<h4 class="loginMenuHead loginMenuHead_enter">Вход</h4>
@@ -699,9 +734,9 @@
 	<script>
 		b1 = new BgInit('body');
 	</script>
-	<script type="text/javascript" src="js/loginPopUp.js"></script>
+	<script type="text/javascript" src="js/popUp.js"></script>
 	<script>
-		l1 = new LoginPopUp('#login', '#loginMenu');
+		l1 = new PopUp('#header', '#loginMenu');
 	</script>
 </body>
 </html>

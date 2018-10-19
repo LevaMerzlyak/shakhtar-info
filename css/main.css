@@ -17,12 +17,12 @@ body {
   font-family: 'GothamPro', sans-serif;
   font-weight: 500; }
 
-.login__link, .loginMenuHead, .loginMenu input[type=text], .loginMenu input[type=email], .loginMenu input[type=password], .loginMenu__link, .loginMenu__txt, .matchesTable th,
+.login__link, .avatarMenu__txt, .avatar__file p, .loginMenuHead, .loginMenu input[type=text], .loginMenu input[type=email], .loginMenu input[type=password], .loginMenu__link, .loginMenu__txt, .matchesTable th,
 .matchesTable td, .news__time, .video__time, .footer__txt, .socials__link {
   font-family: 'ProximaNova', sans-serif;
   font-weight: 400; }
 
-.section__head, .more__btn, .nav__link, .loginMenu input[type=submit], .matches__head, .match__date, .match__result, .broadcast__chanel, .broadcast__time, .highlightVideo__head {
+.section__head, .more__btn, .nav__link, .avatarMenu__form input[type=submit], .loginMenu input[type=submit], .matches__head, .match__date, .match__result, .broadcast__chanel, .broadcast__time, .highlightVideo__head {
   font-family: 'ProximaNova', sans-serif;
   font-weight: 700; }
 
@@ -206,7 +206,7 @@ footer {
   left: 3%;
   top: 3%;
   background-color: #1b1b1b;
-  z-index: 1;
+  z-index: 2;
   -webkit-transform: translateY(-200%);
   -ms-transform: translateY(-200%);
   transform: translateY(-200%);
@@ -312,7 +312,8 @@ footer {
   position: relative;
   overflow: hidden;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  cursor: pointer; }
   .user__photo img {
     width: 100%;
     height: auto;
@@ -327,14 +328,11 @@ footer {
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
-  .user__photo_none img {
+    top: 0;
+    left: 0; }
+  .user__photo_def img {
     display: none; }
-  .user__photo_none .icon {
+  .user__photo_def .icon {
     display: inline-block; }
 
 .login_loged .login__block {
@@ -346,6 +344,148 @@ footer {
   display: flex; }
 
 /*-- /Log In Block --*/
+/*-----------------------------------------------------------------*/
+/*-- User Icon Menu --*/
+.avatar__menu {
+  width: 30%;
+  padding: 0;
+  /* avatar menu closed 2% */
+  opacity: 0;
+  /* avatar menu closed 2% */
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #131313;
+  -webkit-transition: all 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.5s;
+  -o-transition: all 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.5s;
+  transition: all 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.5s; }
+
+.avatarMenu {
+  opacity: 0;
+  /* avatar menu closed */
+  -webkit-transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s;
+  -o-transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s;
+  transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s; }
+  .avatarMenu .user__name {
+    font-size: 1.5em; }
+
+.avatarMenu__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.user__photo_avatarMenu {
+  width: 7em;
+  height: 7em;
+  cursor: default; }
+
+.avatarMenu__txt {
+  color: #fff;
+  font-size: 0.9em;
+  margin-top: 2em;
+  margin-bottom: 1em; }
+
+.avatarMenu__form input[type=submit] {
+  display: inline-block;
+  padding-right: 0;
+  padding-left: 0;
+  color: #fff;
+  font-size: 1em;
+  line-height: 2em;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  z-index: 2; }
+
+.avatar__file {
+  height: 2em; }
+  .avatar__file p {
+    display: inline-block;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+    color: #fff;
+    font-size: 1em;
+    line-height: 2em;
+    border: 2px solid #f5f2eb; }
+  .avatar__file input[type=file] {
+    opacity: 0;
+    position: absolute;
+    height: 2em;
+    outline: none; }
+
+.avatarMenu__radios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 4em;
+  margin-top: 2em;
+  margin-bottom: 2em; }
+
+.avatar__label {
+  width: 4em;
+  height: 4em;
+  position: relative;
+  cursor: pointer; }
+  .avatar__label .icon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .avatar__label .icon:before {
+      content: '';
+      display: none;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 70%;
+      background-color: rgba(0, 0, 0, 0.2);
+      background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAzOCAzMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzggMzA7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cGF0aCBzdHlsZT0iZmlsbDojRTExMjAzOyIgZD0iTTE3LjI3LDI3LjM4N2MtMS42NiwxLjY1Ni00LjM0OCwxLjY1Ni02LjAwNCwwbC05LjMwNS05LjMwNGMtMS42NTYtMS42NTctMS42NTYtNC4zNDQsMC02LjAwNAoJCQljMS42Ni0xLjY1Nyw0LjM0OC0xLjY1Nyw2LjAwNCwwbDUuNTQzLDUuNTQzYzAuNDE4LDAuNDE4LDEuMDk4LDAuNDE4LDEuNTE2LDBMMzAuMDMxLDIuNjEzYzEuNjYxLTEuNjU2LDQuMzQ4LTEuNjU2LDYuMDA0LDAKCQkJYzAuNzk3LDAuNzk3LDEuMjQ2LDEuODc5LDEuMjQ2LDMuMDA0cy0wLjQ0OSwyLjIwMy0xLjI0NiwzTDE3LjI3LDI3LjM4N3oiLz4KCTwvZz4KPC9nPgo8L3N2Zz4=); }
+  .avatar__label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer; }
+    .avatar__label input:checked + .icon:before {
+      display: block; }
+
+.more__btn_avatarMenu {
+  z-index: 1;
+  margin-top: 1em; }
+
+/* avatar menu open */
+.avatar__menu_open {
+  padding: 2%;
+  opacity: 1;
+  -webkit-transition: all 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s;
+  -o-transition: all 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s;
+  transition: all 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s; }
+  .avatar__menu_open .avatarMenu {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.5s;
+    -o-transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.5s;
+    transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.5s; }
+
+/*-- /User Icon Menu --*/
 /*-----------------------------------------------------------------*/
 /*-- Log In Menu --*/
 .login__wrap {
