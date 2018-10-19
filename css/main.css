@@ -17,12 +17,12 @@ body {
   font-family: 'GothamPro', sans-serif;
   font-weight: 500; }
 
-.login__link, .matchesTable th,
+.login__link, .loginMenuHead, .loginMenu input[type=text], .loginMenu input[type=email], .loginMenu input[type=password], .loginMenu__link, .loginMenu__txt, .matchesTable th,
 .matchesTable td, .news__time, .video__time, .footer__txt, .socials__link {
   font-family: 'ProximaNova', sans-serif;
   font-weight: 400; }
 
-.section__head, .more__btn, .nav__link, .matches__head, .match__date, .match__result, .broadcast__chanel, .broadcast__time, .highlightVideo__head {
+.section__head, .more__btn, .nav__link, .loginMenu input[type=submit], .matches__head, .match__date, .match__result, .broadcast__chanel, .broadcast__time, .highlightVideo__head {
   font-family: 'ProximaNova', sans-serif;
   font-weight: 700; }
 
@@ -106,6 +106,29 @@ body {
     z-index: -1; }
   .more__btn:hover:before {
     width: 100%; }
+
+.close__btn {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  position: relative; }
+  .close__btn:before, .close__btn:after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 30px;
+    position: absolute;
+    top: 7px;
+    left: 22px;
+    background-color: #fff; }
+  .close__btn:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .close__btn:after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
 
 /*-- /Global Styles --*/
 .loading {
@@ -325,6 +348,144 @@ footer {
 /*-- /Log In Block --*/
 /*-----------------------------------------------------------------*/
 /*-- Log In Menu --*/
+.login__wrap {
+  /*display: none;*/
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 100; }
+
+.loginMenu__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 30%;
+  height: 75vh;
+  padding: 3%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #131313; }
+
+.loginMenu__close {
+  position: absolute;
+  top: 3px;
+  right: 3px; }
+
+.loginMenu__head {
+  position: relative;
+  overflow: hidden; }
+
+.loginMenuHead {
+  color: #fff;
+  font-size: 2.4em;
+  text-align: center;
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%); }
+  .loginMenuHead_reg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%); }
+
+.login__menu {
+  position: relative;
+  height: 70%;
+  overflow: hidden; }
+
+.loginMenu {
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%); }
+  .loginMenu_reg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%); }
+  .loginMenu input[type=text], .loginMenu input[type=email], .loginMenu input[type=password] {
+    width: 100%;
+    padding: 0.5em 1.25em;
+    margin-bottom: 1em;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 1em;
+    background-color: #131313;
+    outline: none;
+    border: 2px solid #f5f2eb; }
+    .loginMenu input[type=text]:placeholder, .loginMenu input[type=email]:placeholder, .loginMenu input[type=password]:placeholder {
+      color: #f5f2eb; }
+  .loginMenu input[type=submit] {
+    display: inline-block;
+    padding-right: 0;
+    padding-left: 0;
+    color: #fff;
+    font-size: 1em;
+    line-height: 2em;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none; }
+
+.loginMenu__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden; }
+
+.loginMenu__link {
+  color: #fff;
+  font-size: 0.9em; }
+  .loginMenu__link_enter {
+    position: absolute;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%); }
+
+.loginMenu__txt {
+  color: #fff;
+  font-size: 1.2em;
+  line-height: 2em;
+  position: relative; }
+  .loginMenu__txt .icon {
+    width: 2em;
+    height: 2em;
+    margin-left: 1em;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
 /*-- Log In Menu --*/
 /*-----------------------------------------------------------------*/
 /*-- Loaded State --*/
@@ -434,6 +595,7 @@ footer {
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
   background-color: #fff;
+  cursor: default;
   -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.1s;
   transition: -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.1s;
   -o-transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.1s;
@@ -783,7 +945,7 @@ footer {
   color: #ffffff;
   line-height: 2em;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.7); }
+  background-color: #242527; }
 
 .main__head {
   color: #ffffff;

@@ -147,7 +147,133 @@
 /*-- /Log In Block --*/
 /*-----------------------------------------------------------------*/
 /*-- Log In Menu --*/
-
+.login__wrap {
+	/*display: none;*/
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: $overlayLight;
+	z-index: 100;
+}
+.loginMenu__wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30%;
+	height: 75vh;
+	padding: 3%;
+	box-sizing: border-box;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: $blk;
+}
+.loginMenu__close {
+	position: absolute;
+	top: 3px;
+	right: 3px;
+}
+.loginMenu__head {
+	position: relative;
+	overflow: hidden;
+}
+.loginMenuHead {
+	color: #fff;
+	@extend %proxi-reg;
+	font-size: 2.4em;
+	text-align: center;
+	transform: translateY(0%);
+	&_reg {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: translateY(-100%);
+	}
+}
+.login__menu {
+	position: relative;
+	height: 70%;
+	overflow: hidden;
+}
+.loginMenu {
+	width: 100%;
+	height: 100%;
+	transform: translateY(-100%);	
+	&_reg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: translateY(0%);
+	}
+	input {
+		&[type=text],
+		&[type=email],
+		&[type=password] {
+			width: 100%;
+			padding: 0.5em 1.25em;
+			margin-bottom: 1em;
+			box-sizing: border-box;
+			color: #fff;
+			@extend %proxi-reg;
+			font-size: 1em;
+			background-color: $blk;
+			outline: none;
+			border: 2px solid $newsClr;
+			&:placeholder {
+				color: $newsClr;
+			}
+		}
+		&[type=submit] {
+			display: inline-block;
+		    padding-right: 0;
+		    padding-left: 0;
+		    color: #fff;
+		    @extend %proxi-bld;
+		    font-size: 1em;
+		    line-height: 2em;
+		    text-transform: uppercase;
+			background-color: transparent;
+			border: none;
+		}
+	}
+}
+.loginMenu__links {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+}
+.loginMenu__link {
+	color: #fff;
+	@extend %proxi-reg;
+	font-size: 0.9em;
+	&_enter {
+		position: absolute;
+		transform: translateY(-100%);
+	}
+}
+.loginMenu__txt {
+	color: #fff;
+	@extend %proxi-reg;
+	font-size: 1.2em;
+	line-height: 2em;
+	position: relative;
+	.icon {
+		width: 2em;
+		height: 2em;
+		margin-left: 1em;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
 /*-- Log In Menu --*/
 /*-----------------------------------------------------------------*/
 /*-- Loaded State --*/
