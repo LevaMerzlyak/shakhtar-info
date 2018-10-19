@@ -42,12 +42,12 @@
 		&:hover {
 			.match__broadcast {
 				transform: translateY(0%);
-				transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+				transition: transform 0.5s $ttf;
 			}
 			.broadcast__chanel,
 			.broadcast__time {
 				opacity: 1;
-				transition: opacity 0.2s cubic-bezier(0.5, 0, 0.5, 1) 0.3s;
+				transition: opacity 0.2s $ttf 0.3s;
 			}
 		}
 	}
@@ -94,7 +94,7 @@
 	transform: translateY(-100%);
 	background-color: #fff;
 	cursor: default;
-	transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.1s;
+	transition: transform 0.5s $ttf 0.1s;
 	&:before {
 		content: "";
 		display: block;
@@ -112,14 +112,14 @@
 	@extend %proxi-bld;
 	line-height: 1.3em;
 	opacity: 0;
-	transition: opacity 0.2s cubic-bezier(0.5, 0, 0.5, 1);
+	transition: opacity 0.2s $ttf;
 }
 .broadcast__time {
 	color: #000;
 	font-size: 3em;
 	@extend %proxi-bld;
 	opacity: 0;
-	transition: opacity 0.2s cubic-bezier(0.5, 0, 0.5, 1);
+	transition: opacity 0.2s $ttf;
 }
 .matchesTable {
 	width: 100%;

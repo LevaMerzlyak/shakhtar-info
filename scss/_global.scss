@@ -121,7 +121,7 @@ body {
         top: 0;
         left: 0;
         background-color: $red;
-        transition: width 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+        transition: width 0.5s $ttf;
         z-index: -1;
     }
     &:hover {

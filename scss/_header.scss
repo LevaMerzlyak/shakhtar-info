@@ -15,7 +15,7 @@
 	background-color: $header;
 	z-index: 1;
 	transform: translateY(-200%);/* unloaded state */
-	transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.2s;
+	transition: transform 0.5s $ttf 0.2s;
 }
 .logo {
 	width: 16%;
@@ -148,33 +148,36 @@
 /*-----------------------------------------------------------------*/
 /*-- Log In Menu --*/
 .login__wrap {
-	/*display: none;*/
 	width: 100%;
-	height: 100vh;
+	height: 0;/* login menu close 100vh */
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: $overlayLight;
+	background-color: $overlay;
 	z-index: 100;
+	transition: height 0.5s $ttf 1s;
 }
 .loginMenu__wrap {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	width: 30%;
-	height: 75vh;
-	padding: 3%;
+	height: 0;/* login menu close 75vh */
+	padding: 0;/* login menu close 3% */
 	box-sizing: border-box;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	background-color: $blk;
+	transition: all 0.5s $ttf 0.5s;
 }
 .loginMenu__close {
 	position: absolute;
 	top: 3px;
 	right: 3px;
+	opacity: 0;/* login menu close */
+	transition: opacity 0.5s $ttf 0s;
 }
 .loginMenu__head {
 	position: relative;
@@ -185,13 +188,16 @@
 	@extend %proxi-reg;
 	font-size: 2.4em;
 	text-align: center;
-	transform: translateY(0%);
+	transform: translateY(-100%);/* login menu close */
+	opacity: 0;/* login menu close */
+	transition: all 0.5s $ttf 0s;
 	&_reg {
 		width: 100%;
 		position: absolute;
 		top: 0;
 		left: 0;
-		transform: translateY(-100%);
+		transform: translateY(-100%);/* login menu close */
+		opacity: 0;/* login menu close */
 	}
 }
 .login__menu {
@@ -202,12 +208,13 @@
 .loginMenu {
 	width: 100%;
 	height: 100%;
-	transform: translateY(-100%);	
+	transform: translateY(-100%);	/* login menu close */
+	opacity: 0;/* login menu close */
+	transition: all 0.5s $ttf 0s;
 	&_reg {
 		position: absolute;
 		top: 0;
 		left: 0;
-		transform: translateY(0%);
 	}
 	input {
 		&[type=text],
@@ -254,9 +261,11 @@
 	color: #fff;
 	@extend %proxi-reg;
 	font-size: 0.9em;
-	&_enter {
+	transform: translateY(100%);/* login menu close */
+	opacity: 0;/* login menu close */
+	transition: transform 0.5s $ttf 0s, opacity 0.5s $ttf 0s;
+	&_reg {
 		position: absolute;
-		transform: translateY(-100%);
 	}
 }
 .loginMenu__txt {
@@ -265,6 +274,8 @@
 	font-size: 1.2em;
 	line-height: 2em;
 	position: relative;
+	opacity: 0;/* login menu close */
+	transition: opacity 0.5s $ttf 0s;
 	.icon {
 		width: 2em;
 		height: 2em;
@@ -274,7 +285,49 @@
 		transform: translateY(-50%);
 	}
 }
-/*-- Log In Menu --*/
+/* login menu open */
+.login__wrap_open {
+	height: 100vh;
+	transition: height 0.5s $ttf 0s;
+	.loginMenu__wrap {
+		height: 75vh;
+		padding: 3%;
+		transition: all 0.5s $ttf 0.5s;
+	}
+	.loginMenu__close,
+	.loginMenu__txt {
+		opacity: 1;
+		transition: opacity 0.5s $ttf 1s;
+	}
+	&.login__wrap_enter {
+		.loginMenuHead_enter,
+		.loginMenu_enter,
+		.loginMenu__link_enter {
+			transform: translateY(0%);
+			opacity: 1;
+			transition: all 0.5s $ttf 0.75s;
+		}
+		.loginMenu_enter {
+			transform: translateY(0%);
+			opacity: 1;
+			transition: transform 1s $ttf 0.75s, opacity 1s $ttf 1s;
+		}
+	}
+	&.login__wrap_reg {
+		.loginMenuHead_reg,
+		.loginMenu__link_reg {
+			transform: translateY(0%);
+			opacity: 1;
+			transition: all 0.5s $ttf 0.75s;
+		}
+		.loginMenu_reg {
+			transform: translateY(0%);
+			opacity: 1;
+			transition: transform 1s $ttf 0.75s, opacity 1s $ttf 1s;
+		}
+	}
+}
+/*-- /Log In Menu --*/
 /*-----------------------------------------------------------------*/
 /*-- Loaded State --*/
 .loaded {
