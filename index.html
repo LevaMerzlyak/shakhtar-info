@@ -28,7 +28,7 @@
 		  	</div>
 		</div>
 	</div>
-	<header class="header">
+	<header class="header" id="header">
 		<a href="index.html" class="logo icon icon_logo">ШАХТАР.INFO</a>
 		<ul class="nav">
 			<li class="nav__item nav__item_active">
@@ -50,23 +50,73 @@
 				<a href="video.html" class="nav__link">Видео</a>
 			</li>
 		</ul>
-		<a href="#" class="search">
-			<i class="icon icon_search icon_search_header"></i>
-			<div class="search__block">
+		<div class="search">
+			<a href="#" class="search__link">
+				<i class="icon icon_search icon_search_header"></i>
+			</a>
+			<div class="search__block"> <!-- class="search__block search__block_open" -->
 				<form action="">
 					<input type="text" name="search" placeholder="Поиск..." class="search__input">
 					<button type="submit" class="search__submit"><i class="icon icon_search"></i></button>
 				</form>
 			</div>
-		</a>
-		<div class="login"><a href="#" class="login__link login__link_log">ВХОД</a><a href="#" class="login__link">регистрация</a><i class="icon icon_user"></i></div>		
+		</div>
+		<div class="login login_loged"><!-- class="login login_loged" -->	
+			<div class="login__block">
+				<a href="#" class="login__link login__link_log">ВХОД</a>
+				<a href="#" class="login__link login__link_reg">регистрация</a>
+				<i class="icon icon_user"></i>
+			</div>
+			<div class="user__block">
+				<p class="user__name">User Name</p>
+				<div class="user__photo user__photo_def"><!-- class="icon user__photo" -->
+					<i class="icon icon_user_def"></i>
+					<img src="images/users/user.png" alt="User Name">
+				</div>
+			</div>
+		</div>
+		<div class="avatar__menu">
+			<div class="avatarMenu">
+				<div class="avatarMenu__user">
+					<p class="user__name">User Name</p>
+					<div class="user__photo user__photo_avatarMenu user__photo_def">
+						<i class="icon icon_user_def"></i>
+						<img src="images/users/user.png" alt="User Name">
+					</div>
+				</div>
+				<p class="avatarMenu__txt">Загризите фотографию или выберете из предложенных</p>		
+				<form class="avatarMenu__form">
+					<label class="avatar__file">
+						<input type="file">
+						<p>Загрузить аватар</p>
+					</label>
+					<div class="avatarMenu__radios">
+						<label class="avatar__label">
+							<input type="radio" name="avatar" value="def">
+							<i class="icon icon_user_def"></i>
+						</label>
+						<label class="avatar__label">
+							<input type="radio" name="avatar" value="def2">
+							<i class="icon icon_user_def2"></i>
+						</label>
+						<label class="avatar__label">
+							<input type="radio" name="avatar" value="def3">
+							<i class="icon icon_user_def3"></i>
+						</label>
+					</div>
+					<div class="more__btn more__btn_avatarMenu">
+						<input type="submit" value="Подтвердить" id="avatarSubmit">
+					</div>
+				</form>
+			</div>
+		</div>
 	</header>
 	<div class="main__wrap">
 		<main class="main block__bg bg__overlay">
 			<img src="images/facundo-ferreyra-6.jpg">
 			<div class="main__highlight">
 				<div class="highligh__info highligh__info_video">
-					<a href="#" class="highlightVideo block__bg videoBtn__bg">
+					<a href="#" class="highlightVideo block__bg videoBtn__bg  bg__overlay">
 						<img src="images/video-cover/shakhtar_dynamo.jpg" alt="">
 						<h5 class="highlightVideo__head">Обзор голов (Шахтер - Динамо)</h5>
 					</a>			
@@ -102,7 +152,7 @@
 								</time>
 							</div>
 							<div class="newsImg">
-								<div class="news__img block__bg videoBtn__bg">
+								<div class="news__img block__bg videoBtn__bg bg__overlay bg__overlay_light">
 									<img src="images/news-cover/shaktar_verder.jpg" alt="">
 								</div>
 							</div>
@@ -174,7 +224,7 @@
 								</time>
 							</div>
 							<div class="newsImg">
-								<div class="news__img block__bg videoBtn__bg">
+								<div class="news__img block__bg videoBtn__bg bg__overlay bg__overlay_light">
 									<img src="images/video-cover/fereira.jpg" alt="">
 								</div>
 							</div>
@@ -290,10 +340,10 @@
 						<th>Очки</th>
 					</tr>
 					<tr>
-						<td>1</td>
-						<td><i class="team__logo block__bg"><img src="images/teams/Shakhtar.png"></i>Шахтер</td>
-						<td>11</td>
-						<td>28</td>
+						<td class="shakhtar">1</td>
+						<td class="shakhtar"><i class="team__logo block__bg"><img src="images/teams/Shakhtar.png"></i>Шахтер</td>
+						<td class="shakhtar">11</td>
+						<td class="shakhtar">28</td>
 					</tr>
 					<tr>
 						<td>2</td>
@@ -338,7 +388,7 @@
 							</time>
 						</div>
 						<div class="newsImg">
-							<div class="news__img block__bg videoBtn__bg">
+							<div class="news__img block__bg videoBtn__bg bg__overlay bg__overlay_light">
 								<img src="images/news-cover/shaktar_verder.jpg" alt="">
 							</div>
 						</div>
@@ -410,7 +460,7 @@
 							</time>
 						</div>
 						<div class="newsImg">
-							<div class="news__img block__bg videoBtn__bg">
+							<div class="news__img block__bg videoBtn__bg bg__overlay bg__overlay_light">
 								<img src="images/video-cover/fereira.jpg" alt="">
 							</div>
 						</div>
@@ -428,7 +478,7 @@
 							</time>
 						</div>
 						<div class="newsImg">
-							<div class="news__img block__bg videoBtn__bg">
+							<div class="news__img block__bg videoBtn__bg bg__overlay  bg__overlay_light">
 								<img src="images/news-cover/shaktar_verder.jpg" alt="">
 							</div>
 						</div>
@@ -500,7 +550,7 @@
 							</time>
 						</div>
 						<div class="newsImg">
-							<div class="news__img block__bg videoBtn__bg">
+							<div class="news__img block__bg videoBtn__bg bg__overlay bg__overlay_light">
 								<img src="images/video-cover/fereira.jpg" alt="">
 							</div>
 						</div>
@@ -628,6 +678,42 @@
 		</div>
 	</footer>
 
+	<div class="login__wrap" id="loginMenu">
+		<div class="loginMenu__wrap">
+			<div class="loginMenu__close">
+				<a href="#" class="close__btn"></a>
+			</div>
+			<div class="loginMenu__head">
+				<h4 class="loginMenuHead loginMenuHead_enter">Вход</h4>
+				<h4 class="loginMenuHead loginMenuHead_reg">Регистрация</h4>
+			</div>
+			<div class="login__menu">
+					<form class="loginMenu loginMenu_enter">
+						<input type="email" placeholder="E-mail">
+						<input type="password" placeholder="Пароль">
+						<div class="more__btn">
+							<input type="submit" value="вход">
+						</div>
+					</form>
+					<form class="loginMenu loginMenu_reg">			
+						<input type="email" placeholder="E-mail">
+						<input type="text" placeholder="Логин">
+						<input type="password" placeholder="Пароль">
+						<input type="password" placeholder="Подтвердите пароль">
+						<div class="more__btn">
+							<input type="submit" value="Регистрация">
+						</div>
+					</form>
+				<div class="loginMenu__links">
+					<a href="#" class="loginMenu__link loginMenu__link_enter" id="reg-menu">Регистрация</a>
+					<a href="#" class="loginMenu__link loginMenu__link_enter">Забыли пароль?</a>
+					<a href="#" class="loginMenu__link loginMenu__link_reg" id="login-menu">Вход</a>
+				</div>
+			</div>			
+			<p class="loginMenu__txt">Войти с помощью: <a href="#" class="icon icon_fbBox"></a></p>
+		</div>
+	</div>
+
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script>
 		var perfData = window.performance.timing,
@@ -637,11 +723,11 @@
 		setTimeout(function(){
 
 			$('body').removeClass('loading').addClass('loaded');
+
 			setTimeout(function () {
-				$('section').css('visibility', 'visible');
-				$('footer').css('visibility', 'visible');
-				$('.loader').hide();
-			}, 510);
+				$('section').show();
+				$('footer').show();
+			}, 2000);
 
 		}, time);
 
@@ -649,6 +735,10 @@
 	<script type="text/javascript" src="js/bgInit.js"></script>
 	<script>
 		b1 = new BgInit('body');
+	</script>
+	<script type="text/javascript" src="js/popUp.js"></script>
+	<script>
+		l1 = new PopUp('#header', '#loginMenu');
 	</script>
 </body>
 </html>

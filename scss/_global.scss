@@ -121,13 +121,36 @@ body {
         top: 0;
         left: 0;
         background-color: $red;
-        transition: width 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+        transition: width 0.5s $ttf;
         z-index: -1;
     }
     &:hover {
         &:before {
             width: 100%;
         }
+    }
+}
+.close__btn {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    position: relative;
+    &:before,
+    &:after {
+        content: "";
+        display: block;
+        width: 2px;
+        height: 30px;
+        position: absolute;
+        top: 7px;
+        left: 22px;
+        background-color: #fff;
+    }
+    &:before {
+        transform: rotate(45deg);
+    }
+    &:after {
+        transform: rotate(-45deg);
     }
 }
 /*-- /Global Styles --*/

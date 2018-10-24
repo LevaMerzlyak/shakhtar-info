@@ -3,7 +3,7 @@
 .main__wrap {
 	overflow: hidden;
 	height: 0;/* unloaded state */
-	transition: height 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+	transition: height 0.5s $ttf;
 }
 .main {
 	display: flex;
@@ -48,17 +48,17 @@
 			z-index: 10;
 			color: $lightGrey;/* unloaded state */
 			transform: translateY(-100%);/* unloaded state */
-			transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.5s, color 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1s;
+			transition: transform 0.5s $ttf 0.5s, color 0.5s $ttf 1s;
 		}
 		.match__wrap {
 			height: 22vh;
 			transform: translateY(-30vh);/* unloaded state */
-			transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 1s;
+			transition: transform 0.5s $ttf 1s;
 			.match__date,
 			.team__logo,
 			.match__result {
 				opacity: 0;/* unloaded state */
-				transition: opacity 0.3s cubic-bezier(0.5, 0, 0.5, 1) 1.5s;
+				transition: opacity 0.3s $ttf 1.5s;
 			}
 
 		}
@@ -74,7 +74,7 @@
 	padding-bottom: 66%;
 	position: relative;
 	opacity: 0;/* unloaded state */
-	transition: opacity 0.01s cubic-bezier(0.5, 0, 0.5, 1) 0.95s;
+	transition: opacity 0.01s $ttf 0.95s;
 	&:before {
 		content: "";
 		display: block;
@@ -98,7 +98,7 @@
 	@extend %proxi-bld;
 	line-height: 2em;
 	text-align: center;
-	background-color: $overlay;
+	background-color: $darkGrey;
 }
 .main__head {
 	color: #ffffff;
@@ -108,7 +108,7 @@
 	margin-top: 20vh;
 	transform: scale(0.8);/* unloaded state */
 	opacity: 0;/* unloaded state */
-	transition: transform 0.1s cubic-bezier(0.5, 0, 0.5, 1) 0.4s, opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.4s;
+	transition: transform 0.1s $ttf 0.4s, opacity 0.5s $ttf 0.4s;
 }
 /*-- /Highlight Block --*/
 /*-----------------------------------------------------------------*/
@@ -136,7 +136,7 @@
 	position: relative;
 	opacity: 0;/* unloaded state */
 	transform: scale(0.8);/* unloaded state */
-	transition: transform 0.2s cubic-bezier(0.5, 0, 0.5, 1) 0.4s, opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.4s;;
+	transition: transform 0.2s $ttf 0.4s, opacity 0.5s $ttf 0.4s;;
 	&:before {
 		content: "";
 		display: block;
@@ -147,11 +147,11 @@
 		left: 0;
 		background-color: $red;
 		z-index: -1;
-		transition: width 0.2s cubic-bezier(0.5, 0, 0.5, 1);
+		transition: width 0.2s $ttf;
 	}
 	&_top {
 		&:before{
-			transition: width 0.2s cubic-bezier(0.5, 0, 0.5, 1) 0.7s;
+			transition: width 0.2s $ttf 0.7s;
 		}
 	}
 	&:hover {
@@ -165,7 +165,7 @@
 	width: 0%;/* unloaded state */
 	height: 4px;
 	background-color: $red;
-	transition: width 0.2s cubic-bezier(0.5, 0, 0.5, 1) 0.2s;
+	transition: width 0.2s $ttf 0.2s;
 }
 .news_main {
 	.news__dateTime {
@@ -197,7 +197,7 @@
 	.highligh__info {
 		&_video {
 			&:before {
-				animation: shader 1s cubic-bezier(0.5, 0, 0.5, 1) 0.4s;
+				animation: shader 1s $ttf 0.4s;
 			}
 		}
 		&_match {
