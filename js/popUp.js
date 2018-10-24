@@ -3,18 +3,23 @@ function PopUp(sHeader, sLoginMenu) {
 	var p = this;
 
 	p.header = $(sHeader);
-	p.container = p.header.find('.login');
-	p.enter = p.container.find('.login__link_log');
-	p.reg = p.container.find('.login__link_reg');
+	p.login = p.header.find('.login');
+	p.enter = p.login.find('.login__link_log');
+	p.reg = p.login.find('.login__link_reg');
 
+	p.searchBtn = p.header.find('.search__link');
+	p.searchMenu = p.header.find('.search__block');
+	p.searchMenuOpen = false; 
 
 	p.menu = $(sLoginMenu);
 	p.close = p.menu.find('.close__btn');
 	p.menuEnter = p.menu.find('#login-menu');
 	p.menuReg = p.menu.find('#reg-menu');
 
-	p.avatar = p.container.find('.user__photo');
+	p.avatar = p.login.find('.user__photo');
 	p.avatarMenu = p.header.find('.avatar__menu');
+	p.avatarSubmit = p.avatarMenu.find('#avatarSubmit');
+	p.avatarMenuOpen = false; 
 
 	p.openEnter = function (event) {
 		
@@ -74,9 +79,61 @@ function PopUp(sHeader, sLoginMenu) {
 
 	}
 
-	p.openAvatarMenu = function () {
+	p.openCloseAvatarMenu = function () {		
 
-		p.avatarMenu.toggleClass('avatar__menu_open');
+		if (p.searchMenuOpen) p.closeSearchMenu();
+
+		if (p.avatarMenuOpen) {
+			p.closeAvatarMenu();
+		} else {
+			p.openAvatarMenu();
+		}
+
+	}
+
+	p.openAvatarMenu = function () {
+		
+		p.avatarMenu.addClass('avatar__menu_open');
+
+		p.avatarMenuOpen = true;
+
+	}
+
+	p.closeAvatarMenu = function () {
+		
+		p.avatarMenu.removeClass('avatar__menu_open');
+
+		p.avatarMenuOpen = false;
+
+	}
+
+	p.openCloseSearchMenu = function (event) {
+
+		event.preventDefault();
+
+		if (p.avatarMenuOpen) p.closeAvatarMenu();
+
+		if (p.searchMenuOpen) {
+			p.closeSearchMenu();
+		} else {
+			p.openSearchMenu();
+		}
+
+	}
+
+	p.openSearchMenu = function () {
+		
+		p.searchMenu.addClass('search__block_open');
+
+		p.searchMenuOpen = true;
+
+	}
+
+	p.closeSearchMenu = function () {
+
+		p.searchMenu.removeClass('search__block_open');
+
+		p.searchMenuOpen = false;
 
 	}
 
@@ -87,5 +144,9 @@ function PopUp(sHeader, sLoginMenu) {
 	p.close.click(p.hideMenu);
 	p.menu.click(p.closeMenu);
 
-	p.avatar.click(p.openAvatarMenu);
+	p.avatar.click(p.openCloseAvatarMenu);
+	p.avatarSubmit.click(p.closeAvatarMenu);
+
+	p.searchBtn.click(p.openCloseSearchMenu);
+	
 }

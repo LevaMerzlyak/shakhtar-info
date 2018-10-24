@@ -50,16 +50,18 @@
 				<a href="video.html" class="nav__link">Видео</a>
 			</li>
 		</ul>
-		<a href="#" class="search">
-			<i class="icon icon_search icon_search_header"></i>
-			<div class="search__block">
+		<div class="search">
+			<a href="#" class="search__link">
+				<i class="icon icon_search icon_search_header"></i>
+			</a>
+			<div class="search__block"> <!-- class="search__block search__block_open" -->
 				<form action="">
 					<input type="text" name="search" placeholder="Поиск..." class="search__input">
 					<button type="submit" class="search__submit"><i class="icon icon_search"></i></button>
 				</form>
 			</div>
-		</a>
-		<div class="login"><!-- class="login login_loged" -->	
+		</div>
+		<div class="login login_loged"><!-- class="login login_loged" -->	
 			<div class="login__block">
 				<a href="#" class="login__link login__link_log">ВХОД</a>
 				<a href="#" class="login__link login__link_reg">регистрация</a>
@@ -103,7 +105,7 @@
 						</label>
 					</div>
 					<div class="more__btn more__btn_avatarMenu">
-						<input type="submit" value="Подтвердить">
+						<input type="submit" value="Подтвердить" id="avatarSubmit">
 					</div>
 				</form>
 			</div>
