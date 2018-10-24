@@ -36,27 +36,30 @@
 	a {
 		color: #fff;
 	}
+	&_dev {
+		font-size: 1em;
+		@extend %gotham-med;
+		a {
+			color: $red;
+		}
+	}
 }
-.socials {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
+.socials {}
 .socials__item {
 	&:not(:last-child) {
-		margin-bottom: 1em;
+		margin-bottom: 10%;
 	}
 }
 .socials__link {
 	position: relative;
-	padding-left: 2.5em;
+	padding-left: 2.8em;
 	color: #fff;
 	font-size: 0.9em;
 	@extend %proxi-reg;
 	text-decoration: none;
 	line-height: 1.7em;
 	.icon {
-		width: 1.5em;
+		width: 1.8em;
 		height: 1.5em;
 		position: absolute;
 		top: 50%;
