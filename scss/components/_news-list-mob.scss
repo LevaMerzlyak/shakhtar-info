@@ -1,0 +1,17 @@
+/*-----------------------------------------------------------------*/
+/*-- News List Mobile --*/
+@media only screen and (max-width: 1200px) {
+	.news__link {
+		height: 15vh;
+	}
+	.news__dateTime {
+		display: none;
+	}
+	.newsImg {
+		width: 30%;
+	}
+	.newsHead {
+		font-size: 2.5em;
+	}
+}
+/*-- /News List Mobile --*/
