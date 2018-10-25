@@ -1585,10 +1585,11 @@ footer {
   padding-top: 3vh;
   padding-bottom: 5vh;
   background-color: #131313; }
-  .footer .logo {
-    margin-right: 2%; }
   .footer .nav__item:before {
     display: none; }
+
+.logo_footer {
+  margin-right: 2%; }
 
 .footer__nav {
   display: -webkit-box;
@@ -1660,6 +1661,8 @@ footer {
   background-color: #242424; }
 
 /*-- /Footer Style --*/
+/*-----------------------------------------------------------------*/
+/*-- Header Mobile Style --*/
 @media only screen and (max-width: 1200px) {
   .header {
     width: 96%;
@@ -1787,6 +1790,90 @@ footer {
     width: 100%;
     height: 100%; } }
 
+/*-- /Header Mobile Style --*/
+/*-----------------------------------------------------------------*/
+/*-- News List Mobile --*/
 @media only screen and (max-width: 1200px) {
-  .news__aside iframe {
+  .news__link {
+    height: 15vh; }
+  .news__dateTime {
+    display: none; }
+  .newsImg {
+    width: 30%; }
+  .newsHead {
+    font-size: 2.5em; } }
+
+/*-- /News List Mobile --*/
+/*-----------------------------------------------------------------*/
+/*-- Main Block Mobile Style --*/
+@media only screen and (max-width: 1200px) {
+  .main {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .main__highlight {
+    width: 100%; }
+  .highligh__info {
+    display: none; }
+  .main__head {
+    font-size: 5.8em;
+    margin-bottom: 5vh; }
+  .main__news {
+    width: 100%; }
+  .newsMenu {
+    display: none; }
+  .loaded .main__wrap {
+    margin-bottom: 60vh; }
+  .loaded_mob .main__wrap {
+    overflow: visible; }
+  .loaded .news_main .newsImg {
+    width: 30%; } }
+
+/*-- /Main Block Mobile Style --*/
+/*-----------------------------------------------------------------*/
+/*-- Matches Block Mobile --*/
+@media only screen and (max-width: 1200px) {
+  .matches__wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .matches__col {
+    width: 100%; } }
+
+/*-- /Matches Block Mobile --*/
+/*-----------------------------------------------------------------*/
+/*-- News Mobile Block --*/
+@media only screen and (max-width: 1200px) {
+  .news__wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .news_allNews {
+    width: 100%;
+    margin-right: 0; }
+    .news_allNews .newsImg {
+      width: 30%; }
+    .news_allNews .news__head {
+      width: 70%; }
+  .news__aside {
+    width: 0;
+    height: 0; }
+    .news__aside iframe {
+      display: none; } }
+
+/*-- /News Mobile Block --*/
+/*-----------------------------------------------------------------*/
+/*-- Footer Mobile Style --*/
+@media only screen and (max-width: 1200px) {
+  .logo_footer {
+    display: none; }
+  .nav_footer {
+    width: 100%; } }
+
+@media only screen and (max-width: 1023px) {
+  .nav_footer {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .nav_footer .nav__item {
+      width: 33%; }
+  .footerTxt {
     display: none; } }
+
+/*-- /Footer Mobile Style --*/
