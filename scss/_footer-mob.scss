@@ -1,0 +1,22 @@
+/*-----------------------------------------------------------------*/
+/*-- Footer Mobile Style --*/
+@media only screen and (max-width: 1200px) {
+	.logo_footer {
+		display: none;
+	}
+	.nav_footer {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 1023px) {
+	.nav_footer {
+		flex-wrap: wrap;
+		.nav__item {
+			width: 33%;
+		}
+	}
+	.footerTxt {
+		display: none;
+	}
+}
+/*-- /Footer Mobile Style --*/
