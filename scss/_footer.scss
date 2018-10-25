@@ -6,14 +6,14 @@
 	padding-top: 3vh;
 	padding-bottom: 5vh;
 	background-color: $blk;
-	.logo {
-		margin-right: 2%;
-	}
 	.nav__item {
 		&:before {
 			display: none;
 		}
 	}
+}
+.logo_footer {
+	margin-right: 2%;
 }
 .footer__nav {
 	display: flex;
