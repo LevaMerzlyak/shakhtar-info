@@ -1,0 +1,25 @@
+/*-----------------------------------------------------------------*/
+/*-- News Mobile Block --*/
+@media only screen and (max-width: 1200px) {
+	.news__wrap {
+		flex-wrap: wrap;
+	}
+	.news_allNews {
+		width: 100%;
+		margin-right: 0;
+		.newsImg {
+			width: 30%;
+		}
+		.news__head {
+			width: 70%;
+		}
+	}
+	.news__aside {
+		width: 0;
+		height: 0;
+		iframe {
+			display: none;
+		}
+	}
+}
+/*-- /News Mobile Block --*/
