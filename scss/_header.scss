@@ -10,8 +10,8 @@
 	padding-right: 2%;
 	box-sizing: border-box;
 	position: absolute;
-	left: 3%;
-	top: 3%;
+	left: 3vw;
+	top: 3vw;
 	background-color: $header;
 	z-index: 2;
 	transform: translateY(-200%);/* unloaded state */
@@ -22,6 +22,9 @@
 	height: 35%;
 	margin-right: 9%;
 	text-indent: -9999px;
+}
+.header__nav {
+	width: 50%;
 }
 /*-----------------------------------------------------------------*/
 /*-- Search Block --*/
@@ -105,12 +108,14 @@
 	margin-right: 1em;
 }
 .user__photo {
-	width: 3.5em;
-	height: 3.5em;
 	position: relative;
 	overflow: hidden;
 	box-sizing: border-box;
 	cursor: pointer;
+	&_header {
+		width: 3.5em;
+		height: 3.5em;
+	}
 	img {
 		width: 100%;
 		height: auto;

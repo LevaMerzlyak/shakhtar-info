@@ -3,29 +3,48 @@ function PopUp(sHeader, sLoginMenu) {
 	var p = this;
 
 	p.header = $(sHeader);
+
+	p.menuBtn = p.header.find('.menuBtn');
+	p.menu = p.header.find('.header__nav');
+
 	p.login = p.header.find('.login');
 	p.enter = p.login.find('.login__link_log');
 	p.reg = p.login.find('.login__link_reg');
+	p.logUsr = p.login.find('.login__user');
 
 	p.searchBtn = p.header.find('.search__link');
 	p.searchMenu = p.header.find('.search__block');
 	p.searchMenuOpen = false; 
 
-	p.menu = $(sLoginMenu);
-	p.close = p.menu.find('.close__btn');
-	p.menuEnter = p.menu.find('#login-menu');
-	p.menuReg = p.menu.find('#reg-menu');
+	p.loginMenu = $(sLoginMenu);
+	p.close = p.loginMenu.find('.close__btn');
+	p.loginMenuEnter = p.loginMenu.find('#login-menu');
+	p.loginMenuReg = p.loginMenu.find('#reg-menu');
 
 	p.avatar = p.login.find('.user__photo');
 	p.avatarMenu = p.header.find('.avatar__menu');
 	p.avatarSubmit = p.avatarMenu.find('#avatarSubmit');
-	p.avatarMenuOpen = false; 
+	p.avatarMenuOpen = false;
+
+	p.openCloseMainMenu = function (event) {
+		
+		event.preventDefault();
+
+		if (p.menuBtn.hasClass('menuBtn_close')) {
+			p.menuBtn.removeClass('menuBtn_close');
+			p.menu.removeClass('header__nav_menuOpen');
+		} else {
+			p.menuBtn.addClass('menuBtn_close');
+			p.menu.addClass('header__nav_menuOpen');
+		}
+
+	}
 
 	p.openEnter = function (event) {
 		
 		event.preventDefault();
 
-		p.menu.addClass('login__wrap_open');
+		p.loginMenu.addClass('login__wrap_open');
 
 		setTimeout(function () {
 			p.showEnter();
@@ -37,7 +56,7 @@ function PopUp(sHeader, sLoginMenu) {
 		
 		event.preventDefault();
 
-		p.menu.addClass('login__wrap_open');
+		p.loginMenu.addClass('login__wrap_open');
 
 		setTimeout(function () {
 			p.showReg();
@@ -45,12 +64,12 @@ function PopUp(sHeader, sLoginMenu) {
 		
 	}
 
-	p.showEnter =function (event) {
+	p.showEnter = function (event) {
 
 		if (event) event.preventDefault();
 		
-		p.menu.removeClass('login__wrap_reg');
-		p.menu.addClass('login__wrap_enter');
+		if (p.loginMenu.hasClass('login__wrap_reg')) p.loginMenu.removeClass('login__wrap_reg');
+		p.loginMenu.addClass('login__wrap_enter');
 
 	}
 
@@ -58,35 +77,37 @@ function PopUp(sHeader, sLoginMenu) {
 
 		if (event) event.preventDefault();
 		
-		p.menu.removeClass('login__wrap_enter');
-		p.menu.addClass('login__wrap_reg');
+		if (p.loginMenu.hasClass('login__wrap_enter')) p.loginMenu.removeClass('login__wrap_enter');
+		p.loginMenu.addClass('login__wrap_reg');
 
 	}
 
-	p.hideMenu = function (event) {
+	p.hideLoginMenu = function (event) {
 		
 		if (event) event.preventDefault();
 
-		p.menu.removeClass('login__wrap_open');
-		p.menu.removeClass('login__wrap_enter');
-		p.menu.removeClass('login__wrap_reg');
+		p.loginMenu.removeClass('login__wrap_open');
+		if (p.loginMenu.hasClass('login__wrap_enter')) {
+			p.loginMenu.removeClass('login__wrap_enter');
+		} else {
+			p.loginMenu.removeClass('login__wrap_reg');			
+		}
 
 	}
 
-	p.closeMenu = function (event) {
+	p.closeLoginMenu = function (event) {
 		
-		if (event.target === this ) p.hideMenu();
+		if (event.target === this ) p.hideLoginMenu();
 
 	}
 
-	p.openCloseAvatarMenu = function () {		
-
-		if (p.searchMenuOpen) p.closeSearchMenu();
+	p.openCloseAvatarMenu = function () {
 
 		if (p.avatarMenuOpen) {
 			p.closeAvatarMenu();
 		} else {
-			p.openAvatarMenu();
+			if (p.searchMenuOpen) p.closeSearchMenu();
+			setTimeout(p.openAvatarMenu, 500);
 		}
 
 	}
@@ -111,12 +132,11 @@ function PopUp(sHeader, sLoginMenu) {
 
 		event.preventDefault();
 
-		if (p.avatarMenuOpen) p.closeAvatarMenu();
-
 		if (p.searchMenuOpen) {
 			p.closeSearchMenu();
 		} else {
-			p.openSearchMenu();
+			if (p.avatarMenuOpen) p.closeAvatarMenu();
+			setTimeout(p.openSearchMenu, 500);
 		}
 
 	}
@@ -138,15 +158,17 @@ function PopUp(sHeader, sLoginMenu) {
 	}
 
 	p.enter.click(p.openEnter);
+	p.logUsr.click(p.openEnter);
 	p.reg.click(p.openReg);
-	p.menuEnter.click(p.showEnter);
-	p.menuReg.click(p.showReg);
-	p.close.click(p.hideMenu);
-	p.menu.click(p.closeMenu);
+	p.loginMenuEnter.click(p.showEnter);
+	p.loginMenuReg.click(p.showReg);
+	p.close.click(p.hideLoginMenu);
+	p.loginMenu.click(p.closeLoginMenu);
 
 	p.avatar.click(p.openCloseAvatarMenu);
 	p.avatarSubmit.click(p.closeAvatarMenu);
 
 	p.searchBtn.click(p.openCloseSearchMenu);
 	
+	p.menuBtn.click(p.openCloseMainMenu);
 }

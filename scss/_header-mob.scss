@@ -1,0 +1,133 @@
+@media only screen and (max-width: 1200px) {
+	.header {
+		width: 96%;
+		left: 2vw;
+		top: 2vw;
+	}
+	.menuBtn__line {
+		display: block;
+		width: 80%;
+		height: 4px;
+		border-radius: 2px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		background-color: $menuClr;
+		opacity: 1;
+		transition: opacity 0.1s $ttf 1s, width 0.2s $ttf 1s;
+	}
+	.menuBtn {
+		display: inline-block;
+		width: 44px;
+		height: 44px;
+		position: relative;
+		&:before,
+	    &:after {
+	        content: "";
+	        display: block;
+	        height: 4px;
+	        width: 100%;
+			border-radius: 2px;
+	        position: absolute;
+	        top: 10px;
+	        left: 0;
+	        background-color: $menuClr;
+	        transform: rotate(0deg);
+	        transition: all 0.5s $ttf 0.5s;
+	    }
+	    &:after {
+	    	top: 30px;
+	    }
+	    &_close {
+	    	&:before {
+	    		top: 22px;
+	    		transform: rotate(45deg);
+	    	}
+	    	&:after {
+	    		transform: rotate(-45deg);
+	    		top: 22px;
+	    	}
+	    	.menuBtn__line {
+	    		width: 0;
+	    		opacity: 0;
+	    		transition: opacity 0.1s $ttf 0.5s, width 0.2s $ttf 0.5s;
+	    	}
+	    }
+	}
+	.logo_header {
+		margin-right: 0;
+		height: 36px;
+		width: 60%;
+	}
+	.header__nav {
+		width: 100%;
+		height: 0;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background-color: $header;
+		overflow: hidden;
+		transition: height 0.5s $ttf 0.5s;
+	}
+	.nav_header {
+		/*display: none;*/
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		.nav__item {
+			&:before {
+				display: none;
+			}
+		}
+		.nav__link {
+			padding-top: 0.25em;
+			padding-bottom: 0.25em;
+			font-size: 3em;
+			opacity: 0;
+			transition: opacity 0.5s $ttf 0s;
+		}
+	}	
+	.header__nav_menuOpen {
+		height: calc(100vh - 11vh - (2vw * 2));
+		transition: height 0.5s $ttf 0s;
+		.nav__link {
+			opacity: 1;
+			transition: opacity 0.5s $ttf 0.5s;
+		}
+	}
+	.search {
+		display: none;
+	}
+	.login__link {
+		display: none;
+	}
+	.login__block {
+		width: 44px;
+		height: 44px;
+	}
+	.icon_user {
+		width: 70%;
+		height: 70%;
+		cursor: pointer;
+	}
+	.user__block {
+		height: 44px;
+		width: 44px;
+	}
+	.user__name_header {
+		display: none;
+	}
+	.user__photo_header {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.news__aside {
+		iframe {
+			display: none;
+		}
+	}
+}
