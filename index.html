@@ -116,6 +116,7 @@
 			</div>
 		</div>
 	</header>
+
 	<div class="main__wrap">
 		<main class="main block__bg bg__overlay">
 			<img src="images/facundo-ferreyra-6.jpg">
@@ -574,7 +575,7 @@
 
 	<footer class="footer">
 		<div class="footer__nav">
-			<a href="index.html" class="logo icon icon_logo">ШАХТАР.INFO</a>
+			<a href="index.html" class="logo logo_footer icon icon_logo">ШАХТАР.INFO</a>
 			<ul class="nav nav_footer">
 				<li class="nav__item nav__item_active">
 					<a href="index.html" class="nav__link">Главная</a>
@@ -736,6 +737,8 @@
 			setTimeout(function () {
 				$('section').show();
 				$('footer').show();
+				var viewWidth = $(window).width();
+				if (viewWidth < 1200) $('body').addClass('loaded_mob');
 			}, 2000);
 
 		}, time);
