@@ -15,10 +15,13 @@
 		}
 	}
 }
-.nav__wrap {
+.footer__nav {
 	display: flex;
 	align-items: center;
 	height: 11vh;
+}
+.nav_footer {
+	width: 50%;
 }
 .footer__wrap {
 	display: flex;
