@@ -1,0 +1,39 @@
+/*-----------------------------------------------------------------*/
+/*-- Main Block Mobile Style --*/
+@media only screen and (max-width: 1200px) {
+	.main {
+		flex-wrap: wrap;
+	}
+	.main__highlight {
+		width: 100%;
+	}
+	.highligh__info {
+		display: none;
+	}
+	.main__head {
+		font-size: 5.8em;
+		margin-bottom: 5vh;
+	}
+	.main__news {
+		width: 100%;
+	}
+	.newsMenu {
+		display: none;
+	}
+	.loaded {
+		.main__wrap {
+			margin-bottom: 60vh;
+		}
+		&_mob {
+			.main__wrap {
+				overflow: visible;
+			}
+		}
+		.news_main {
+			.newsImg {
+				width: 30%;
+			}
+		}
+	}
+}
+/*-- /Main Block Mobile Style --*/
