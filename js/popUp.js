@@ -6,6 +6,7 @@ function PopUp(sHeader, sLoginMenu) {
 	p.login = p.header.find('.login');
 	p.enter = p.login.find('.login__link_log');
 	p.reg = p.login.find('.login__link_reg');
+	p.logUsr = p.login.find('.login__user');
 
 	p.searchBtn = p.header.find('.search__link');
 	p.searchMenu = p.header.find('.search__block');
@@ -138,6 +139,7 @@ function PopUp(sHeader, sLoginMenu) {
 	}
 
 	p.enter.click(p.openEnter);
+	p.logUsr.click(p.openEnter);
 	p.reg.click(p.openReg);
 	p.menuEnter.click(p.showEnter);
 	p.menuReg.click(p.showReg);
