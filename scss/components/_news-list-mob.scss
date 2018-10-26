@@ -10,8 +10,22 @@
 	.newsImg {
 		width: 30%;
 	}
-	.newsHead {
-		font-size: 2.5em;
+}
+@media only screen and (max-width: 1200px) and (orientation: landscape) {
+	.newsImg {
+		width: 20%;
+	}
+	.news__head {
+		width: 80%;
+	}
+	.news__item {
+		&_video {
+			.news__img {
+				&:after {
+					background-size: 40%;
+				}
+			}
+		}
 	}
 }
 /*-- /News List Mobile --*/

@@ -11,7 +11,6 @@
 		display: none;
 	}
 	.main__head {
-		font-size: 5.8em;
 		margin-bottom: 5vh;
 	}
 	.main__news {
@@ -32,6 +31,18 @@
 		.news_main {
 			.newsImg {
 				width: 30%;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 1200px) and (orientation: landscape) {
+	.loaded {
+		.news_main {
+			.newsImg {
+				width: 20%;
+			}
+			.news__head {
+				width: 80%;
 			}
 		}
 	}

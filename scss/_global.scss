@@ -27,7 +27,26 @@ body {
     background-color: #242424;
 }
 body {
-    @include fluid-type($min_width, $max_width, $min_font, $max_font);
+    @include fluid-type($minMob_width, $maxMob_width, $min_font, $max_font);
+}
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: $min_font;
+    }
+}
+@media screen and (min-width: $min_width) {
+    body {
+        font-size: calc($min_font + 8 * ((100vw - $min_width) / 640));
+    }
+}
+@media screen and (min-width: $max_width) {
+    body {
+        font-size: $max_font;
+    }
+}
+.container {
+    overflow-x: hidden;
+    position: relative;
 }
 %gotham-med {
     font-family: 'GothamPro', sans-serif;

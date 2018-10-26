@@ -22,4 +22,14 @@
 		}
 	}
 }
+@media only screen and (max-width: 1200px) and (orientation: landscape) {
+	.news_allNews {
+		.newsImg {
+			width: 20%;
+		}
+		.news__head {
+			width: 80%;
+		}
+	}
+}
 /*-- /News Mobile Block --*/
