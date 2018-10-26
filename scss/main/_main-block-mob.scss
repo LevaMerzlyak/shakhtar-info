@@ -21,7 +21,7 @@
 	}
 	.loaded {
 		.main__wrap {
-			margin-bottom: 60vh;
+			margin-bottom: 55vh;
 		}
 		&_mob {
 			.main__wrap {
@@ -37,6 +37,9 @@
 }
 @media only screen and (max-width: 1200px) and (orientation: landscape) {
 	.loaded {
+		.main__wrap {
+			margin-bottom: 70vh;
+		}
 		.news_main {
 			.newsImg {
 				width: 20%;
