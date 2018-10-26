@@ -28,6 +28,9 @@
 		  	</div>
 		</div>
 	</div>
+
+<div class="container">
+	
 	<header class="header" id="header">
 		<a href="#" class="menuBtn"><!-- class="menuBtn menuBtn_close" -->
 			<i class="menuBtn__line"></i>
@@ -606,18 +609,18 @@
 				<li class="socials__item">
 					<a href="#" class="socials__link"><i class="icon icon_facebook"></i>Facebook</a>
 				</li>
-				<!--li class="socials__item">
+				<li class="socials__item">
 					<a href="#" class="socials__link"><i class="icon icon_instagram"></i>Instagram</a>
-				</li-->
-				<!--li class="socials__item">
+				</li>
+				<li class="socials__item">
 					<a href="#" class="socials__link"><i class="icon icon_vkontakte"></i>Вконтакте</a>
-				</li-->
-				<!--li class="socials__item">
+				</li>
+				<li class="socials__item">
 					<a href="#" class="socials__link"><i class="icon icon_twitter"></i>Twitter</a>
-				</li-->
-				<!--li class="socials__item">
+				</li>
+				<li class="socials__item">
 					<a href="#" class="socials__link"><i class="icon icon_googlePlus"></i>Google +</a>
-				</li-->
+				</li>
 			</ul>
 			<aside class="footer__aside">
 				<div class="google">
@@ -685,7 +688,7 @@
 			    </div>
 			</aside>
 		</div>
-		<p class="footer__txt footer__txt_dev">Разроботано в <a href="http://webcustom.org" target="_blank">webcustom.org</a></p>
+		<p class="footer__txt footer__txt_dev">Разработано в <a href="http://webcustom.org" target="_blank">webcustom.org</a></p>
 	</footer>
 
 	<div class="login__wrap" id="loginMenu">
@@ -723,7 +726,7 @@
 			<p class="loginMenu__txt">Войти с помощью: <a href="#" class="icon icon_fbBox"></a></p>
 		</div>
 	</div>
-
+</div>
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script>
 		var perfData = window.performance.timing,
@@ -737,6 +740,7 @@
 			setTimeout(function () {
 				$('section').show();
 				$('footer').show();
+				$('.loader').hide();
 				var viewWidth = $(window).width();
 				if (viewWidth < 1200) $('body').addClass('loaded_mob');
 			}, 2000);
