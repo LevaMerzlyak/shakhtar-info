@@ -3,6 +3,7 @@
 .videos__wrap {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	box-sizing: border-box;
 }
 .video__link {
