@@ -1927,6 +1927,14 @@ footer {
   .news__item_video .news__img:after {
     background-size: 40%; } }
 
+@media only screen and (max-width: 1023px) and (orientation: landscape) {
+  .news__link {
+    height: 20vh; } }
+
+@media only screen and (max-width: 330px) and (orientation: portrait) {
+  .newsHead {
+    font-size: 1em; } }
+
 /*-- /News List Mobile --*/
 /*-----------------------------------------------------------------*/
 /*-- Main Block Mobile Style --*/
@@ -1958,6 +1966,26 @@ footer {
     width: 20%; }
   .loaded .news_main .news__head {
     width: 80%; } }
+
+@media only screen and (max-width: 1023px) and (orientation: landscape) {
+  .main__head {
+    font-size: 2.5em;
+    margin-bottom: 0; }
+  .loaded .main__wrap {
+    margin-bottom: 100vh; } }
+
+@media only screen and (max-width: 500px) and (orientation: portrait) {
+  .main__head {
+    margin-bottom: 0; } }
+
+@media only screen and (max-width: 370px) and (orientation: portrait) {
+  .main__head {
+    font-size: 3em;
+    margin-bottom: 0; } }
+
+@media only screen and (max-width: 330px) and (orientation: portrait) {
+  .main__head {
+    font-size: 2.5em; } }
 
 /*-- /Main Block Mobile Style --*/
 /*-----------------------------------------------------------------*/
@@ -2002,6 +2030,14 @@ footer {
     width: 80%;
     left: 20%; } }
 
+@media only screen and (max-width: 1023px) and (orientation: landscape) {
+  .video__link {
+    height: 20vh; } }
+
+@media only screen and (max-width: 330px) and (orientation: portrait) {
+  .videoHead {
+    font-size: 1em; } }
+
 /*-- /Videos List Mobile --*/
 /*-----------------------------------------------------------------*/
 /*-- Video Block Mobile --*/
@@ -2010,6 +2046,19 @@ footer {
     margin-top: 5vh; } }
 
 /*-- /Video Block Mobile --*/
+/*-----------------------------------------------------------------*/
+/*---- Matches Tables Mobile --*/
+@media only screen and (max-width: 1023px) and (orientation: landscape) {
+  .match__wrap {
+    height: 40vh; }
+  .match__broadcast {
+    padding-left: 10%;
+    padding-right: 10%; }
+  .matchesTable th,
+  .matchesTable td {
+    line-height: 10vh; } }
+
+/*-- /Matches Tables Mobile --*/
 /*-----------------------------------------------------------------*/
 /*-- Matches Block Mobile --*/
 @media only screen and (max-width: 1200px) {
