@@ -11,7 +11,7 @@
 	box-sizing: border-box;
 	position: absolute;
 	left: 3vw;
-	top: 3vw;
+	top: 3vh;
 	background-color: $header;
 	z-index: 2;
 	transform: translateY(-200%);/* unloaded state */
@@ -192,7 +192,7 @@
 	margin-top: 2em;
 	margin-bottom: 1em;
 }
-.avatarMenu__form {
+.avatarMenuForm {
 	input[type=submit] {
 		display: inline-block;
 	    padding-right: 0;
@@ -303,6 +303,7 @@
 	transition: height 0.5s $ttf 1s;
 }
 .loginMenu__wrap {
+	visibility: hidden;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -315,7 +316,7 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	background-color: $blk;
-	transition: all 0.5s $ttf 0.5s;
+	transition: padding 0.5s $ttf 0.5s, height 0.5s $ttf 0.5s;
 }
 .loginMenu__close {
 	position: absolute;
@@ -323,6 +324,7 @@
 	right: 3px;
 	opacity: 0;/* login menu close */
 	transition: opacity 0.5s $ttf 0s;
+	z-index: 0;
 }
 .loginMenu__head {
 	position: relative;
@@ -435,9 +437,13 @@
 	height: 100vh;
 	transition: height 0.5s $ttf 0s;
 	.loginMenu__wrap {
+		visibility: visible;
 		height: 75vh;
 		padding: 3%;
-		transition: all 0.5s $ttf 0.5s;
+		transition: padding 0.5s $ttf 0.5s, height 0.5s $ttf 0.5s;
+	}
+	.loginMenu__close {
+		z-index: 100;
 	}
 	.loginMenu__close,
 	.loginMenu__txt {

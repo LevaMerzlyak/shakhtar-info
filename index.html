@@ -28,6 +28,9 @@
 		  	</div>
 		</div>
 	</div>
+
+<div class="container">
+	
 	<header class="header" id="header">
 		<a href="#" class="menuBtn"><!-- class="menuBtn menuBtn_close" -->
 			<i class="menuBtn__line"></i>
@@ -89,30 +92,32 @@
 						<img src="images/users/user.png" alt="User Name">
 					</div>
 				</div>
-				<p class="avatarMenu__txt">Загризите фотографию или выберете из предложенных</p>		
-				<form class="avatarMenu__form">
-					<label class="avatar__file">
-						<input type="file">
-						<p>Загрузить аватар</p>
-					</label>
-					<div class="avatarMenu__radios">
-						<label class="avatar__label">
-							<input type="radio" name="avatar" value="def">
-							<i class="icon icon_user_def"></i>
+				<div class="avatarMenu__form">
+					<p class="avatarMenu__txt">Загризите фотографию или выберете из предложенных</p>		
+					<form class="avatarMenuForm">
+						<label class="avatar__file">
+							<input type="file">
+							<p>Загрузить аватар</p>
 						</label>
-						<label class="avatar__label">
-							<input type="radio" name="avatar" value="def2">
-							<i class="icon icon_user_def2"></i>
-						</label>
-						<label class="avatar__label">
-							<input type="radio" name="avatar" value="def3">
-							<i class="icon icon_user_def3"></i>
-						</label>
-					</div>
-					<div class="more__btn more__btn_avatarMenu">
-						<input type="submit" value="Подтвердить" id="avatarSubmit">
-					</div>
-				</form>
+						<div class="avatarMenu__radios">
+							<label class="avatar__label">
+								<input type="radio" name="avatar" value="def">
+								<i class="icon icon_user_def"></i>
+							</label>
+							<label class="avatar__label">
+								<input type="radio" name="avatar" value="def2">
+								<i class="icon icon_user_def2"></i>
+							</label>
+							<label class="avatar__label">
+								<input type="radio" name="avatar" value="def3">
+								<i class="icon icon_user_def3"></i>
+							</label>
+						</div>
+						<div class="more__btn more__btn_avatarMenu">
+							<input type="submit" value="Подтвердить" id="avatarSubmit">
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -247,8 +252,10 @@
 	<section class="video">
 		<h2 class="section__head section__head_video">ВИДЕО</h2>
 		<div class="videos__wrap">
-			<a href="#" class="video__link block__bg bg__overlay bg__overlay_light videoBtn__bg">
-				<img src="images/video-cover/shakhtar_roma.jpg" alt="">
+			<a href="#" class="video__link">
+				<div class="videoImg block__bg bg__overlay bg__overlay_light videoBtn__bg">					
+					<img src="images/video-cover/shakhtar_roma.jpg" alt="">
+				</div>
 				<div class="video__txt">
 					<div class="video__dateTime">
 						<time datetime="2018-05-19 16:20">
@@ -261,8 +268,10 @@
 					</div>
 				</div>
 			</a>
-			<a href="#" class="video__link block__bg bg__overlay bg__overlay_light videoBtn__bg">
-				<img src="images/video-cover/shakhtar_verder.jpg" alt="">
+			<a href="#" class="video__link">
+				<div class="videoImg block__bg bg__overlay bg__overlay_light videoBtn__bg">
+					<img src="images/video-cover/shakhtar_verder.jpg" alt="">
+				</div>
 				<div class="video__txt">
 					<div class="video__dateTime">
 						<time datetime="2018-05-23 18:20">
@@ -275,8 +284,10 @@
 					</div>
 				</div>
 			</a>
-			<a href="#" class="video__link block__bg bg__overlay bg__overlay_light videoBtn__bg">
-				<img src="images/video-cover/shakhtar_dynamo.jpg" alt="">
+			<a href="#" class="video__link">
+				<div class="videoImg block__bg bg__overlay bg__overlay_light videoBtn__bg">
+					<img src="images/video-cover/shakhtar_dynamo.jpg" alt="">
+				</div>
 				<div class="video__txt">
 					<div class="video__dateTime">
 						<time datetime="2018-05-23 18:20">
@@ -290,7 +301,9 @@
 				</div>
 			</a>
 		</div>
-		<a href="video.html" class="more__btn">все видео</a>
+		<div class="moreBtn__wrap moreBtn__wrap_video">
+			<a href="video.html" class="more__btn">все видео</a>
+		</div>
 	</section>
 
 	<section class="matches">
@@ -310,7 +323,9 @@
 					<p class="match__result">2:2</p>
 					<i class="team__logo block__bg"><img src="images/teams/Shakhtar.png"></i>
 				</div>
-				<a href="results.html" class="more__btn">ИТОГИ МАТЧЕЙ</a>
+				<div class="moreBtn__wrap">
+					<a href="results.html" class="more__btn">ИТОГИ МАТЧЕЙ</a>
+				</div>
 			</div>
 			<div class="matches__col">
 				<h4 class="matches__head matches__head_next">Следующие матчи</h4>
@@ -334,7 +349,9 @@
 						<time class="broadcast__time" datetime="22:00">22:00</time>
 					</div>
 				</div>
-				<a href="following.html" class="more__btn">СЛЕДУЮЩИЕ МАТЧИ</a>
+				<div class="moreBtn__wrap">
+					<a href="following.html" class="more__btn">СЛЕДУЮЩИЕ МАТЧИ</a>
+				</div>
 			</div>
 			<div class="matches__col">
 				<h4 class="matches__head">Турнирная таблица</h4>
@@ -376,13 +393,15 @@
 						<td>14</td>
 					</tr>
 				</table>
-				<a href="table.html" class="more__btn">Вся таблица</a>
+				<div class="moreBtn__wrap">
+					<a href="table.html" class="more__btn">Вся таблица</a>
+				</div>
 			</div>
 		</div>
 	</section>
 
 	<section class="allNews">
-		<h2 class="section__head">ВСЕ НОВОСТИ</h2>
+		<h2 class="section__head section__head_allNews">ВСЕ НОВОСТИ</h2>
 		<div class="news__wrap">
 			<ul class="news news_allNews">
 				<li class="news__item news__item_video">
@@ -570,7 +589,9 @@
 				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FShakhtarFun%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 			</aside>
 		</div>
-		<a href="news.html" class="more__btn">ВСЕ НОВОСТИ</a>
+		<div class="moreBtn__wrap moreBtn__wrap_allNews">
+			<a href="news.html" class="more__btn">ВСЕ НОВОСТИ</a>
+		</div>
 	</section>
 
 	<footer class="footer">
@@ -606,18 +627,18 @@
 				<li class="socials__item">
 					<a href="#" class="socials__link"><i class="icon icon_facebook"></i>Facebook</a>
 				</li>
-				<!--li class="socials__item">
+				<li class="socials__item">
 					<a href="#" class="socials__link"><i class="icon icon_instagram"></i>Instagram</a>
-				</li-->
-				<!--li class="socials__item">
+				</li>
+				<li class="socials__item">
 					<a href="#" class="socials__link"><i class="icon icon_vkontakte"></i>Вконтакте</a>
-				</li-->
-				<!--li class="socials__item">
+				</li>
+				<li class="socials__item">
 					<a href="#" class="socials__link"><i class="icon icon_twitter"></i>Twitter</a>
-				</li-->
-				<!--li class="socials__item">
+				</li>
+				<li class="socials__item">
 					<a href="#" class="socials__link"><i class="icon icon_googlePlus"></i>Google +</a>
-				</li-->
+				</li>
 			</ul>
 			<aside class="footer__aside">
 				<div class="google">
@@ -685,7 +706,7 @@
 			    </div>
 			</aside>
 		</div>
-		<p class="footer__txt footer__txt_dev">Разроботано в <a href="http://webcustom.org" target="_blank">webcustom.org</a></p>
+		<p class="footer__txt footer__txt_dev">Разработано в <a href="http://webcustom.org" target="_blank">webcustom.org</a></p>
 	</footer>
 
 	<div class="login__wrap" id="loginMenu">
@@ -723,7 +744,7 @@
 			<p class="loginMenu__txt">Войти с помощью: <a href="#" class="icon icon_fbBox"></a></p>
 		</div>
 	</div>
-
+</div>
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script>
 		var perfData = window.performance.timing,
@@ -737,6 +758,7 @@
 			setTimeout(function () {
 				$('section').show();
 				$('footer').show();
+				$('.loader').hide();
 				var viewWidth = $(window).width();
 				if (viewWidth < 1200) $('body').addClass('loaded_mob');
 			}, 2000);

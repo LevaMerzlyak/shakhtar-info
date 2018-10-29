@@ -6,9 +6,6 @@
 	margin-top: 10vh;
 	margin-bottom: 10vh;
 	box-sizing: border-box;
-	.more__btn {
-		margin-top: 5vh;
-	}
 }
 .news__wrap {
 	display: flex;
@@ -39,5 +36,8 @@
 	width: 30%;
 	height: 80vh;
 	margin-top: 1em;
+}
+.moreBtn__wrap_allNews {
+	margin-top: 5vh;
 }
 /*-- /News Block --*/

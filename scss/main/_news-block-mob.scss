@@ -1,6 +1,11 @@
 /*-----------------------------------------------------------------*/
 /*-- News Mobile Block --*/
 @media only screen and (max-width: 1200px) {
+	.section__head_allNews {
+        &:after {
+        	left: 8em;
+        }
+    }
 	.news__wrap {
 		flex-wrap: wrap;
 	}
@@ -19,6 +24,16 @@
 		height: 0;
 		iframe {
 			display: none;
+		}
+	}
+}
+@media only screen and (max-width: 1200px) and (orientation: landscape) {
+	.news_allNews {
+		.newsImg {
+			width: 20%;
+		}
+		.news__head {
+			width: 80%;
 		}
 	}
 }

@@ -1,0 +1,62 @@
+/*-----------------------------------------------------------------*/
+/*-- Videos List Mobile --*/
+@media only screen and (max-width: 1200px) {
+	.videos__wrap {
+		flex-wrap: wrap;
+	}
+	.video__link {
+		width: 100%;
+		height: 15vh;
+		padding-bottom: 0;
+		margin-bottom: 1em;
+	}
+	.videoImg {
+		width: 30%;
+		&:after {
+			background-size: 50%;
+		}
+	}
+	.video__txt {
+		width: 70%;
+		height: 100%;
+		bottom: 0;		
+		left: 30%;
+		transform: translateX(0%);
+		&:before {
+			display: none;
+		}
+	}
+	.videoHead {
+		font-size: 1.3em;
+		line-height: 1.1em;
+	}
+	.video__dateTime {
+		display: none;
+	}
+	.video__head {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 1200px) and (orientation: landscape) {
+	.videoImg {
+		width: 20%;		
+		&:after {
+			background-size: 40%;
+		}
+	}
+	.video__txt {
+		width: 80%;
+		left: 20%;
+	}
+}
+@media only screen and (max-width: 1023px) and (orientation: landscape) {
+	.video__link {
+		height: 20vh;
+	}
+}
+@media only screen and (max-width: 330px) and (orientation: portrait) {
+	.videoHead {
+		font-size: 1em;
+	}
+}
+/*-- /Videos List Mobile --*/

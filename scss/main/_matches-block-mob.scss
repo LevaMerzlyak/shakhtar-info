@@ -6,6 +6,9 @@
 	}
 	.matches__col {
 		width: 100%;
+		&:not(:last-child) {
+			margin-bottom: 10vh;
+		}
 	}
 }
 /*-- /Matches Block Mobile --*/
