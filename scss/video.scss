@@ -1,0 +1,22 @@
+@import 'variables';
+@import 'global';
+
+.loading {
+    height: 100vh;
+    overflow: hidden;
+}
+section,
+footer {
+    display: none;
+}
+
+@import 'components/navigation';
+@import 'header';
+@import 'components/videos-list';
+@import 'components/videos-list-mob';
+
+@import 'footer';
+// Mobile Styles
+@import 'header-mob';
+
+@import 'footer-mob';
