@@ -6,6 +6,7 @@ function PopUp(sHeader, sLoginMenu) {
 
 	p.menuBtn = p.header.find('.menuBtn');
 	p.menu = p.header.find('.header__nav');
+	p.mainMenuOpen = false;
 
 	p.login = p.header.find('.login');
 	p.enter = p.login.find('.login__link_log');
@@ -30,13 +31,34 @@ function PopUp(sHeader, sLoginMenu) {
 		
 		event.preventDefault();
 
-		if (p.menuBtn.hasClass('menuBtn_close')) {
-			p.menuBtn.removeClass('menuBtn_close');
-			p.menu.removeClass('header__nav_menuOpen');
+		if (p.mainMenuOpen) {
+			p.closeMainMenu();
 		} else {
-			p.menuBtn.addClass('menuBtn_close');
-			p.menu.addClass('header__nav_menuOpen');
+			if (p.avatarMenuOpen) {
+				p.closeAvatarMenu();
+				setTimeout(p.openMainMenu, 750);
+			} else {
+				p.openMainMenu();
+			}
 		}
+
+	}
+
+	p.openMainMenu = function () {
+
+		p.menuBtn.addClass('menuBtn_close');
+		p.menu.addClass('header__nav_menuOpen');
+
+		p.mainMenuOpen = true;
+
+	}
+
+	p.closeMainMenu = function () {
+		
+		p.menuBtn.removeClass('menuBtn_close');
+		p.menu.removeClass('header__nav_menuOpen');
+
+		p.mainMenuOpen = false;
 
 	}
 
@@ -106,8 +128,13 @@ function PopUp(sHeader, sLoginMenu) {
 		if (p.avatarMenuOpen) {
 			p.closeAvatarMenu();
 		} else {
-			if (p.searchMenuOpen) p.closeSearchMenu();
-			setTimeout(p.openAvatarMenu, 500);
+			if (p.searchMenuOpen || p.mainMenuOpen) {
+				p.closeMainMenu();
+				p.closeSearchMenu();
+				setTimeout(p.openAvatarMenu, 750);
+			} else {
+				p.openAvatarMenu();
+			}
 		}
 
 	}
@@ -135,8 +162,12 @@ function PopUp(sHeader, sLoginMenu) {
 		if (p.searchMenuOpen) {
 			p.closeSearchMenu();
 		} else {
-			if (p.avatarMenuOpen) p.closeAvatarMenu();
-			setTimeout(p.openSearchMenu, 500);
+			if (p.avatarMenuOpen) {
+				p.closeAvatarMenu();
+				setTimeout(p.openSearchMenu, 750);
+			} else {
+				p.openSearchMenu();
+			}
 		}
 
 	}
