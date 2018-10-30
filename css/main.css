@@ -27,7 +27,11 @@ body {
 
 .container {
   overflow-x: hidden;
-  position: relative; }
+  overflow-y: hidden;
+  position: relative;
+  height: 110vh; }
+  .container_loaded {
+    height: auto; }
 
 .news__date, .newsHead, .video__date, .videoHead, .footer__txt_dev {
   font-family: 'GothamPro', sans-serif;
@@ -884,9 +888,9 @@ footer {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  transform: translateY(-100%);
+  -webkit-transform: translateY(-105%);
+  -ms-transform: translateY(-105%);
+  transform: translateY(-105%);
   background-color: #fff;
   cursor: default;
   -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.1s;

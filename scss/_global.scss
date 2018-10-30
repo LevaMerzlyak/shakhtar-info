@@ -46,7 +46,12 @@ body {
 }
 .container {
     overflow-x: hidden;
+    overflow-y: hidden;
     position: relative;
+    height: 110vh;
+    &_loaded {
+        height: auto;
+    }
 }
 %gotham-med {
     font-family: 'GothamPro', sans-serif;

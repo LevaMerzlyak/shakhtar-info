@@ -27,7 +27,11 @@ body {
 
 .container {
   overflow-x: hidden;
-  position: relative; }
+  overflow-y: hidden;
+  position: relative;
+  height: 110vh; }
+  .container_loaded {
+    height: auto; }
 
 .video__date, .videoHead, .footer__txt_dev {
   font-family: 'GothamPro', sans-serif;
