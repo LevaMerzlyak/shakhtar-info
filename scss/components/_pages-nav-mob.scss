@@ -4,6 +4,20 @@
 	.pagesNav {
 		justify-content: center;
 	}
+	.pagesNav__link {
+		min-width: 44px;
+	}
+	.pagesNav__item {
+		&_dots {
+			&.pagesNav__item_start,
+			&.pagesNav__item_end {
+				display: none;
+			}
+			.pagesNav__link {
+				min-width: auto;
+			}
+		}
+	}
 }
 @media only screen and (max-width: 500px) {
 	.pagesNav {
@@ -15,8 +29,9 @@
 		}
 	}
 }
-@media only screen and (max-width: 330px) {
-	.pagesNav__item_dis {
+@media only screen and (max-width: 410px) {
+	.pagesNav__item_atStart,
+	.pagesNav__item_atEnd {
 		display: none;
 	}
 }

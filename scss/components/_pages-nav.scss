@@ -10,7 +10,6 @@
 }
 .pagesNav__link {
 	display: inline-block;
-	width: 44px;
 	height: 44px;
 	color: $red;
 	font-size: 1.5em;
@@ -19,6 +18,7 @@
 	text-align: center;
 	text-decoration: none;
 	&_btn {
+		width: 44px;
 		background-color: $red;
 		position: relative;
 		.icon {
@@ -31,8 +31,7 @@
 		}
 	}
 	&_active {
-		font-size: 1.7em;
-		font-weight: 700;
+		text-decoration: underline;
 	}
 }
 /*-- /Pages Navigation --*/

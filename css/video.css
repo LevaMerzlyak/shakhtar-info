@@ -924,7 +924,6 @@ footer {
 
 .pagesNav__link {
   display: inline-block;
-  width: 44px;
   height: 44px;
   color: #e11203;
   font-size: 1.5em;
@@ -932,6 +931,7 @@ footer {
   text-align: center;
   text-decoration: none; }
   .pagesNav__link_btn {
+    width: 44px;
     background-color: #e11203;
     position: relative; }
     .pagesNav__link_btn .icon {
@@ -944,8 +944,7 @@ footer {
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
   .pagesNav__link_active {
-    font-size: 1.7em;
-    font-weight: 700; }
+    text-decoration: underline; }
 
 /*-- /Pages Navigation --*/
 /*-----------------------------------------------------------------*/
@@ -1303,7 +1302,13 @@ footer {
   .pagesNav {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; } }
+    justify-content: center; }
+  .pagesNav__link {
+    min-width: 44px; }
+  .pagesNav__item_dots.pagesNav__item_start, .pagesNav__item_dots.pagesNav__item_end {
+    display: none; }
+  .pagesNav__item_dots .pagesNav__link {
+    min-width: auto; } }
 
 @media only screen and (max-width: 500px) {
   .pagesNav {
@@ -1313,8 +1318,9 @@ footer {
   .pagesNav__item:not(:last-child) {
     margin-right: 0; } }
 
-@media only screen and (max-width: 330px) {
-  .pagesNav__item_dis {
+@media only screen and (max-width: 410px) {
+  .pagesNav__item_atStart,
+  .pagesNav__item_atEnd {
     display: none; } }
 
 /*-- /Pages Navigation Mobile --*/
