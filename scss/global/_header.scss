@@ -17,6 +17,9 @@
 	transform: translateY(-200%);/* unloaded state */
 	transition: transform 0.5s $ttf 0.2s;
 }
+.menuBtn {
+	display: none;
+}
 .logo {
 	width: 16%;
 	height: 35%;
