@@ -1,5 +1,5 @@
-@import 'variables';
-@import 'global';
+@import 'global/variables';
+@import 'global/global';
 
 .loading {
     height: 100vh;
@@ -11,12 +11,18 @@ footer {
 }
 
 @import 'components/navigation';
-@import 'header';
+@import 'global/header';
+
 @import 'components/videos-list';
-@import 'components/videos-list-mob';
+@import 'components/pages-nav';
+@import 'video/videos-page';
 
-@import 'footer';
+@import 'global/footer';
 // Mobile Styles
-@import 'header-mob';
+@import 'global/header-mob';
 
-@import 'footer-mob';
+@import 'components/videos-list-mob';
+@import 'components/pages-nav-mob';
+@import 'video/videos-page-mob';
+
+@import 'global/footer-mob';
