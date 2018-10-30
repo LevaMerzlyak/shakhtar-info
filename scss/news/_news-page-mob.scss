@@ -1,0 +1,73 @@
+/*-----------------------------------------------------------------*/
+/*-- News Page Block Mobile --*/
+@media only screen and (max-width: 1200px) {
+	.section__head_news {
+		margin-bottom: 5vh;
+		&:after {
+			left: 8em;
+		}
+	}
+	.news__link {
+		height: 15vh;
+		margin-bottom: 1em;
+		position: relative;
+		&:before {
+			content: "";
+			display: block;
+			width: 0.9%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: $red;
+			z-index: 1;
+		}
+	}
+	.news__dateTime {
+		display: none;
+	}
+	.newsImg {
+		width: 30%;
+		height: 100%;
+		padding-bottom: 0;
+	}
+	.newsTxt__wrap {
+		width: 70%;
+	}
+	.news__header {
+		height: 100%;
+		&:before {
+			display: none;
+		}
+	}
+	.news__head {
+		width: 100%;
+	}
+	.news__txt {
+		display: none;
+	}
+}
+@media only screen and (max-width: 1200px) and (orientation: landscape) {
+	.newsImg {
+		width: 20%;
+	}
+	.newsTxt__wrap {
+		width: 80%;
+	}
+}
+@media only screen and (max-width: 1100px) {
+	.news {
+		margin-top: calc(5vh + (44px + (2vh * 2)) + 2vw);
+	}
+}
+@media only screen and (max-width: 1023px) and (orientation: landscape) {
+	.news__link {
+		height: 20vh;
+	}
+}
+@media only screen and (max-width: 330px) and (orientation: portrait) {
+	.newsHead {
+		font-size: 1em;
+	}
+}
+/*-- /News Page Block Mobile --*/
