@@ -124,6 +124,7 @@ body {
     color: $sectionHead;
     @extend %proxi-bld;
     font-size: 1.8em;
+    text-transform: uppercase;
 }
 .more__btn {
     display: inline-block;

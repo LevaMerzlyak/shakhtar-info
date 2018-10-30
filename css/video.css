@@ -98,7 +98,8 @@ body {
 
 .section__head {
   color: #888888;
-  font-size: 1.8em; }
+  font-size: 1.8em;
+  text-transform: uppercase; }
 
 .more__btn {
   display: inline-block;
