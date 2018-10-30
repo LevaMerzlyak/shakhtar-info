@@ -2,8 +2,15 @@
 /*-- Pages Navigation --*/
 .pagesNav {
 	display: flex;
+	justify-content: center;
 }
 .pagesNav__item {
+	&_dots {
+		&.pagesNav__item_start,
+		&.pagesNav__item_end {
+			display: none;
+		}
+	}
 	&:not(:last-child) {
 		margin-right: 1em;
 	}
