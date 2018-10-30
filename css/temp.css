@@ -263,6 +263,9 @@ footer {
   transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.2s;
   transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.2s, -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.2s; }
 
+.menuBtn {
+  display: none; }
+
 .logo {
   width: 16%;
   height: 35%;
@@ -995,11 +998,19 @@ footer {
     display: none; }
   .login__block {
     width: 44px;
-    height: 44px; }
+    height: 44px;
+    position: relative; }
   .icon_user {
     width: 70%;
     height: 70%;
     cursor: pointer; }
+  .login__user {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
   .user__block {
     height: 44px;
     width: 44px; }
