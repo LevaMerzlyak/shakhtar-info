@@ -1,0 +1,23 @@
+/*-----------------------------------------------------------------*/
+/*-- Pages Navigation Mobile --*/
+@media only screen and (max-width: 1200px) {
+	.pagesNav {
+		justify-content: center;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.pagesNav {
+		justify-content: space-between;;
+	}
+	.pagesNav__item {
+		&:not(:last-child) {
+			margin-right: 0;
+		}
+	}
+}
+@media only screen and (max-width: 330px) {
+	.pagesNav__item_dis {
+		display: none;
+	}
+}
+/*-- /Pages Navigation Mobile --*/
