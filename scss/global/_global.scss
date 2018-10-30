@@ -36,7 +36,7 @@ body {
 }
 @media screen and (min-width: $min_width) {
     body {
-        font-size: calc($min_font + 8 * ((100vw - $min_width) / 640));
+        font-size: calc(12px + 8 * ((100vw - 1280px) / 640));
     }
 }
 @media screen and (min-width: $max_width) {

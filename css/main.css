@@ -19,7 +19,7 @@ body {
 
 @media screen and (min-width: 1280px) {
   body {
-    font-size: calc($min_font + 8 * ((100vw - $min_width) / 640)); } }
+    font-size: calc(12px + 8 * ((100vw - 1280px) / 640)); } }
 
 @media screen and (min-width: 1920px) {
   body {
