@@ -12,7 +12,7 @@
 	position: absolute;
 	left: 3vw;
 	top: 3vh;
-	background-color: $header;
+	background-color: $clr-header;
 	z-index: 2;
 	transform: translateY(-200%);/* unloaded state */
 	transition: transform 0.5s $ttf 0.2s;
@@ -48,7 +48,7 @@
 	position: absolute;
 	top: 100%;
 	right: -1em;
-	background-color: $bg;
+	background-color: $clr-blk;
 	overflow: hidden;
 	z-index: -1;
 	form {
@@ -60,19 +60,19 @@
 }
 .search__input {
 	padding: 1em;
-	color: $menuClr;
+	color: #fff;
 	font-size: 0.9em;
-	background-color: $blk;
+	background-color: $clr-newsHead;
 	border: none;
 	&:focus {
 		outline: none;
-		background-color: $lightGrey;
+		background-color: $clr-sectionHead;
 	}
 }
 .search__submit {
 	padding: 1em;	
 	font-size: 0.9em;
-	background-color: $blk;
+	background-color: $clr-blk;
 	border: none;
 	cursor: pointer;
 }
@@ -84,7 +84,7 @@
 	align-items: center;
 }
 .login__link {
-	color: $menuClr;
+	color: #fff;
 	font-size: 0.9em;
 	@extend %proxi-reg;
 	text-decoration: none;
@@ -105,7 +105,7 @@
 	align-items: center;
 }
 .user__name {
-	color: $red;
+	color: $clr-orange;
 	font-size: 1em;
 	@extend %proxi-eXbld;
 	margin-right: 1em;
@@ -164,7 +164,7 @@
 	position: absolute;
 	top: 100%;
 	right: 0;
-	background-color: $blk;
+	background-color: $clr-blk;
 	transition: all 0.5s $ttf 0.5s;
 }
 .avatarMenu {
@@ -221,7 +221,7 @@
 		@extend %proxi-reg;
 		font-size: 1em;
 		line-height: 2em;
-		border: 2px solid $newsClr;
+		border: 1px solid #fff;
 	}
 	input[type=file] {
 		opacity: 0;
@@ -262,7 +262,7 @@
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: 70%;
-			background-color: $overlayLight;
+			background-color: $clr-overlayLight;
 			background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAzOCAzMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzggMzA7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cGF0aCBzdHlsZT0iZmlsbDojRTExMjAzOyIgZD0iTTE3LjI3LDI3LjM4N2MtMS42NiwxLjY1Ni00LjM0OCwxLjY1Ni02LjAwNCwwbC05LjMwNS05LjMwNGMtMS42NTYtMS42NTctMS42NTYtNC4zNDQsMC02LjAwNAoJCQljMS42Ni0xLjY1Nyw0LjM0OC0xLjY1Nyw2LjAwNCwwbDUuNTQzLDUuNTQzYzAuNDE4LDAuNDE4LDEuMDk4LDAuNDE4LDEuNTE2LDBMMzAuMDMxLDIuNjEzYzEuNjYxLTEuNjU2LDQuMzQ4LTEuNjU2LDYuMDA0LDAKCQkJYzAuNzk3LDAuNzk3LDEuMjQ2LDEuODc5LDEuMjQ2LDMuMDA0cy0wLjQ0OSwyLjIwMy0xLjI0NiwzTDE3LjI3LDI3LjM4N3oiLz4KCTwvZz4KPC9nPgo8L3N2Zz4=);
 		}
 	}
@@ -301,7 +301,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: $overlay;
+	background-color: $clr-overlay;
 	z-index: 100;
 	transition: height 0.5s $ttf 1s;
 }
@@ -318,7 +318,7 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background-color: $blk;
+	background-color: $clr-blk;
 	transition: padding 0.5s $ttf 0.5s, height 0.5s $ttf 0.5s;
 }
 .loginMenu__close {
@@ -377,11 +377,11 @@
 			color: #fff;
 			@extend %proxi-reg;
 			font-size: 1em;
-			background-color: $blk;
+			background-color: $clr-blk;
 			outline: none;
-			border: 2px solid $newsClr;
+			border: 1px solid #fff;
 			&:placeholder {
-				color: $newsClr;
+				color: #fff;
 			}
 		}
 		&[type=submit] {

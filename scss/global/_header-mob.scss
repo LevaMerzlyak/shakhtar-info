@@ -14,7 +14,7 @@
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
-		background-color: $menuClr;
+		background-color: #fff;
 		opacity: 1;
 		transition: opacity 0.1s $ttf 1s, width 0.2s $ttf 1s;
 	}
@@ -33,7 +33,7 @@
 	        position: absolute;
 	        top: 10px;
 	        left: 0;
-	        background-color: $menuClr;
+	        background-color: #fff;
 	        transform: rotate(0deg);
 	        transition: all 0.5s $ttf 0.5s;
 	    }
@@ -67,7 +67,7 @@
 		position: absolute;
 		top: 100%;
 		left: 0;
-		background-color: $header;
+		background-color: $clr-header;
 		overflow: hidden;
 		transition: height 0.5s $ttf 0.5s;
 	}
@@ -173,7 +173,7 @@
 				padding: 0.3em 1.25em;
 				margin-bottom: 0.5em;
 				font-size: 0.9em;
-				border: 1px solid $newsClr;
+				border: 1px solid #fff;
 			}
 			&[type=submit] {
 				font-size: 0.9em;

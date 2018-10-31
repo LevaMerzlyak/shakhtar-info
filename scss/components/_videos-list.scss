@@ -18,7 +18,7 @@
 			}
 		}
 		.videoHead {
-			color: $bg;
+			color: $clr-newsHead;
 		}
 	}
 }
@@ -47,14 +47,14 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		background-color: $red;
+		background-color: $clr-orange;
 		z-index: 1;
 	}
 }
 .video__dateTime {
 	width: 25%;
 	height: 100%;
-	background-color: $vidDate;
+	background-color: $clr-header;
 	position: relative;
 	time {
 		position: absolute;
@@ -78,7 +78,7 @@
 .video__head {
 	width: 75%;
 	height: 100%;
-	background-color: $vidHead;
+	background-color: $clr-newsHead;
 	position: relative;
 	&:before {
 		content: "";
@@ -88,7 +88,7 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		background-color: $menuClr;
+		background-color: #fff;
 		transition: width 0.5s $ttf;
 	}
 }

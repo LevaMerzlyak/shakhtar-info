@@ -18,7 +18,7 @@
 .pagesNav__link {
 	display: inline-block;
 	height: 44px;
-	color: $red;
+	color: $clr-orange;
 	font-size: 1.5em;
 	@extend %proxi-reg;
 	line-height: 44px;
@@ -26,7 +26,7 @@
 	text-decoration: none;
 	&_btn {
 		width: 44px;
-		background-color: $red;
+		background-color: $clr-orange;
 		position: relative;
 		.icon {
 			width: 30px;

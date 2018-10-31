@@ -24,7 +24,7 @@
 /*-- Font Style --*/
 body {
     font-family: 'ProximaNova', sans-serif;
-    background-color: #242424;
+    background-color: $clr-bg;
 }
 body {
     @include fluid-type($minMob_width, $maxMob_width, $min_font, $max_font);
@@ -89,11 +89,11 @@ body {
         position: absolute;
         left: 0;
         top: 0;
-        background-color: $overlay;
+        background-color: $clr-overlay;
     }
     &_light {
         &:before {
-            background-color: $overlayLight;
+            background-color: $clr-overlayLight;
         }
     }
     &_grad {
@@ -121,7 +121,7 @@ body {
     }
 }
 .section__head {
-    color: $sectionHead;
+    color: $clr-sectionHead;
     @extend %proxi-bld;
     font-size: 1.8em;
     text-transform: uppercase;
@@ -145,7 +145,7 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-        background-color: $red;
+        background-color: $clr-orange;
         transition: width 0.5s $ttf;
         z-index: -1;
     }
@@ -183,7 +183,7 @@ body {
 /*-- Global Styles Mobile --*/
 @media only screen and (max-width: 1200px) {
     .more__btn {
-        background-color: $red;
+        background-color: $clr-orange;
         &:before {
             display: none;
         }
@@ -200,7 +200,7 @@ body {
             top: 50%;
             left: 4em;
             transform: translateY(-50%);
-            background-color: $red;
+            background-color: $clr-orange;
         }
     }
     .moreBtn__wrap {

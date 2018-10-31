@@ -15,7 +15,7 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		background-color: $red;
+		background-color: $clr-orange;
 		z-index: -1;
 		transition: width 0.2s $ttf;
 	}
@@ -36,7 +36,7 @@
 	padding-right: 1.25em;
 	padding-bottom: 0.5em;
 	padding-left: 1.25em;
-	color: $menuClr;
+	color: #fff;
 	font-size: 1em;
 	@extend %proxi-bld;
 	text-decoration: none;
