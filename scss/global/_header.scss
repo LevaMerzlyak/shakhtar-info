@@ -410,7 +410,7 @@
 .loginMenu__link {
 	color: #fff;
 	@extend %proxi-reg;
-	font-size: 0.9em;
+	font-size: 1em;
 	transform: translateY(100%);/* login menu close */
 	opacity: 0;/* login menu close */
 	transition: transform 0.5s $ttf 0s, opacity 0.5s $ttf 0s;
