@@ -1600,6 +1600,18 @@ footer {
   .matches__col .moreBtn__wrap {
     margin-top: 5vh; }
 
+.matchesTable {
+  position: relative; }
+  .matchesTable:before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fa4616; }
+
 /*-- /Matches Block --*/
 /*-----------------------------------------------------------------*/
 /*-- News Block --*/
@@ -2080,7 +2092,9 @@ footer {
   .matches__col {
     width: 100%; }
     .matches__col:not(:last-child) {
-      margin-bottom: 10vh; } }
+      margin-bottom: 10vh; }
+  .matchesTable:before {
+    display: none; } }
 
 /*-- /Matches Block Mobile --*/
 /*-----------------------------------------------------------------*/

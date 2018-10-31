@@ -17,4 +17,17 @@
 		margin-top: 5vh;
 	}
 }
+.matchesTable {
+	position: relative;
+	&:before {
+		content: "";
+		display: block;
+		height: 100%;
+		width: 1px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-color: $clr-orange;
+	}
+}
 /*-- /Matches Block --*/
