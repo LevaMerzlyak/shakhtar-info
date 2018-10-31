@@ -5,7 +5,7 @@
 	padding-right: 3%;
 	padding-top: 3vh;
 	padding-bottom: 5vh;
-	background-color: $blk;
+	background-color: $clr-blk;
 	.nav__item {
 		&:before {
 			display: none;
@@ -43,7 +43,7 @@
 		font-size: 1em;
 		@extend %gotham-med;
 		a {
-			color: $red;
+			color: $clr-orange;
 		}
 	}
 }
@@ -75,6 +75,6 @@
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 10px;
-	background-color: $bg;
+	background-color: $clr-bg;
 }
 /*-- /Footer Style --*/

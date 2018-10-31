@@ -44,14 +44,14 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		background-color: $red;
+		background-color: $clr-orange;
 		z-index: 1;
 	}
 }
 .news__dateTime {
 	width: 15%;
 	position: relative;
-	background-color: $blk;
+	background-color: $clr-header;
 	transition: width 0.5s $ttf 0.2s;
 	&:before {
 		content: "";
@@ -61,7 +61,7 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		background-color: $red;
+		background-color: $clr-orange;
 		transition: width 0.2s $ttf 0.5s;
 	}
 	time {
@@ -86,7 +86,7 @@
 .news__head {
 	width: 85%;
 	position: relative;
-	background-color: $lightGrey;
+	background-color: $clr-newsHead;
 	&:before {
 		content: "";
 		display: block;
@@ -95,7 +95,7 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		background-color: $menuClr;
+		background-color: #fff;
 		transition: width 0.5s $ttf;
 	}
 }
@@ -105,7 +105,7 @@
 	transform: translateY(-50%);
 	padding: 1em;
 	box-sizing: border-box;
-	color: $newsClr;
+	color: #fff;
 	font-size: 1.3em;
 	@extend %gotham-med;
 	line-height: 1.1em;
@@ -125,7 +125,7 @@
 .newsTxt__link {
 	margin-top: 5%;
 	position: relative;
-	color: $red;
+	color: $clr-orange;
 	font-size: 1.3em;
 	@extend %proxi-reg;
 	line-height: 1.5em;
@@ -152,7 +152,7 @@
 			}
 		}
 		.newsHead {
-			color: $darkGrey;
+			color: $clr-matchNext;
 			transition: color 0.5s $ttf 0.2s;
 		}
 	}

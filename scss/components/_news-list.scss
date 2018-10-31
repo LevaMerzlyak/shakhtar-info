@@ -12,7 +12,7 @@
 			position: absolute;
 			top: 0;
 			left: 0;
-			background-color: $red;
+			background-color: $clr-orange;
 			z-index: 1;
 		}
 	}
@@ -36,7 +36,7 @@
 			}
 		}
 		.news__head {
-			color: $darkGrey;
+			color: $clr-matchNext;
 			transition: color 0.5s $ttf 0.3s;
 			&:before {
 				width: 100%;
@@ -48,7 +48,7 @@
 .news__dateTime {
 	width: 15%;
 	position: relative;
-	background-color: $darkGrey;
+	background-color: $clr-header;
 	transition: width 0.5s $ttf 0.2s;
 	&:before {
 		content: "";
@@ -58,7 +58,7 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		background-color: $red;
+		background-color: $clr-orange;
 		transition: width 0.2s $ttf 0.6s;
 	}
 	time {
@@ -84,7 +84,7 @@
 }
 .newsImg {
 	width: 15%;
-	background-color: $blk;
+	background-color: $clr-blk;
 	transition: width 0.5s $ttf 0.7s;
 }
 .news__img {
@@ -97,7 +97,7 @@
 .news__head {
 	width: 70%;
 	position: relative;
-	background-color: $lightGrey;
+	background-color: $clr-newsHead;
 	transition: width 0.5s $ttf 1.2s;
 	&:before {
 		content: "";
@@ -107,7 +107,7 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		background-color: $menuClr;
+		background-color: #fff;
 		transition: width 0.5s $ttf;
 	}
 }
@@ -117,7 +117,7 @@
 	transform: translateY(-50%);
 	padding: 1em;
 	box-sizing: border-box;
-	color: $newsClr;
+	color: #fff;
 	font-size: 1.3em;
 	@extend %gotham-med;
 	line-height: 1.1em;
@@ -139,7 +139,7 @@
 			}
 		}
 		.newsHead {
-			color: $darkGrey;
+			color: $clr-matchNext;
 			transition: color 0.5s $ttf 0.3s;
 		}
 	}
