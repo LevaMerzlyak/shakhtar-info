@@ -15,7 +15,6 @@
 	justify-content: space-between;
 	text-decoration: none;
 	margin-bottom: 10vh;
-	cursor: default;
 }
 .newsImg {
 	width: 32%;
@@ -130,7 +129,6 @@
 	@extend %proxi-reg;
 	line-height: 1.5em;
 	text-decoration: underline;
-	cursor: pointer;
 	.icon {
 		position: absolute;
 		top: 50%;

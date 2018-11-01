@@ -820,8 +820,7 @@ footer {
   -ms-flex-pack: justify;
   justify-content: space-between;
   text-decoration: none;
-  margin-bottom: 10vh;
-  cursor: default; }
+  margin-bottom: 10vh; }
 
 .newsImg {
   width: 32%;
@@ -941,8 +940,7 @@ footer {
   color: #fa4616;
   font-size: 1.3em;
   line-height: 1.5em;
-  text-decoration: underline;
-  cursor: pointer; }
+  text-decoration: underline; }
   .newsTxt__link .icon {
     position: absolute;
     top: 50%;
