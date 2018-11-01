@@ -40,6 +40,7 @@
 	left: 50%;
 	background-color: $clr-header;
 	transform: translateX(-50%);
+	z-index: 3;
 	&:before {
 		content: "";
 		display: block;

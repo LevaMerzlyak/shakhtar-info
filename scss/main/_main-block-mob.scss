@@ -3,6 +3,9 @@
 @media only screen and (max-width: 1200px) {
 	.main {
 		flex-wrap: wrap;
+		&.block__bg {
+			overflow: visible;
+		}
 	}
 	.main__highlight {
 		width: 100%;

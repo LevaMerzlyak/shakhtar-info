@@ -55,9 +55,21 @@ body {
 .block__bg {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  position: relative;
+  overflow: hidden; }
   .block__bg img {
-    display: none; }
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  .block__bg_portrait img {
+    height: 100%;
+    width: auto; }
 
 .bg__overlay:before {
   content: "";
@@ -67,7 +79,8 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.7); }
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1; }
 
 .bg__overlay_light:before {
   background-color: rgba(0, 0, 0, 0.2); }
@@ -94,7 +107,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 50%;
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgMzk0IDM5NCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzk0IDM5NDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNGRkZGRkY7fQo8L3N0eWxlPgo8Zz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0yNzUuNiwxOTAuMWwtMTA4LjEtNzMuOWMtMy40LTIuNS0xMi4zLTIuNS0xMyw2Ljl2MTQ3LjhjMC44LDkuNCw5LjksOS41LDEzLDYuOWwxMDguMS03My45CgkJQzI3OC40LDIwMi4yLDI4Mi4yLDE5NS4zLDI3NS42LDE5MC4xTDI3NS42LDE5MC4xeiBNMTcxLjIsMjU1LjJWMTM4LjhMMjU2LDE5N0wxNzEuMiwyNTUuMnogTTE3MS4yLDI1NS4yIi8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTk3LDFDODguOSwxLDEsODguOSwxLDE5N3M4Ny45LDE5NiwxOTYsMTk2czE5Ni04Ny45LDE5Ni0xOTZTMzA1LjEsMSwxOTcsMUwxOTcsMXogTTE5NywzNzYuMwoJCWMtOTguOSwwLTE3OS4zLTgwLjQtMTc5LjMtMTc5LjNTOTguMSwxNy43LDE5NywxNy43UzM3Ni4zLDk4LjEsMzc2LjMsMTk3UzI5NS45LDM3Ni4zLDE5NywzNzYuM0wxOTcsMzc2LjN6IE0xOTcsMzc2LjMiLz4KPC9nPgo8L3N2Zz4=); }
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgMzk0IDM5NCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzk0IDM5NDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNGRkZGRkY7fQo8L3N0eWxlPgo8Zz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0yNzUuNiwxOTAuMWwtMTA4LjEtNzMuOWMtMy40LTIuNS0xMi4zLTIuNS0xMyw2Ljl2MTQ3LjhjMC44LDkuNCw5LjksOS41LDEzLDYuOWwxMDguMS03My45CgkJQzI3OC40LDIwMi4yLDI4Mi4yLDE5NS4zLDI3NS42LDE5MC4xTDI3NS42LDE5MC4xeiBNMTcxLjIsMjU1LjJWMTM4LjhMMjU2LDE5N0wxNzEuMiwyNTUuMnogTTE3MS4yLDI1NS4yIi8+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTk3LDFDODguOSwxLDEsODguOSwxLDE5N3M4Ny45LDE5NiwxOTYsMTk2czE5Ni04Ny45LDE5Ni0xOTZTMzA1LjEsMSwxOTcsMUwxOTcsMXogTTE5NywzNzYuMwoJCWMtOTguOSwwLTE3OS4zLTgwLjQtMTc5LjMtMTc5LjNTOTguMSwxNy43LDE5NywxNy43UzM3Ni4zLDk4LjEsMzc2LjMsMTk3UzI5NS45LDM3Ni4zLDE5NywzNzYuM0wxOTcsMzc2LjN6IE0xOTcsMzc2LjMiLz4KPC9nPgo8L3N2Zz4=);
+  z-index: 2; }
 
 .section__head {
   color: #888888;
@@ -175,6 +189,11 @@ body {
       background-color: #fa4616; }
   .moreBtn__wrap {
     text-align: center; } }
+
+@media only screen and (max-width: 1025px) {
+  .block__bg img {
+    height: 100%;
+    width: auto; } }
 
 /*-- /Global Styles Mobile --*/
 .loading {
@@ -887,9 +906,9 @@ footer {
 /*-- Header Mobile Style --*/
 @media only screen and (max-width: 1200px) {
   .header {
-    width: 96%;
-    left: 2vw;
-    top: 2vw; }
+    width: 100%;
+    left: 0;
+    top: 0; }
   .menuBtn__line {
     display: block;
     width: 80%;
@@ -983,7 +1002,7 @@ footer {
       -o-transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s;
       transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s; }
   .header__nav_menuOpen {
-    height: calc(100vh - 11vh - (2vw * 2));
+    height: calc(100vh - 11vh);
     -webkit-transition: height 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s;
     -o-transition: height 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s;
     transition: height 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0s; }
@@ -1025,7 +1044,7 @@ footer {
     padding-top: 2vh;
     padding-bottom: 2vh; }
   .header__nav_menuOpen {
-    height: calc(100vh - (44px + (2vh * 2)) - (2vw * 2)); } }
+    height: calc(100vh - (44px + (2vh * 2))); } }
 
 @media only screen and (max-width: 1100px) and (orientation: portrait) {
   .login__wrap_open .loginMenu__wrap {

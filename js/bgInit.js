@@ -8,6 +8,7 @@ function BgInit(sSelector) {
 	b.initBg = function () {		
 		b.container.each(function () {
 			let src = $(this).find('img').attr('src');
+			$(this).find('img').hide();
 			$(this).css('background-image', 'url(' + src + ')');
 		});
 	}
