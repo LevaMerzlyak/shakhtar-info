@@ -76,6 +76,15 @@
 	@extend %proxi-reg;
 	line-height: 1.2em;
 }
+.video__views {
+	display: none;
+}
+.videoViews__num {
+	color: $clr-sectionHead;
+	font-size: 0.9em;
+	@extend %proxi-reg;
+	line-height: 1.5em;
+}
 .video__head {
 	width: 75%;
 	height: 100%;
@@ -96,7 +105,10 @@
 .videoHead {
 	position: absolute;
 	top: 50%;
-	padding: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
 	transform: translateY(-50%);
 	color: #fff;
 	font-size: 1.1em;

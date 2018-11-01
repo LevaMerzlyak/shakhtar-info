@@ -12,6 +12,9 @@
 	.news_allNews {
 		width: 100%;
 		margin-right: 0;
+		.news__dateTime {
+			width: 70%;
+		}
 		.newsImg {
 			width: 30%;
 		}
@@ -29,6 +32,9 @@
 }
 @media only screen and (max-width: 1200px) and (orientation: landscape) {
 	.news_allNews {
+		.news__dateTime {
+			width: 80%;
+		}
 		.newsImg {
 			width: 20%;
 		}

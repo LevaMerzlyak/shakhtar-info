@@ -26,15 +26,69 @@
 	.videoHead {
 		font-size: 1.3em;
 		line-height: 1.1em;
+		padding-bottom: 2em;
 	}
 	.video__dateTime {
-		display: none;
+		display: flex;
+		width: 70%;
+		height: auto;
+		padding-left: 1.3em;
+		box-sizing: border-box;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		background-color: transparent;
+		z-index: 2;
+		time {
+			display: flex;
+			padding-left: 0.5em;
+			position: relative;
+			top: 0;
+			left: 0;
+			transform: translate(0%, 0%);
+		    &:before {
+		    	content: "";
+		    	display: block;
+		    	width: 4px;
+		    	height: 0.9em;
+		    	position: absolute;
+		    	left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				background-color: $clr-orange;
+		    }
+		}
+		&:before {
+			display: none;
+		}
+	}
+	.video__date {
+		color: $clr-sectionHead;
+		font-family: 'ProximaNova', sans-serif;
+	    font-weight: 400;
+	    margin-right: 1em;
+	}
+	.video__time {
+		color: $clr-sectionHead;
+		font-size: 0.9em;
+		line-height: 1.5em;
+	}
+	.video__views {
+		display: flex;
+		margin-left: 1em;
+		.icon {
+			height: 1.35em;
+			margin-right: 0.5em;
+		}
 	}
 	.video__head {
 		width: 100%;
 	}
 }
 @media only screen and (max-width: 1200px) and (orientation: landscape) {
+	.video__link {
+		height: 20vh;
+	}
 	.videoImg {
 		width: 20%;		
 		&:after {
@@ -46,14 +100,17 @@
 		left: 20%;
 	}
 }
-@media only screen and (max-width: 1023px) and (orientation: landscape) {
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
 	.video__link {
-		height: 20vh;
+		height: 30vh;
 	}
 }
 @media only screen and (max-width: 330px) and (orientation: portrait) {
 	.videoHead {
 		font-size: 1em;
+	}
+	.video__dateTime {
+		padding-left: 1em;
 	}
 }
 /*-- /Videos List Mobile --*/

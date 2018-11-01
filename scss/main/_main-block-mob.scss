@@ -29,6 +29,9 @@
 			}
 		}
 		.news_main {
+			.news__dateTime {
+				width: 70%;
+			}
 			.newsImg {
 				width: 30%;
 			}
@@ -38,9 +41,12 @@
 @media only screen and (max-width: 1200px) and (orientation: landscape) {
 	.loaded {
 		.main__wrap {
-			margin-bottom: 70vh;
+			margin-bottom: 85vh;
 		}
 		.news_main {
+			.news__dateTime {
+				width: 80%;
+			}
 			.newsImg {
 				width: 20%;
 			}
@@ -57,7 +63,7 @@
 	}
 	.loaded {
 		.main__wrap {
-			margin-bottom: 100vh;
+			margin-bottom: 150vh;
 		}
 	}
 }
