@@ -2,9 +2,9 @@
 /*-- Header Mobile Style --*/
 @media only screen and (max-width: 1200px) {
 	.header {
-		width: 96%;
-		left: 2vw;
-		top: 2vw;
+		width: 100%;
+		left: 0;
+		top: 0;
 	}
 	.menuBtn__line {
 		display: block;
@@ -91,7 +91,7 @@
 		}
 	}	
 	.header__nav_menuOpen {
-		height: calc(100vh - 11vh - (2vw * 2));
+		height: calc(100vh - 11vh);
 		transition: height 0.5s $ttf 0s;
 		.nav__link {
 			opacity: 1;
@@ -141,7 +141,7 @@
 		padding-bottom: 2vh;
 	}
 	.header__nav_menuOpen {
-		height: calc(100vh - (44px + (2vh * 2)) - (2vw * 2));
+		height: calc(100vh - (44px + (2vh * 2)));
 	}
 }
 @media only screen and (max-width: 1100px) and (orientation: portrait) {
