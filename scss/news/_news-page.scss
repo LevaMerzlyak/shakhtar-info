@@ -82,6 +82,15 @@
 	@extend %proxi-reg;
 	line-height: 1.2em;
 }
+.news__views {
+	display: none;
+}
+.newsViews__num {
+	color: $clr-sectionHead;
+	font-size: 0.9em;
+	@extend %proxi-reg;
+	line-height: 1.5em;
+}
 .news__head {
 	width: 85%;
 	position: relative;
@@ -102,7 +111,10 @@
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	padding: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
 	box-sizing: border-box;
 	color: #fff;
 	font-size: 1.3em;
