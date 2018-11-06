@@ -6,6 +6,7 @@
     overflow: hidden;
 }
 section,
+aside,
 footer {
     display: none;
 }
@@ -13,8 +14,15 @@ footer {
 @import 'components/navigation';
 @import 'global/header';
 
+@import 'components/match-tables';
+@import 'article/article-page';
+@import 'components/video-player';
+
+
 @import 'global/footer';
 // Mobile Styles
 @import 'global/header-mob';
+
+@import 'components/match-tables-mob';
 
 @import 'global/footer-mob';

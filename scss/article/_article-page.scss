@@ -1,0 +1,132 @@
+/*-----------------------------------------------------------------*/
+/*-- Article Page Block --*/
+.main {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 3%;
+	padding-right: 3%;
+	margin-top: 20vh;
+	margin-bottom: 10vh;
+	box-sizing: border-box;
+}
+.article__wrap {
+	width: 65%;
+}
+.article__aside {
+	width: 30%;
+}
+.article__header {
+	display: flex;
+	position: relative;
+	&:before {
+		content: "";
+		display: block;
+		width: 1%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: $clr-orange;
+	}
+}
+.article__dateTime {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 12%;
+	background-color: $clr-header;
+	.pub__dateTime {
+		width: 100%;
+		text-align: center;
+	}
+}
+.article__date {
+	color: #fff;
+	font-size: 0.9em;
+	@extend %proxi-bld;
+	line-height: 1.5em;
+}
+.article__time {
+	color: #fff;
+	font-size: 1.25em;
+	@extend %proxi-reg;
+	line-height: 1.2em;
+}
+.article__views {
+	margin-top: 1em;
+	width: 100%;
+	text-align: center;
+}
+.articleViews__num {
+	color: $clr-sectionHead;
+	font-size: 0.9em;
+	@extend %proxi-reg;
+	line-height: 1.5em;
+}
+.article__head {
+	width: 88%;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-right: 1em;
+	padding-left: 1em;
+	box-sizing: border-box;
+	background-color: $clr-newsHead;
+}
+.articleHead {
+	color: #fff;
+	font-size: 3em;
+	@extend %proxi-bld;
+	line-height: 1em;
+}
+.article__txt {
+	padding-top: 2em;
+	padding-left: 2em;
+	padding-bottom: 2em;
+	padding-right: 2em;
+	background-color: #fff;
+}
+.articleTxt {
+	color: $clr-bg;
+	font-size: 1.1em;
+	@extend %proxi-reg;
+	line-height: 1.6em;
+	&:not(:first-child) {
+		margin-top: 2em;
+	}
+}
+.article__more {
+	margin-top: 2em;
+	padding-left: 2em;
+	position: relative;
+	&:before {
+		content: "";
+		display: block;
+		height: 100%;
+		width: 1%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-color: $clr-orange;
+	}
+}
+.articleMore__head {
+	margin-bottom: 0.5em;
+	color: $clr-blk;
+	font-size: 1.2em;
+	@extend %proxi-bld;
+	text-transform: uppercase;
+}
+.articleMore__link {
+	color: $clr-orange;
+	font-size: 1.2em;
+	@extend %proxi-bld;
+	text-decoration: none;
+}
+.article__media {
+	margin-top: 2em;
+}
+.articleMedia__img {
+	width: 100%;
+	height: auto;
+}
+/*-- /Article Page Block --*/
