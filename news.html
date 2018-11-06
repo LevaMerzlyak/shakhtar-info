@@ -54,7 +54,7 @@
 					<a href="club.html" class="nav__link">Клуб</a>
 				</li>
 				<li class="nav__item">
-					<a href="video.html" class="nav__link">Видео</a>
+					<a href="videos.html" class="nav__link">Видео</a>
 				</li>
 			</ul>
 		</div>
@@ -122,7 +122,7 @@
 		</div>
 	</header>
 
-	<section class="news">
+	<section class="news" id="newsList1">
 		<h2 class="section__head section__head_news">ВСЕ НОВОСТИ</h2>
 		<a href="news-1.html" class="news__link">
 			<div class="newsImg">
@@ -133,9 +133,9 @@
 			<div class="newsTxt__wrap">
 				<div class="news__header">
 					<div class="news__dateTime">
-						<time datetime="2018-05-20 15:08">
-							<p class="news__date">20.05.2018</p>
-							<p class="news__time">15:08</p>
+						<time class="pub__dateTime" datetime="2018-05-20 15:08">
+							<p class="news__date pub__date"></p>
+							<p class="news__time pub__time"></p>
 						</time>
 						<div class="news__views">
 							<i class="icon icon_eye"></i>
@@ -161,9 +161,9 @@
 			<div class="newsTxt__wrap">
 				<div class="news__header">
 					<div class="news__dateTime">
-						<time datetime="2018-05-20 15:08">
-							<p class="news__date">20.05.2018</p>
-							<p class="news__time">15:08</p>
+						<time class="pub__dateTime" datetime="2018-11-06 15:08">
+							<p class="news__date pub__date"></p>
+							<p class="news__time pub__time"></p>
 						</time>
 						<div class="news__views">
 							<i class="icon icon_eye"></i>
@@ -189,9 +189,9 @@
 			<div class="newsTxt__wrap">
 				<div class="news__header">
 					<div class="news__dateTime">
-						<time datetime="2018-05-20 15:08">
-							<p class="news__date">20.05.2018</p>
-							<p class="news__time">15:08</p>
+						<time class="pub__dateTime" datetime="2018-05-20 15:08">
+							<p class="news__date pub__date"></p>
+							<p class="news__time pub__time"></p>
 						</time>
 						<div class="news__views">
 							<i class="icon icon_eye"></i>
@@ -217,9 +217,9 @@
 			<div class="newsTxt__wrap">
 				<div class="news__header">
 					<div class="news__dateTime">
-						<time datetime="2018-05-20 15:08">
-							<p class="news__date">20.05.2018</p>
-							<p class="news__time">15:08</p>
+						<time class="pub__dateTime" datetime="2018-05-20 15:08">
+							<p class="news__date pub__date"></p>
+							<p class="news__time pub__time"></p>
 						</time>
 						<div class="news__views">
 							<i class="icon icon_eye"></i>
@@ -245,9 +245,9 @@
 			<div class="newsTxt__wrap">
 				<div class="news__header">
 					<div class="news__dateTime">
-						<time datetime="2018-05-20 15:08">
-							<p class="news__date">20.05.2018</p>
-							<p class="news__time">15:08</p>
+						<time class="pub__dateTime" datetime="2018-05-20 15:08">
+							<p class="news__date pub__date"></p>
+							<p class="news__time pub__time"></p>
 						</time>
 						<div class="news__views">
 							<i class="icon icon_eye"></i>
@@ -315,7 +315,7 @@
 					<a href="club.html" class="nav__link">Клуб</a>
 				</li>
 				<li class="nav__item">
-					<a href="video.html" class="nav__link">Видео</a>
+					<a href="videos.html" class="nav__link">Видео</a>
 				</li>
 			</ul>
 		</div>
@@ -470,11 +470,15 @@
 	</script>
 	<script type="text/javascript" src="js/bgInit.js"></script>
 	<script>
-		b1 = new BgInit('body');
+		b1 = new BgInit('.container');
+	</script>
+	<script type="text/javascript" src="js/pubDateTime.js"></script>
+	<script>
+		l1 = new PubDateTime('#newsList1');		
 	</script>
 	<script type="text/javascript" src="js/popUp.js"></script>
 	<script>
-		l1 = new PopUp('#header', '#loginMenu');
+		p1 = new PopUp('#header', '#loginMenu');
 	</script>
 </body>
 </html>
