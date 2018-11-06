@@ -2000,6 +2000,19 @@ footer {
 
 /*-- /Header Mobile Style --*/
 /*-----------------------------------------------------------------*/
+/*---- Matches Tables Mobile --*/
+@media only screen and (max-width: 1023px) and (orientation: landscape) {
+  .match__wrap {
+    height: 40vh; }
+  .match__broadcast {
+    padding-left: 10%;
+    padding-right: 10%; }
+  .matchesTable th,
+  .matchesTable td {
+    line-height: 10vh; } }
+
+/*-- /Matches Tables Mobile --*/
+/*-----------------------------------------------------------------*/
 /*-- News List Mobile --*/
 @media only screen and (max-width: 1200px) {
   .news__link {
@@ -2266,19 +2279,6 @@ footer {
     margin-top: 5vh; } }
 
 /*-- /Video Block Mobile --*/
-/*-----------------------------------------------------------------*/
-/*---- Matches Tables Mobile --*/
-@media only screen and (max-width: 1023px) and (orientation: landscape) {
-  .match__wrap {
-    height: 40vh; }
-  .match__broadcast {
-    padding-left: 10%;
-    padding-right: 10%; }
-  .matchesTable th,
-  .matchesTable td {
-    line-height: 10vh; } }
-
-/*-- /Matches Tables Mobile --*/
 /*-----------------------------------------------------------------*/
 /*-- Matches Block Mobile --*/
 @media only screen and (max-width: 1200px) {
