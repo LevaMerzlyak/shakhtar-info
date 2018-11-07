@@ -134,8 +134,8 @@
 				</div>
 				<!--<div class="highligh__info highligh__info_match">
 					<h4 class="matches__head">Следующий матч</h4>
-					<div class="match__wrap">
-						<time class="match__date" datetime="2018-10-19">19.10.2018</time>
+					<div class="match__wrap" id="matchHighlight1">
+						<time class="match__date pub__dateTime" datetime="2018-10-19"></time>
 						<i class="team__logo block__bg block__bg_portrait"><img src="images/teams/Shakhtar.png"></i>
 						<p class="match__result">-:-</p>
 						<i class="team__logo block__bg block__bg_portrait"><img src="images/teams/Desna.png"></i>
@@ -341,16 +341,16 @@
 	<section class="matches">
 		<h2 class="section__head">МАТЧИ</h2>
 		<div class="matches__wrap">
-			<div class="matches__col">
+			<div class="matches__col" id="matches1">
 				<h4 class="matches__head">Предыдущие матчи</h4>
 				<div class="match__wrap">
-					<time class="match__date" datetime="2018-10-07">07.10.2018</time>
+					<time class="match__date pub__dateTime" datetime="2018-10-07"></time>
 					<i class="team__logo block__bg block__bg_portrait"><img src="images/teams/Shakhtar.png"></i>
 					<p class="match__result">1:1</p>
 					<i class="team__logo block__bg block__bg_portrait"><img src="images/teams/Zorya.png"></i>
 				</div>
 				<div class="match__wrap">
-					<time class="match__date" datetime="2018-10-02">02.10.2018</time>
+					<time class="match__date pub__dateTime" datetime="2018-10-02"></time>
 					<i class="team__logo block__bg block__bg_portrait"><img src="images/teams/Olympique_Lyonnais.png"></i>
 					<p class="match__result">2:2</p>
 					<i class="team__logo block__bg block__bg_portrait"><img src="images/teams/Shakhtar.png"></i>
@@ -359,10 +359,10 @@
 					<a href="results.html" class="more__btn">ИТОГИ МАТЧЕЙ</a>
 				</div>
 			</div>
-			<div class="matches__col">
+			<div class="matches__col" id="matches2">
 				<h4 class="matches__head matches__head_next">Следующие матчи</h4>
 				<div class="match__wrap match__wrap_next">
-					<time class="match__date" datetime="2018-10-19">19.10.2018</time>
+					<time class="match__date pub__dateTime" datetime="2018-10-19"></time>
 					<i class="team__logo block__bg block__bg_portrait"><img src="images/teams/Shakhtar.png"></i>
 					<p class="match__result">-:-</p>
 					<i class="team__logo block__bg block__bg_portrait"><img src="images/teams/Desna.png"></i>
@@ -372,7 +372,7 @@
 					</div>
 				</div>
 				<div class="match__wrap  match__wrap_next">
-					<time class="match__date" datetime="2018-10-23">23.10.2018</time>
+					<time class="match__date pub__dateTime" datetime="2018-10-23"></time>
 					<i class="team__logo block__bg block__bg_portrait"><img src="images/teams/Shakhtar.png"></i>
 					<p class="match__result">-:-</p>
 					<i class="team__logo block__bg block__bg_portrait"><img src="images/teams/Manchester_City.png"></i>
@@ -850,7 +850,12 @@
 	<script>
 		l1 = new PubDateTime('#newsList1');	
 		l2 = new PubDateTime('#videoList1');	
-		l3 = new PubDateTime('#newsList2');	
+		l3 = new PubDateTime('#newsList2');
+		l3 = new PubDateTime('#newsList2');
+		l4 = new PubDateTime('#matches1');
+		l5 = new PubDateTime('#matches2');
+
+		//l10 = new PubDateTime('#matchHighlight1');
 	</script>
 	<script type="text/javascript" src="js/popUp.js"></script>
 	<script>
