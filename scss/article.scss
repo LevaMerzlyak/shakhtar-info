@@ -14,10 +14,12 @@ footer {
 @import 'components/navigation';
 @import 'global/header';
 
-@import 'components/match-tables';
 @import 'article/article-page';
 @import 'components/video-player';
+@import 'components/gallery';
+@import 'components/match-tables';
 @import 'components/videos-list';
+
 
 
 @import 'global/footer';

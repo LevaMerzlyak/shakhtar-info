@@ -37,12 +37,12 @@ body {
   font-family: 'GothamPro', sans-serif;
   font-weight: 500; }
 
-.login__link, .avatarMenu__txt, .avatar__file p, .loginMenuHead, .loginMenu input[type=text], .loginMenu input[type=email], .loginMenu input[type=password], .loginMenu__link, .loginMenu__txt, .matchesTable th,
-.matchesTable td, .article__time, .articleViews__num, .articleTxt, .articleTagsHead, .articleTags__link, .addComment__form textarea, .comment__txt, .video__time, .videoViews__num, .footer__txt, .socials__link {
+.login__link, .avatarMenu__txt, .avatar__file p, .loginMenuHead, .loginMenu input[type=text], .loginMenu input[type=email], .loginMenu input[type=password], .loginMenu__link, .loginMenu__txt, .article__time, .articleViews__num, .articleTxt, .articleTagsHead, .articleTags__link, .addComment__form textarea, .comment__txt, .matchesTable th,
+.matchesTable td, .video__time, .videoViews__num, .footer__txt, .socials__link {
   font-family: 'ProximaNova', sans-serif;
   font-weight: 400; }
 
-.section__head, .more__btn, .more__btn input[type=submit], .nav__link, .matches__head, .match__date, .match__result, .broadcast__chanel, .broadcast__time, .article__date, .articleHead, .articleMore__head, .articleMore__link, .addComment__head, .comment__date, .comment__userName, .comment__answerBtn, .comment__answerToUser {
+.section__head, .more__btn, .more__btn input[type=submit], .nav__link, .article__date, .articleHead, .articleMore__head, .articleMore__link, .addComment__head, .comment__date, .comment__userName, .comment__answerBtn, .comment__answerToUser, .matches__head, .match__date, .match__result, .broadcast__chanel, .broadcast__time {
   font-family: 'ProximaNova', sans-serif;
   font-weight: 700; }
 
@@ -813,178 +813,6 @@ footer {
 /*-- /Loaded State --*/
 /*-- /Header CSS --*/
 /*-----------------------------------------------------------------*/
-/*---- Matches Tables --*/
-.matches__head {
-  color: #fff;
-  font-size: 1.3em;
-  line-height: 11vh;
-  text-transform: uppercase;
-  background-color: #3c3d3f;
-  text-align: center; }
-  .matches__head_next {
-    background-color: #353638; }
-
-.match__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 24vh;
-  background-color: #2c2c2e;
-  position: relative;
-  overflow: hidden; }
-  .match__wrap:first-of-type:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(200, 200, 200, 0.2); }
-  .match__wrap_next {
-    background-color: #252528; }
-    .match__wrap_next:first-of-type:after {
-      background-color: rgba(255, 255, 255, 0.2); }
-    .match__wrap_next:hover .match__broadcast {
-      -webkit-transform: translateY(0%);
-      -ms-transform: translateY(0%);
-      transform: translateY(0%);
-      -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
-      transition: -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
-      -o-transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
-      transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
-      transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1), -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1); }
-    .match__wrap_next:hover .broadcast__chanel,
-    .match__wrap_next:hover .broadcast__time {
-      opacity: 1;
-      -webkit-transition: opacity 0.2s cubic-bezier(0.5, 0, 0.5, 1) 0.3s;
-      -o-transition: opacity 0.2s cubic-bezier(0.5, 0, 0.5, 1) 0.3s;
-      transition: opacity 0.2s cubic-bezier(0.5, 0, 0.5, 1) 0.3s; }
-
-.match__date {
-  position: absolute;
-  top: 1em;
-  right: 2em;
-  color: #888888;
-  font-size: 0.9em;
-  z-index: 10; }
-  .match__date:before {
-    content: "";
-    display: block;
-    height: 100%;
-    width: 0.3em;
-    position: absolute;
-    left: -1em;
-    top: 0;
-    background-color: #fa4616; }
-
-.match__result {
-  color: #fff;
-  font-size: 3em; }
-
-.team__logo {
-  height: 45%;
-  width: 25%;
-  background-size: contain; }
-
-.match__broadcast {
-  width: 100%;
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-top: 2em;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-transform: translateY(-105%);
-  -ms-transform: translateY(-105%);
-  transform: translateY(-105%);
-  background-color: #fff;
-  cursor: default;
-  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.1s;
-  transition: -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.1s;
-  -o-transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.1s;
-  transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.1s;
-  transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.1s, -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.1s; }
-  .match__broadcast:before {
-    content: "";
-    display: block;
-    height: 100%;
-    width: 1.5%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #fa4616; }
-
-.broadcast__chanel {
-  color: #000;
-  font-size: 1.8em;
-  line-height: 1.3em;
-  opacity: 0;
-  -webkit-transition: opacity 0.2s cubic-bezier(0.5, 0, 0.5, 1);
-  -o-transition: opacity 0.2s cubic-bezier(0.5, 0, 0.5, 1);
-  transition: opacity 0.2s cubic-bezier(0.5, 0, 0.5, 1); }
-
-.broadcast__time {
-  color: #000;
-  font-size: 3em;
-  opacity: 0;
-  -webkit-transition: opacity 0.2s cubic-bezier(0.5, 0, 0.5, 1);
-  -o-transition: opacity 0.2s cubic-bezier(0.5, 0, 0.5, 1);
-  transition: opacity 0.2s cubic-bezier(0.5, 0, 0.5, 1); }
-
-.matchesTable {
-  width: 100%; }
-  .matchesTable th,
-  .matchesTable td {
-    width: 17%;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    color: #fff;
-    font-size: 1.2em;
-    line-height: 8vh;
-    text-align: left; }
-    .matchesTable th:first-child,
-    .matchesTable td:first-child {
-      padding-left: 1em;
-      width: 28%; }
-    .matchesTable th:nth-of-type(2),
-    .matchesTable td:nth-of-type(2) {
-      width: 40%; }
-    .matchesTable th:last-child,
-    .matchesTable td:last-child {
-      width: 15%; }
-    .matchesTable th.shakhtar,
-    .matchesTable td.shakhtar {
-      color: #fa4616; }
-  .matchesTable td:nth-of-type(2) {
-    position: relative;
-    padding-left: 2em; }
-    .matchesTable td:nth-of-type(2) .team__logo {
-      display: inline-block;
-      width: 1.8em;
-      height: 1.2em;
-      position: absolute;
-      top: 50%;
-      left: 0;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%); }
-  .matchesTable tr:nth-of-type(odd) {
-    background-color: #2c2c2e; }
-  .matchesTable tr:nth-of-type(even) {
-    background-color: #3c3d3f; }
-
-/*-- /Matches Tables --*/
-/*-----------------------------------------------------------------*/
 /*-- Article Page Block --*/
 .main {
   display: -webkit-box;
@@ -1379,6 +1207,273 @@ footer {
   transition: opacity 0.8s 0s, height 0s 0.8s; }
 
 /*-- /Video Player --*/
+/*-----------------------------------------------------------------*/
+/*-- Gallery --*/
+.gallery {
+  width: 100%;
+  height: 0;
+  padding-bottom: 45%;
+  position: relative; }
+
+.gallery__preview {
+  width: 80%;
+  height: 100%;
+  background-color: #353638;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.galleryPreview__wrap {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative; }
+
+.galleryPreview__img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.gallery__btn {
+  display: block;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  .gallery__btn_prev {
+    left: 1em; }
+  .gallery__btn_next {
+    right: 1em; }
+  .gallery__btn .icon {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-size: 30%; }
+    .gallery__btn .icon_prev {
+      background-position-x: 44%;
+      background-position-y: 50%; }
+    .gallery__btn .icon_next {
+      background-position-x: 56%;
+      background-position-y: 50%; }
+  .gallery__btn:hover .icon {
+    background-color: rgba(0, 0, 0, 0.7); }
+
+.gallery__thumbnails {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #2c2c2e;
+  overflow: hidden; }
+
+.thumbnails__wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: -17px;
+  overflow-y: scroll; }
+
+.thumbnail__link {
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%; }
+  .thumbnail__link_active {
+    border: 1px solid #fa4616; }
+
+.thumbnail__img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+/*-- /Gallery --*/
+/*-----------------------------------------------------------------*/
+/*---- Matches Tables --*/
+.matches__head {
+  color: #fff;
+  font-size: 1.3em;
+  line-height: 11vh;
+  text-transform: uppercase;
+  background-color: #3c3d3f;
+  text-align: center; }
+  .matches__head_next {
+    background-color: #353638; }
+
+.match__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 24vh;
+  background-color: #2c2c2e;
+  position: relative;
+  overflow: hidden; }
+  .match__wrap:first-of-type:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(200, 200, 200, 0.2); }
+  .match__wrap_next {
+    background-color: #252528; }
+    .match__wrap_next:first-of-type:after {
+      background-color: rgba(255, 255, 255, 0.2); }
+    .match__wrap_next:hover .match__broadcast {
+      -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      transform: translateY(0%);
+      -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+      transition: -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+      -o-transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+      transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+      transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1), -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1); }
+    .match__wrap_next:hover .broadcast__chanel,
+    .match__wrap_next:hover .broadcast__time {
+      opacity: 1;
+      -webkit-transition: opacity 0.2s cubic-bezier(0.5, 0, 0.5, 1) 0.3s;
+      -o-transition: opacity 0.2s cubic-bezier(0.5, 0, 0.5, 1) 0.3s;
+      transition: opacity 0.2s cubic-bezier(0.5, 0, 0.5, 1) 0.3s; }
+
+.match__date {
+  position: absolute;
+  top: 1em;
+  right: 2em;
+  color: #888888;
+  font-size: 0.9em;
+  z-index: 10; }
+  .match__date:before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 0.3em;
+    position: absolute;
+    left: -1em;
+    top: 0;
+    background-color: #fa4616; }
+
+.match__result {
+  color: #fff;
+  font-size: 3em; }
+
+.team__logo {
+  height: 45%;
+  width: 25%;
+  background-size: contain; }
+
+.match__broadcast {
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 2em;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(-105%);
+  -ms-transform: translateY(-105%);
+  transform: translateY(-105%);
+  background-color: #fff;
+  cursor: default;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.1s;
+  transition: -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.1s;
+  -o-transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.1s;
+  transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.1s;
+  transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.1s, -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.1s; }
+  .match__broadcast:before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 1.5%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fa4616; }
+
+.broadcast__chanel {
+  color: #000;
+  font-size: 1.8em;
+  line-height: 1.3em;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s cubic-bezier(0.5, 0, 0.5, 1);
+  -o-transition: opacity 0.2s cubic-bezier(0.5, 0, 0.5, 1);
+  transition: opacity 0.2s cubic-bezier(0.5, 0, 0.5, 1); }
+
+.broadcast__time {
+  color: #000;
+  font-size: 3em;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s cubic-bezier(0.5, 0, 0.5, 1);
+  -o-transition: opacity 0.2s cubic-bezier(0.5, 0, 0.5, 1);
+  transition: opacity 0.2s cubic-bezier(0.5, 0, 0.5, 1); }
+
+.matchesTable {
+  width: 100%; }
+  .matchesTable th,
+  .matchesTable td {
+    width: 17%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 8vh;
+    text-align: left; }
+    .matchesTable th:first-child,
+    .matchesTable td:first-child {
+      padding-left: 1em;
+      width: 28%; }
+    .matchesTable th:nth-of-type(2),
+    .matchesTable td:nth-of-type(2) {
+      width: 40%; }
+    .matchesTable th:last-child,
+    .matchesTable td:last-child {
+      width: 15%; }
+    .matchesTable th.shakhtar,
+    .matchesTable td.shakhtar {
+      color: #fa4616; }
+  .matchesTable td:nth-of-type(2) {
+    position: relative;
+    padding-left: 2em; }
+    .matchesTable td:nth-of-type(2) .team__logo {
+      display: inline-block;
+      width: 1.8em;
+      height: 1.2em;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+  .matchesTable tr:nth-of-type(odd) {
+    background-color: #2c2c2e; }
+  .matchesTable tr:nth-of-type(even) {
+    background-color: #3c3d3f; }
+
+/*-- /Matches Tables --*/
 /*-----------------------------------------------------------------*/
 /*-- Videos List --*/
 .videos__wrap {
