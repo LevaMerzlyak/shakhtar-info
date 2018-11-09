@@ -41,7 +41,7 @@ body {
   font-family: 'ProximaNova', sans-serif;
   font-weight: 400; }
 
-.section__head, .more__btn, .nav__link, .avatarMenuForm input[type=submit], .loginMenu input[type=submit] {
+.section__head, .more__btn, .more__btn input[type=submit], .nav__link {
   font-family: 'ProximaNova', sans-serif;
   font-weight: 700; }
 
@@ -125,6 +125,17 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   position: relative; }
+  .more__btn input[type=submit] {
+    display: inline-block;
+    padding-right: 0;
+    padding-left: 0;
+    color: #fff;
+    font-size: 1em;
+    line-height: 2em;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    outline: none; }
   .more__btn:before {
     content: "";
     display: block;
@@ -471,15 +482,6 @@ footer {
   margin-bottom: 1em; }
 
 .avatarMenuForm input[type=submit] {
-  display: inline-block;
-  padding-right: 0;
-  padding-left: 0;
-  color: #fff;
-  font-size: 1em;
-  line-height: 2em;
-  text-transform: uppercase;
-  background-color: transparent;
-  border: none;
   position: relative;
   z-index: 2; }
 
@@ -683,16 +685,6 @@ footer {
     border: 1px solid #fff; }
     .loginMenu input[type=text]:placeholder, .loginMenu input[type=email]:placeholder, .loginMenu input[type=password]:placeholder {
       color: #fff; }
-  .loginMenu input[type=submit] {
-    display: inline-block;
-    padding-right: 0;
-    padding-left: 0;
-    color: #fff;
-    font-size: 1em;
-    line-height: 2em;
-    text-transform: uppercase;
-    background-color: transparent;
-    border: none; }
 
 .loginMenu__links {
   display: -webkit-box;

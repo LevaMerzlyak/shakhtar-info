@@ -7,26 +7,43 @@ function PubDateTime(sSelector) {
 
 	l.sToday = 'Сегодня';
 
-	l.initDateTime = function () {
-		
-		l.pubDateTime.each(function () {
-			let pubDate = $(this).find('.pub__date');
-			let pubTime = $(this).find('.pub__time');
-			let aDateTime = $(this).attr('datetime').split(' ');
-			let sDate = aDateTime[0];
-			let sTime = aDateTime[1];
+	l.initDateTime = function () {		
 
-			pubTime.html(sTime);
+		if (l.pubDateTime.children().length > 0) {
 
-			if (l.getToday() == sDate) {
-				pubDate.html(l.sToday);
-			} else {
-				let aDate = sDate.split('-');
-				let dateText = aDate[2] + '.' + aDate[1] + '.' + aDate[0];
-				pubDate.html(dateText);
-			}
+			l.pubDateTime.each(function () {
+				let pubDate = $(this).find('.pub__date');
+				let pubTime = $(this).find('.pub__time');
+				let aDateTime = $(this).attr('datetime').split(' ');
+				let sDate = aDateTime[0];
+				let sTime = aDateTime[1];
 
-		});
+				pubTime.html(sTime);
+
+				if (l.getToday() == sDate) {
+					pubDate.html(l.sToday);
+				} else {
+					let aDate = sDate.split('-');
+					let dateText = aDate[2] + '.' + aDate[1] + '.' + aDate[0];
+					
+					pubDate.html(dateText);
+				}
+
+			});
+		} else {
+			l.pubDateTime.each(function () {
+				let sDateTime = $(this).attr('datetime');
+
+				if (l.getToday() == sDateTime) {
+					$(this).html(l.sToday);
+				} else {
+					let aDate = sDateTime.split('-');
+					let dateText = aDate[2] + '.' + aDate[1] + '.' + aDate[0];
+					
+					$(this).html(dateText);
+				}
+			});
+		}
 
 	}
 

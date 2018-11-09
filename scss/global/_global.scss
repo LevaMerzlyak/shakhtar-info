@@ -152,6 +152,19 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     position: relative;
+    input[type=submit] {
+        display: inline-block;
+        padding-right: 0;
+        padding-left: 0;
+        color: #fff;
+        @extend %proxi-bld;
+        font-size: 1em;
+        line-height: 2em;
+        text-transform: uppercase;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
     &:before {
         content: "";
         display: block;
