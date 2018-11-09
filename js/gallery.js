@@ -8,7 +8,8 @@ function Gallery(sSelector) {
 	g.prevBtn = g.gallery.find('.gallery__btn_prev');
 	g.nextBtn = g.gallery.find('.gallery__btn_next');
 
-	g.thumbs = g.gallery.find('.thumbnail__link');
+	g.thumbsMenu = g.gallery.find('.thumbnails__wrap');
+	g.thumbs = g.thumbsMenu.find('.thumbnail__link');
 	g.active = 'thumbnail__link_active';
 	g.length = g.thumbs.length;
 	g.current = 0;
@@ -19,17 +20,17 @@ function Gallery(sSelector) {
 		let src = cur.find('.thumbnail__img').attr('src');
 
 		g.gallery.find('.' + g.active).removeClass(g.active);
-
 		cur.addClass(g.active);
 		src = src.replace('_thumb');
 		g.preview.attr('src', src);
+
+		g.scrollThumbs();
 		
 	}
 
 	g.showImage = function (event) {
 		
 		event.preventDefault();
-
 		g.current = g.thumbs.index(this);
 
 		g.galleryInit();
@@ -39,7 +40,6 @@ function Gallery(sSelector) {
 	g.showPrev = function (event) {
 		
 		event.preventDefault();
-
 		g.current--;
 
 		g.shift();
@@ -49,7 +49,6 @@ function Gallery(sSelector) {
 	g.showNext = function (event) {
 		
 		event.preventDefault();
-
 		g.current++;
 
 		g.shift();
@@ -63,6 +62,26 @@ function Gallery(sSelector) {
 
 		g.galleryInit();
 
+	}
+
+	g.scrollThumbs = function () {
+
+		let el = g.thumbs.eq(g.current - 1);
+		let start = g.thumbs.eq(0);
+		let dis = 0;
+
+		if (g.current) {
+			dis = el.offset().top - start.offset().top;
+		} else {
+			dis = 0;
+		}
+		g.thumbsMenu.animate({
+			scrollTop: dis
+		}, {
+			duration: 'medium',
+			easing: 'swing' 
+		});
+		
 	}
 
 
