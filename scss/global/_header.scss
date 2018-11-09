@@ -13,7 +13,7 @@
 	left: 3vw;
 	top: 3vh;
 	background-color: $clr-header;
-	z-index: 2;
+	z-index: 5;
 	transform: translateY(-200%);/* unloaded state */
 	transition: transform 0.5s $ttf 0.2s;
 }
