@@ -13,6 +13,11 @@
 .article__wrap {
 	width: 65%;
 }
+.articleImg {
+	width: 100%;
+	height: auto;
+	display: block;
+}
 .article__header {
 	display: flex;
 	position: relative;
@@ -278,6 +283,7 @@
 		position: absolute;
 		top: 0;
 		left: 0;
+		background-size: cover;
 	}
 }
 .commentTxt {
@@ -355,6 +361,15 @@
 	margin-top: 10vh;
 	.section__head {
 		margin-bottom: 5vh;
+	}
+	.news__dateTime {
+		width: 10%;
+	}
+	.newsImg {
+		width: 8%;
+	}
+	.news__head {
+		width: 82%;
 	}
 }
 /*-- /Article See Also --*/

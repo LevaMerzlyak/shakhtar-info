@@ -15,20 +15,22 @@ footer {
 @import 'global/header';
 
 @import 'article/article-page';
+
 @import 'components/video-player';
 @import 'components/gallery';
 @import 'components/match-tables';
 @import 'components/videos-list';
-
-
+@import 'components/news-list';
 
 @import 'global/footer';
 // Mobile Styles
 @import 'global/header-mob';
 
 @import 'article/article-page-mob';
+
 @import 'components/gallery-mob';
 @import 'components/match-tables-mob';
 @import 'components/videos-list-mob';
+@import 'components/news-list-mob';
 
 @import 'global/footer-mob';
