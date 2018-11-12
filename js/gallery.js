@@ -14,6 +14,8 @@ function Gallery(sSelector) {
 	g.length = g.thumbs.length;
 	g.current = 0;
 
+	g.viewWidth = $(window).width();
+
 	g.galleryInit = function () {
 
 		let cur = g.thumbs.eq(g.current);
@@ -70,17 +72,35 @@ function Gallery(sSelector) {
 		let start = g.thumbs.eq(0);
 		let dis = 0;
 
-		if (g.current) {
-			dis = el.offset().top - start.offset().top;
+		if (g.viewWidth <= 500) {
+
+			if (g.current) {
+				dis = el.offset().left - start.offset().left;
+			} else {
+				dis = 0;
+			}
+			g.thumbsMenu.animate({
+				scrollLeft: dis
+			}, {
+				duration: 'medium',
+				easing: 'swing' 
+			});
+
 		} else {
-			dis = 0;
-		}
-		g.thumbsMenu.animate({
-			scrollTop: dis
-		}, {
-			duration: 'medium',
-			easing: 'swing' 
-		});
+
+			if (g.current) {
+				dis = el.offset().top - start.offset().top;
+			} else {
+				dis = 0;
+			}
+			g.thumbsMenu.animate({
+				scrollTop: dis
+			}, {
+				duration: 'medium',
+				easing: 'swing' 
+			});
+
+		}		
 		
 	}
 
@@ -89,5 +109,13 @@ function Gallery(sSelector) {
 	g.thumbs.click(g.showImage);
 	g.prevBtn.click(g.showPrev);
 	g.nextBtn.click(g.showNext);
+
+	$(window).resize(function () {
+
+		g.viewWidth = $(window).width();
+
+		g.scrollThumbs();
+
+	});
 
 }
