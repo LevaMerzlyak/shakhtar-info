@@ -141,6 +141,28 @@
 				left: 10em;
 			}
 		}
+		.news__dateTime {
+			width: 70%;
+		}
+		.newsImg {
+			width: 30%;
+		}
+		.news__head {
+			width: 70%;
+		}
+	}
+}
+@media only screen and (max-width: 1200px) and (orientation: landscape) {
+	.seeAlso {
+		.news__dateTime {
+			width: 80%;
+		}
+		.newsImg {
+			width: 20%;
+		}
+		.news__head {
+			width: 80%;
+		}
 	}
 }
 @media only screen and (max-width: 500px) {
