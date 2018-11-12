@@ -126,7 +126,7 @@
 
 		<section class="article__wrap">
 			<div class="videoPlayer" id="video1">
-				<iframe class="videoPlayer__iframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/hgzzLIa-93c?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
+				<iframe class="videoPlayer__iframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/hgzzLIa-93c"></iframe>
 				<a href="#" class="videoPlayer__poster  block__bg bg__overlay bg__overlay_light videoBtn__bg">
 					<img src="images/video-cover/Fereira-article.jpg" alt="">
 				</a>
@@ -616,27 +616,27 @@
 	</script>
 	<script type="text/javascript" src="js/bgInit.js"></script>
 	<script>
-		b1 = new BgInit('.container');
+		var b1 = new BgInit('.container');
 	</script>
 	<script type="text/javascript" src="js/videoPlay.js"></script>
 	<script>
-		v1 = new VideoPlay('#video1');
-		v2 = new VideoPlay('#video2');
+		var v1 = new VideoPlay('#video1');
+		var v2 = new VideoPlay('#video2');
 	</script>
 	<script type="text/javascript" src="js/pubDateTime.js"></script>
 	<script>
-		l1 = new PubDateTime('#header1');
-		l2 = new PubDateTime('#comments1');
-		l3 = new PubDateTime('#matches1');
-		l4 = new PubDateTime('#videoList1');
+		var l1 = new PubDateTime('#header1');
+		var l2 = new PubDateTime('#comments1');
+		var l3 = new PubDateTime('#matches1');
+		var l4 = new PubDateTime('#videoList1');
 	</script>
 	<script type="text/javascript" src="js/gallery.js"></script>
 	<script>
-		g1 = new Gallery('#gallery1');
+		var g1 = new Gallery('#gallery1');
 	</script>
 	<script type="text/javascript" src="js/popUp.js"></script>
 	<script>
-		p1 = new PopUp('#header', '#loginMenu');
+		var p1 = new PopUp('#header', '#loginMenu');
 	</script>
 </body>
 </html>
