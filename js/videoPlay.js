@@ -4,20 +4,42 @@ function VideoPlay(sSelector) {
 
 	v.player = $(sSelector);
 	v.poster = v.player.find('.videoPlayer__poster');
-	v.iframe = v.player.find('.videoPlayer__iframe');
 
-	v.play = function (event) {
+	v.autoplay = '?autoplay=1';
+
+	let active = 'videoPlayer_active';
+
+	v.playVideo = function (event) {
 
 		event.preventDefault();
 
-		var src = v.iframe.data('src');
+		let poster = $(event.target);
+		let player = poster.closest('.videoPlayer');
+		let iframe = player.find('.videoPlayer__iframe');
+		let src = iframe.data('src');
 
-		v.player.addClass('videoPlayer_active');
+		src += v.autoplay;
 
-		v.iframe.attr('src', src);
+		let prev = $(document).find('.' + active);
+		if (prev.length) {
+			v.stopVideo(prev);
+		}
+
+		player.addClass(active);
+		iframe.attr('src', src);
 
 	}
 
-	v.poster.click(v.play);
+	v.stopVideo = function (oActive) {
+		
+		let iframe = oActive.find('.videoPlayer__iframe');
+
+		oActive.removeClass(active);
+		iframe.attr('src', '');
+
+	}
+
+	v.poster.click(v.playVideo);
+
 
 }
