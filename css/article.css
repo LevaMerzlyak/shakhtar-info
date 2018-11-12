@@ -2002,6 +2002,22 @@ footer {
     font-size: 1.4em; }
   .articleTags__link {
     font-size: 1.4em; }
+  .articleShare {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 5vh; }
+  .articleShare__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .articleShare__num {
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
+    margin-right: 1em; }
   .comments {
     padding-left: 1em;
     padding-right: 1em; }
@@ -2026,11 +2042,58 @@ footer {
     box-sizing: border-box;
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
-    order: 2; }
+    order: 2;
+    margin-bottom: 10vh; }
     .seeAlso .section__head:after {
       left: 10em; } }
 
+@media only screen and (max-width: 500px) {
+  .articleShare {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; } }
+
+@media only screen and (max-width: 420px) and (orientation: portrait) {
+  .article__dateTime {
+    padding-left: 1em; }
+  .article__head {
+    padding-left: 1em;
+    padding-right: 1em; }
+  .article__txt {
+    padding-left: 1em;
+    padding-right: 1em; }
+  .articleTags__head {
+    width: 20%; }
+  .articleTags__list {
+    width: 80%; }
+  .articleShare__item:not(:last-child) {
+    margin-right: 0; } }
+
+@media only screen and (max-width: 350px) and (orientation: portrait) {
+  .articleShare {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .articleShare__item {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 50%;
+    padding-left: 10%;
+    padding-right: 10%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 1em; }
+  .article__aside {
+    padding-left: 1em;
+    padding-right: 1em; } }
+
 /*-- /Article Page Block Mobile --*/
+/*-----------------------------------------------------------------*/
+/*-- Gallery Mobile --*/
+@media only screen and (max-width: 1025px) {
+  .thumbnails__wrap {
+    right: 0; } }
+
+/*-- /Gallery Mobile --*/
 /*-----------------------------------------------------------------*/
 /*---- Matches Tables Mobile --*/
 @media only screen and (max-width: 1023px) and (orientation: landscape) {
