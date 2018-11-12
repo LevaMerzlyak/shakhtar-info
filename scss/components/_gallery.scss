@@ -19,6 +19,7 @@
 	height: 0;
 	padding-bottom: 56.25%;
 	position: relative;
+	overflow: hidden;
 }
 .galleryPreview__img {
 	max-width: 100%;
@@ -88,6 +89,7 @@
 	margin-right: auto;
 	margin-top: 5%;
 	margin-bottom: 5%;
+	box-sizing: border-box;
 	&_active {
 		border: 1px solid $clr-orange;
 	}
