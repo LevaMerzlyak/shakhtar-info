@@ -1,0 +1,39 @@
+/*-----------------------------------------------------------------*/
+/*-- About Block Mobile Style --*/
+@media only screen and (max-width: 1200px) {
+	.about {
+		margin-left: 0;
+		margin-right: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.container_loaded {
+		.about {
+			flex-wrap: wrap;
+			justify-content: flex-start;
+		}
+	}
+	.aboutTxt {
+		width: 100%;
+		padding-left: 1em;
+		padding-right: 1em;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	.about__head {
+		line-height: 1em;
+		margin-bottom: 0.5em;
+	}
+	.about__txt {
+		&:not(:last-child) {
+			margin-bottom: 1em;
+		}
+	}
+	.about__aside {
+		display: none;
+	}
+}
+/*-- /About Block Mobile Style --*/

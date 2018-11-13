@@ -1,0 +1,23 @@
+/*-----------------------------------------------------------------*/
+/*-- Main Block Mobile Style --*/
+@media only screen and (max-width: 1200px) {
+	.main {
+		height: 80vh;
+	}
+	.loaded {
+		.main__wrap {
+			height: 80vh;
+		}
+	}
+}
+@media only screen and (max-width: 1200px) and (orientation: portrait) {
+	.main {
+		height: 65vh;
+	}
+	.loaded {
+		.main__wrap {
+			height: 65vh;
+		}
+	}
+}
+/*-- /Main Block Mobile Style --*/
