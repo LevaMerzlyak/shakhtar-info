@@ -11,7 +11,7 @@ function BgInit(sSelector) {
 
 			$(this).css('background-image', 'url(' + src + ')');
 			
-			$(this).find('img').hide();
+			$(this).find('img').css({'opacity': '0'});
 		});
 	}
 
