@@ -122,12 +122,25 @@
 		</div>
 	</header>
 
-	<section style="margin-top: 20vh; ">
-		<iframe scrolling='no' frameBorder='0' style='padding:0px; margin:0px; border:0px;border-style:none;border-style:none;' width='1920' height='300' src="https://refpaoip.top/I?tag=s_232m_4669c_&site=232&ad=4669" ></iframe>
-	</section>
+	<main class="main__wrap">
+		<div class="main block__bg bg__overlay bg__overlay_light">
+			<img src="images/club-cover.jpg" alt="">
+		</div>
+	</main>
 
-	<section style="margin-top: 10vh; ">
-		<iframe scrolling='no' frameBorder='0' style='padding:0px; margin:0px; border:0px;border-style:none;border-style:none;' width='320' height='480' src="https://refpaoip.top/I?tag=s_232m_4669c_&site=232&ad=4669" ></iframe>
+	<section class="about">
+
+		<div class="aboutTxt">
+			<h1 class="about__head">О клубе</h1>
+			<p class="about__txt">ФК «Шахтер» (официальный сайт <a href="https://shakhtar.com" class="aboutTxt__link">www.shakhtar.com</a>). Прозвище: «кроты», «горняки». Украинский футбольный клуб, который был основан в 1936 году. Первый десять лет (до 1946) команда называлась «Стахановец». В футбольную историю независимой Украины «горянки» вошли как первый клуб, выигравший Кубок УЕФА. Кроме евро трофея «Шахтер» — девятикратный чемпион Украины, девятикратный обладатель Кубка Украины, семикратный обладатель Суперкубка Украины, четырёхкратный обладатель Кубка СССР.</p>
+			<p class="about__txt">С 1996 года руководит клубом Ринат Ахметов (украинский предприниматель, промышленник, миллиардер, самый богатый человек Украины).</p>
+			<p class="about__txt">С 2004 команду возглавляет румынский специалист – <span class="aboutTxt__link">Мирча Луческу</span>.</p>
+		</div>
+
+		<aside class="about__aside">
+			<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FShakhtarFun%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+		</aside>
+
 	</section>
 
 	<footer class="footer">
@@ -294,12 +307,10 @@
 			$('body').removeClass('loading').addClass('loaded');
 
 			setTimeout(function () {
-				$('section').show();
+				$('.about').css({'display': 'flex'});
 				$('footer').show();
 				$('.loader').hide();
 				$('.container').addClass('container_loaded');
-				var viewWidth = $(window).width();
-				if (viewWidth < 1200) $('body').addClass('loaded_mob');
 			}, 2000);
 
 		}, time);
