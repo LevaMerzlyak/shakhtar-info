@@ -1,12 +1,15 @@
 /*-----------------------------------------------------------------*/
 /*-- Main Block Mobile Style --*/
 @media only screen and (max-width: 1200px) {
+	.main__wrap {
+		margin-top: 11vh;		
+	}
 	.main {
-		height: 80vh;
+		height: 70vh;
 	}
 	.loaded {
 		.main__wrap {
-			height: 80vh;
+			height: 70vh;
 		}
 	}
 }
@@ -17,6 +20,31 @@
 	.loaded {
 		.main__wrap {
 			height: 65vh;
+		}
+	}
+}
+@media only screen and (max-width: 1100px) {
+	.main__wrap {
+		margin-top: calc(44px + (2vh * 2));
+	}
+}
+@media only screen and (max-width: 820px) {
+	.main {
+		height: 60vh;
+	}
+	.loaded {
+		.main__wrap {
+			height: 60vh;
+		}
+	}
+}
+@media only screen and (max-width: 420px) and (orientation: portrait) {
+	.main {
+		height: 50vh;
+	}
+	.loaded {
+		.main__wrap {
+			height: 50vh;
 		}
 	}
 }
