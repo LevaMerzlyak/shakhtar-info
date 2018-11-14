@@ -216,17 +216,20 @@ body {
             display: none;
         }
     }
-    .section__head {
-        position: relative;
+    .sectionHead__wrap {
         overflow: hidden;
+    }
+    .section__head {
+        display: inline-block;
+        position: relative;
         &:after {
             content: "";
             display: block;
-            width: 100%;
+            width: 100vw;
             height: 4px;
             position: absolute;
             top: 50%;
-            left: 4em;
+            left: calc(100% + 1em);
             transform: translateY(-50%);
             background-color: $clr-orange;
         }

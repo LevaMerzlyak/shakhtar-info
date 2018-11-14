@@ -113,11 +113,6 @@
 	.comments {
 		padding-left: 1em;
 		padding-right: 1em;
-		.section__head {
-			&:after {
-				left: 9em;
-			}
-		}
 	}
 	.comment__wrap {
 		padding: 1em;
@@ -136,11 +131,6 @@
 		box-sizing: border-box;
 		order: 2;
 		margin-bottom: 10vh;
-		.section__head {
-			&:after {
-				left: 10em;
-			}
-		}
 		.news__dateTime {
 			width: 70%;
 		}

@@ -1,11 +1,8 @@
 /*-----------------------------------------------------------------*/
 /*-- News Page Block Mobile --*/
 @media only screen and (max-width: 1200px) {
-	.section__head_news {
+	.sectionHead__wrap_news {
 		margin-bottom: 5vh;
-		&:after {
-			left: 8em;
-		}
 	}
 	.news__link {
 		height: 15vh;

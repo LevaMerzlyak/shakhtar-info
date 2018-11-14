@@ -183,17 +183,19 @@ body {
     background-color: #fa4616; }
     .more__btn:before {
       display: none; }
-  .section__head {
-    position: relative;
+  .sectionHead__wrap {
     overflow: hidden; }
+  .section__head {
+    display: inline-block;
+    position: relative; }
     .section__head:after {
       content: "";
       display: block;
-      width: 100%;
+      width: 100vw;
       height: 4px;
       position: absolute;
       top: 50%;
-      left: 4em;
+      left: calc(100% + 1em);
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
