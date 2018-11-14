@@ -811,6 +811,29 @@ footer {
 /*-- /Loaded State --*/
 /*-- /Header CSS --*/
 /*-----------------------------------------------------------------*/
+/*-- Main Block Style --*/
+.main__wrap {
+  overflow: hidden;
+  height: 0;
+  /* unloaded state */
+  -webkit-transition: height 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+  -o-transition: height 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+  transition: height 0.5s cubic-bezier(0.5, 0, 0.5, 1); }
+
+.main {
+  height: 100vh;
+  position: relative;
+  background-position-x: center;
+  background-position-y: top; }
+
+/*-----------------------------------------------------------------*/
+/*-- Loaded State --*/
+.loaded .main__wrap {
+  height: 100vh; }
+
+/*-- /Loaded State --*/
+/*-- /Main Block Style --*/
+/*-----------------------------------------------------------------*/
 /*-- Footer Style --*/
 .footer {
   padding-left: 3%;
