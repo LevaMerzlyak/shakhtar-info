@@ -50,17 +50,19 @@
 .teamMember__img {
 	width: 100%;
 	height: 0;
-	padding-bottom: 148%;
+	padding-bottom: 150%;
 	position: relative;
 	background-color: $clr-member;
 }
 .teamMemberImg {
 	max-height: 90%;
+	max-width: 100%;
 	width: auto;
 	height: auto;
 	position: absolute;
-	left: 0;
+	left: 50%;
 	bottom: 0;
+	transform: translateX(-50%);
 }
 .teamMember__header {
 	display: flex;
@@ -110,6 +112,17 @@
 	text-align: center;
 	transition: color 0.2s $ttf 0.3s;
 }
+.teamMember__txt {
+	width: 75%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 1em;
+	@extend %proxi-reg;
+	line-height: 1.2em;
+}
 .teamMember__name {
 	width: 68%;
 	background-color: $clr-newsHead;
@@ -127,7 +140,10 @@
 	}
 }
 .teamMemberName {
-	padding: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
