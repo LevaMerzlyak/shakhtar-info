@@ -6,6 +6,7 @@
     overflow: hidden;
 }
 section,
+aside,
 footer {
     display: none;
 }
@@ -13,8 +14,16 @@ footer {
 @import 'components/navigation';
 @import 'global/header';
 
+@import 'components/match-tables';
+
+@import 'team/team-member-main';
+
 @import 'global/footer';
 // Mobile Styles
 @import 'global/header-mob';
+
+@import 'components/match-tables-mob';
+
+@import 'team/team-member-main-mob';
 
 @import 'global/footer-mob';
