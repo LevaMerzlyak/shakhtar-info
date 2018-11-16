@@ -904,6 +904,7 @@ footer {
   background-color: #e4e4e4; }
 
 .teamMemberImg {
+  display: block;
   max-height: 90%;
   max-width: 100%;
   width: auto;
