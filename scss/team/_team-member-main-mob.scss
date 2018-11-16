@@ -1,0 +1,96 @@
+/*-----------------------------------------------------------------*/
+/*-- Team Member Main Block Mobile --*/
+@media only screen and (max-width: 1200px) {
+	.main {
+		padding-left: 0;
+		padding-right: 0;
+		margin-top: calc(44px + (2vh * 2) + 5vh);
+	}
+	.member {
+		width: 100%;
+	}
+	.memberMain {
+		padding-left: 1em;
+		padding-right: 1em;
+		box-sizing: border-box;
+	}
+	.memberImg {
+		width: 40%;
+		height: 0;
+		padding-bottom: 60%;
+	}
+	.memberInfo {
+		width: 58%;
+	}
+	.member__header {
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+	.memberInfo__item {
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+	.memberTxt {
+		padding: 1em;
+	}
+	.member__aside {
+		width: 100%;
+		padding-left: 2em;
+		padding-right: 2em;
+		box-sizing: border-box;
+		margin-top: 10vh;
+	}
+}
+@media only screen and (max-width: 850px) and (orientation: landscape) {
+	.memberImg {
+		width: 30%;
+		padding-bottom: 45%;
+	}
+	.memberInfo {
+		width: 68%;
+	}
+	.member__num {
+		line-height: 1em;
+	}
+}
+@media only screen and (max-width: 770px) and (orientation: portrait) {
+	.memberImg {
+		width: 30%;
+		padding-bottom: 45%;
+	}
+	.memberInfo {
+		width: 68%;
+	}
+}
+@media only screen and (max-width: 639px) and (orientation: landscape) {
+	.member__name {
+		font-size: 2em;
+	}
+	.member__num {
+		font-size: 5em;
+	}
+}
+@media only screen and (max-width: 450px) and (orientation: portrait) {
+	.memberImg {
+		width: 100%;
+		padding-bottom: 100%;
+	}
+	.memberInfo {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 370px) and (orientation: portrait) {
+	.member__name {
+		font-size: 2.5em;
+	}
+	.member__num {
+		font-size: 5.5em;
+	}
+}
+@media only screen and (max-width: 350px) and (orientation: portrait) {
+	.member__aside {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+}
+/*-- /Team Member Main Block Mobile --*/
