@@ -1,6 +1,10 @@
 /*-----------------------------------------------------------------*/
 /*-- News Page Block Mobile --*/
 @media only screen and (max-width: 1200px) {
+	.news {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
 	.sectionHead__wrap_news {
 		margin-bottom: 5vh;
 	}

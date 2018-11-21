@@ -1,6 +1,10 @@
 /*-----------------------------------------------------------------*/
 /*-- Video Page Block Mobile --*/
 @media only screen and (max-width: 1200px) {
+	.video {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
 	.sectionHead__wrap_video {
 		margin-bottom: 5vh;
 	}

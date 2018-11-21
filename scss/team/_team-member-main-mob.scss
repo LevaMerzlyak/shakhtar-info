@@ -10,8 +10,8 @@
 		width: 100%;
 	}
 	.memberMain {
-		padding-left: 1em;
-		padding-right: 1em;
+		padding-left: 2%;
+		padding-right: 2%;
 		box-sizing: border-box;
 	}
 	.memberImg {
@@ -31,14 +31,7 @@
 		padding-right: 3%;
 	}
 	.memberTxt {
-		padding: 1em;
-	}
-	.member__aside {
-		width: 100%;
-		padding-left: 2em;
-		padding-right: 2em;
-		box-sizing: border-box;
-		margin-top: 10vh;
+		padding: 2%;
 	}
 }
 @media only screen and (max-width: 850px) and (orientation: landscape) {
@@ -85,12 +78,6 @@
 	}
 	.member__num {
 		font-size: 5.5em;
-	}
-}
-@media only screen and (max-width: 350px) and (orientation: portrait) {
-	.member__aside {
-		padding-left: 1em;
-		padding-right: 1em;
 	}
 }
 /*-- /Team Member Main Block Mobile --*/
