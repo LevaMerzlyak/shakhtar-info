@@ -37,7 +37,8 @@ body {
   font-family: 'GothamPro', sans-serif;
   font-weight: 500; }
 
-.login__link, .avatarMenu__txt, .avatar__file p, .loginMenuHead, .loginMenu input[type=text], .loginMenu input[type=email], .loginMenu input[type=password], .loginMenu__link, .loginMenu__txt, .footer__txt, .socials__link {
+.login__link, .avatarMenu__txt, .avatar__file p, .loginMenuHead, .loginMenu input[type=text], .loginMenu input[type=email], .loginMenu input[type=password], .loginMenu__link, .loginMenu__txt, .tableBig th,
+.tableBig td, .footer__txt, .socials__link {
   font-family: 'ProximaNova', sans-serif;
   font-weight: 400; }
 
@@ -814,6 +815,81 @@ footer {
 /*-- /Loaded State --*/
 /*-- /Header CSS --*/
 /*-----------------------------------------------------------------*/
+/*-- Table Page --*/
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-top: 20vh;
+  margin-bottom: 10vh;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.table {
+  width: 100%; }
+
+.tableBig {
+  width: 100%; }
+  .tableBig th,
+  .tableBig td {
+    width: 8%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 8vh;
+    text-align: center;
+    vertical-align: middle; }
+    .tableBig th.tableBig__place,
+    .tableBig td.tableBig__place {
+      width: 10%; }
+    .tableBig th.tableBig__club,
+    .tableBig td.tableBig__club {
+      width: 26%;
+      padding-left: 1.25em;
+      text-align: left;
+      line-height: 1em; }
+  .tableBig thead {
+    background-color: #2c2c2e; }
+  .tableBig tbody .tableBig__club {
+    position: relative;
+    padding-left: 2.75em; }
+    .tableBig tbody .tableBig__club .club__logo {
+      display: inline-block;
+      width: 2.5em;
+      height: 2em;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+    .tableBig tbody .tableBig__club .clubLogo__img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+  .tableBig tbody tr:nth-of-type(even) {
+    background-color: #2c2c2e; }
+  .tableBig tbody tr:nth-of-type(odd) {
+    background-color: #3c3d3f; }
+
+/*-- /Table Page --*/
+/*-----------------------------------------------------------------*/
 /*-- Season Menu --*/
 .sectionHead__drop {
   display: -webkit-box;
@@ -1168,6 +1244,37 @@ footer {
     padding: 8% 5%; } }
 
 /*-- /Header Mobile Style --*/
+/*-----------------------------------------------------------------*/
+/*-- Table Page Mobile --*/
+@media only screen and (max-width: 1023px) and (orientation: landscape) {
+  .main {
+    padding-left: 2%;
+    padding-right: 2%; }
+  .tableBig td,
+  .tableBig th {
+    line-height: 15vh; } }
+
+@media only screen and (max-width: 770px) {
+  .tableBig td,
+  .tableBig th {
+    width: 9%; }
+    .tableBig td.tableBig__place,
+    .tableBig th.tableBig__place {
+      width: 12%; }
+    .tableBig td.tableBig__club,
+    .tableBig th.tableBig__club {
+      width: 34%; }
+    .tableBig td.tableBig__scored, .tableBig td.tableBig__missed,
+    .tableBig th.tableBig__scored,
+    .tableBig th.tableBig__missed {
+      display: none; } }
+
+@media only screen and (max-width: 420px) {
+  .tableBig td,
+  .tableBig th {
+    width: 6%; } }
+
+/*-- /Table Page Mobile --*/
 /*-----------------------------------------------------------------*/
 /*-- Season Menu --*/
 @media only screen and (max-width: 1200px) {
