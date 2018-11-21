@@ -77,9 +77,21 @@
 	@extend %proxi-bld;
 }
 .team__logo {
-	height: 45%;
 	width: 25%;
-	background-size: contain;
+	height: 0;
+	padding-bottom: 16%;
+	position: relative;
+}
+.teamLogo__img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 .match__broadcast {
 	width: 100%;
@@ -154,11 +166,12 @@
 				display: inline-block;
 				width: 2.5em;
 				height: 2em;
+				padding-bottom: 0;
 				position: absolute;
 				top: 50%;
 				left: 0;
 				transform: translateY(-50%);
-			}
+			}			
 		}
 	}
 	tr {
