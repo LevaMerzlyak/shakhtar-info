@@ -1289,6 +1289,9 @@ footer {
 /*-----------------------------------------------------------------*/
 /*-- Footer Mobile Style --*/
 @media only screen and (max-width: 1200px) {
+  .footer {
+    padding-left: 2%;
+    padding-right: 2%; }
   .logo_footer {
     display: none; }
   .nav_footer {

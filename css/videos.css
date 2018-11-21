@@ -1425,6 +1425,9 @@ footer {
 /*-----------------------------------------------------------------*/
 /*-- Video Page Block Mobile --*/
 @media only screen and (max-width: 1200px) {
+  .video {
+    padding-left: 2%;
+    padding-right: 2%; }
   .sectionHead__wrap_video {
     margin-bottom: 5vh; } }
 
@@ -1436,6 +1439,9 @@ footer {
 /*-----------------------------------------------------------------*/
 /*-- Footer Mobile Style --*/
 @media only screen and (max-width: 1200px) {
+  .footer {
+    padding-left: 2%;
+    padding-right: 2%; }
   .logo_footer {
     display: none; }
   .nav_footer {

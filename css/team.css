@@ -1333,6 +1333,9 @@ footer {
 /*-----------------------------------------------------------------*/
 /*-- Members Block Mobile Style --*/
 @media only screen and (max-width: 1200px) {
+  .team {
+    padding-left: 2%;
+    padding-right: 2%; }
   .team__class:not(:last-child) {
     margin-bottom: 5vh; }
   .teamMember {
@@ -1376,6 +1379,9 @@ footer {
 /*-----------------------------------------------------------------*/
 /*-- Footer Mobile Style --*/
 @media only screen and (max-width: 1200px) {
+  .footer {
+    padding-left: 2%;
+    padding-right: 2%; }
   .logo_footer {
     display: none; }
   .nav_footer {

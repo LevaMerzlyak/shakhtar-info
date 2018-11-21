@@ -13,6 +13,10 @@ footer {
 @import 'components/navigation';
 @import 'global/header';
 
+// Aside
+@import 'components/match-tables';
+@import 'components/main-aside';
+
 @import 'about/club-main';
 @import 'about/club-about';
 
@@ -20,8 +24,11 @@ footer {
 // Mobile Styles
 @import 'global/header-mob';
 
+// Aside Mobile
+@import 'components/match-tables-mob';
+@import 'components/main-aside-mob';
+
 @import 'about/club-main-mob';
 @import 'about/club-about-mob';
-
 
 @import 'global/footer-mob';

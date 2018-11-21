@@ -1002,6 +1002,23 @@ footer {
 
 /*-- /Matches Tables --*/
 /*-----------------------------------------------------------------*/
+/*-- Main Aside --*/
+.main__aside {
+  width: 30%; }
+
+.aside__wrap_fb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.aside__wrap:not(:last-child) {
+  margin-bottom: 10vh; }
+
+/*-- /Main Aside --*/
+/*-----------------------------------------------------------------*/
 /*-- Team Member Main Block --*/
 .main {
   display: -webkit-box;
@@ -1130,15 +1147,6 @@ footer {
   .member__txt:not(:last-child) {
     margin-bottom: 1em; }
 
-/*-----------------------------------------------------------------*/
-/*-- Member Aside --*/
-.member__aside {
-  width: 30%; }
-
-.aside__wrap:not(:first-child) {
-  margin-top: 10vh; }
-
-/*-- /Member Aside --*/
 /*-- /Team Member Main Block --*/
 /*-----------------------------------------------------------------*/
 /*-- Footer Style --*/
@@ -1454,6 +1462,23 @@ footer {
 
 /*-- /Matches Tables Mobile --*/
 /*-----------------------------------------------------------------*/
+/*-- Main Aside Mobile --*/
+@media only screen and (max-width: 1200px) {
+  .main__aside {
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 10vh;
+    -webkit-box-ordinal-group: 100;
+    -ms-flex-order: 99;
+    order: 99; }
+  .aside__wrap_fb {
+    display: none; } }
+
+/*-- /Main Aside Mobile --*/
+/*-----------------------------------------------------------------*/
 /*-- Team Member Main Block Mobile --*/
 @media only screen and (max-width: 1200px) {
   .main {
@@ -1463,8 +1488,8 @@ footer {
   .member {
     width: 100%; }
   .memberMain {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 2%;
+    padding-right: 2%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
   .memberImg {
@@ -1480,14 +1505,7 @@ footer {
     padding-left: 3%;
     padding-right: 3%; }
   .memberTxt {
-    padding: 1em; }
-  .member__aside {
-    width: 100%;
-    padding-left: 2em;
-    padding-right: 2em;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    margin-top: 10vh; } }
+    padding: 2%; } }
 
 @media only screen and (max-width: 850px) and (orientation: landscape) {
   .memberImg {
@@ -1524,15 +1542,13 @@ footer {
   .member__num {
     font-size: 5.5em; } }
 
-@media only screen and (max-width: 350px) and (orientation: portrait) {
-  .member__aside {
-    padding-left: 1em;
-    padding-right: 1em; } }
-
 /*-- /Team Member Main Block Mobile --*/
 /*-----------------------------------------------------------------*/
 /*-- Footer Mobile Style --*/
 @media only screen and (max-width: 1200px) {
+  .footer {
+    padding-left: 2%;
+    padding-right: 2%; }
   .logo_footer {
     display: none; }
   .nav_footer {
