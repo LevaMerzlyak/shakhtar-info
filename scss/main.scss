@@ -13,6 +13,9 @@ footer {
 @import 'components/navigation';
 @import 'global/header';
 
+// Aside
+@import 'components/main-aside';
+
 @import 'components/match-tables';
 @import 'components/news-list';
 @import 'main/main-block';
@@ -24,6 +27,9 @@ footer {
 @import 'global/footer';
 // Mobile Styles
 @import 'global/header-mob';
+
+// Aside Mobile
+@import 'components/main-aside-mob';
 
 @import 'components/match-tables-mob';
 @import 'components/news-list-mob';

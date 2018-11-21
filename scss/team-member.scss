@@ -14,7 +14,9 @@ footer {
 @import 'components/navigation';
 @import 'global/header';
 
+// Aside
 @import 'components/match-tables';
+@import 'components/main-aside';
 
 @import 'team/team-member-main';
 
@@ -22,7 +24,9 @@ footer {
 // Mobile Styles
 @import 'global/header-mob';
 
+// Aside Mobile
 @import 'components/match-tables-mob';
+@import 'components/main-aside-mob';
 
 @import 'team/team-member-main-mob';
 

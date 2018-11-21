@@ -1,0 +1,15 @@
+/*-----------------------------------------------------------------*/
+/*-- Main Aside --*/
+.main__aside {
+	width: 30%;
+}
+.aside__wrap {
+	&_fb {
+		display: flex;
+		justify-content: flex-end;
+	}
+	&:not(:last-child) {
+		margin-bottom: 10vh;
+	}
+}
+/*-- /Main Aside --*/

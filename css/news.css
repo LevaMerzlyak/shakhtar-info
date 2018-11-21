@@ -1335,6 +1335,9 @@ footer {
 /*-----------------------------------------------------------------*/
 /*-- News Page Block Mobile --*/
 @media only screen and (max-width: 1200px) {
+  .news {
+    padding-left: 2%;
+    padding-right: 2%; }
   .sectionHead__wrap_news {
     margin-bottom: 5vh; }
   .news__link {
@@ -1472,6 +1475,9 @@ footer {
 /*-----------------------------------------------------------------*/
 /*-- Footer Mobile Style --*/
 @media only screen and (max-width: 1200px) {
+  .footer {
+    padding-left: 2%;
+    padding-right: 2%; }
   .logo_footer {
     display: none; }
   .nav_footer {
