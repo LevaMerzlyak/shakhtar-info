@@ -982,7 +982,7 @@ footer {
   width: 100%; }
   .matchesTable th,
   .matchesTable td {
-    width: 17%;
+    width: 15%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     color: #fff;
@@ -992,13 +992,10 @@ footer {
     .matchesTable th:first-child,
     .matchesTable td:first-child {
       padding-left: 1em;
-      width: 28%; }
+      width: 25%; }
     .matchesTable th:nth-of-type(2),
     .matchesTable td:nth-of-type(2) {
-      width: 40%; }
-    .matchesTable th:last-child,
-    .matchesTable td:last-child {
-      width: 15%; }
+      width: 45%; }
     .matchesTable th.shakhtar,
     .matchesTable td.shakhtar {
       color: #fa4616; }
