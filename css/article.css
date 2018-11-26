@@ -434,6 +434,8 @@ footer {
 /*-----------------------------------------------------------------*/
 /*-- User Icon Menu --*/
 .avatar__menu {
+  display: none;
+  /* unloaded state */
   width: 30%;
   padding: 0;
   /* avatar menu closed 2% */
@@ -811,6 +813,9 @@ footer {
 
 .loaded .nav__item_active:before {
   width: 100%; }
+
+.loaded .avatar__menu {
+  display: block; }
 
 /*-- /Loaded State --*/
 /*-- /Header CSS --*/

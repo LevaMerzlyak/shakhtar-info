@@ -156,6 +156,7 @@
 /*-----------------------------------------------------------------*/
 /*-- User Icon Menu --*/
 .avatar__menu {
+	display: none;/* unloaded state */
 	width: 30%;
 	padding: 0;  /* avatar menu closed 2% */
 	opacity: 0;  /* avatar menu closed */
@@ -470,6 +471,9 @@
 		&:before{
 			width: 100%;
 		}
+	}
+	.avatar__menu {
+		display: block;
 	}
 }
 /*-- /Loaded State --*/
