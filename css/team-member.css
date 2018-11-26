@@ -1142,7 +1142,7 @@ footer {
 
 .member__txt {
   color: #242424;
-  font-size: 1em;
+  font-size: 1.1em;
   line-height: 1.6em; }
   .member__txt:not(:last-child) {
     margin-bottom: 1em; }
@@ -1505,7 +1505,10 @@ footer {
     padding-left: 3%;
     padding-right: 3%; }
   .memberTxt {
-    padding: 2%; } }
+    padding: 2%; }
+  .member__txt {
+    font-size: 1.5em;
+    line-height: 1.3em; } }
 
 @media only screen and (max-width: 850px) and (orientation: landscape) {
   .memberImg {

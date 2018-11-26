@@ -1079,8 +1079,8 @@ footer {
 
 .about__txt {
   color: #242424;
-  font-size: 1em;
-  line-height: 1.5em; }
+  font-size: 1.1em;
+  line-height: 1.6em; }
   .about__txt:not(:last-child) {
     margin-bottom: 2em; }
 
@@ -1479,8 +1479,11 @@ footer {
   .about__head {
     line-height: 1em;
     margin-bottom: 0.5em; }
-  .about__txt:not(:last-child) {
-    margin-bottom: 1em; } }
+  .about__txt {
+    font-size: 1.5em;
+    line-height: 1.3em; }
+    .about__txt:not(:last-child) {
+      margin-bottom: 1em; } }
 
 /*-- /About Block Mobile Style --*/
 /*-----------------------------------------------------------------*/

@@ -110,7 +110,7 @@
 }
 .member__txt {
 	color: $clr-bg;
-	font-size: 1em;
+	font-size: 1.1em;
 	@extend %proxi-reg;
 	line-height: 1.6em;
 	&:not(:last-child) {
