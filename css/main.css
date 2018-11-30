@@ -2426,6 +2426,8 @@ footer {
     width: 50%; } }
 
 /*-- /Footer Mobile Style --*/
+/*-----------------------------------------------------------------*/
+/*-- Ads Styles --*/
 .blurb {
   display: none;
   width: 1200px;
@@ -2457,3 +2459,5 @@ footer {
 .blurb__wrap {
   width: 100%;
   height: 100%; }
+
+/*-- /Ads Styles --*/
