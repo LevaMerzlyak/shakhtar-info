@@ -12,6 +12,11 @@
 		}
 	}
 }
+@media only screen and (max-width: 1100px) {
+	.container {
+		padding-top: calc(44px + (2vh * 2) + 5vh);
+	}
+}
 @media only screen and (max-width: 770px) {
 	.tableBig {
 		td,

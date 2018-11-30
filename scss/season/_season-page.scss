@@ -1,12 +1,14 @@
 /*-----------------------------------------------------------------*/
 /*-- Season Page --*/
+.container {
+	padding-top: 20vh;
+}
 .main {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	padding-left: 3%;
 	padding-right: 3%;
-	margin-top: 20vh;
 	margin-bottom: 10vh;
 	box-sizing: border-box;
 }

@@ -1,9 +1,11 @@
 /*-----------------------------------------------------------------*/
 /*-- News Page Block --*/
+.container {
+	padding-top: 20vh;
+}
 .news {
 	padding-left: 3%;
 	padding-right: 3%;
-	margin-top: 20vh;
 	margin-bottom: 10vh;
 	box-sizing: border-box;
 }

@@ -22,8 +22,8 @@
 	}
 }
 @media only screen and (max-width: 1100px) {
-	.main {
-		margin-top: calc(44px + (2vh * 2) + 5vh);
+	.container {
+		padding-top: calc(5vh + (44px + (2vh * 2)) + 2vw);
 	}
 }
 @media only screen and (max-width: 1023px) {
