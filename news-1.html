@@ -122,6 +122,12 @@
 		</div>
 	</header>
 
+	<div class="blurb blurb_1200x90 blurb_top">
+		<div class="blurb__wrap">
+			<div class="blurb__pattern" style="color: #fff;border:1px solid #fff;text-align: center;width: 100%;height: 100%;line-height: 100%; background: #999">Пример рекламы 1200x90</div>
+		</div>
+	</div>
+
 	<main class="main">
 
 		<section class="article__wrap">
@@ -144,6 +150,11 @@
 				</div>
 			</div>
 			<div class="article__txt">
+				<div class="blurb blurb_300x50 blurb_text blurb_top">
+					<div class="blurb__wrap">
+						<div class="blurb__pattern" style="color: #fff;border:1px solid #fff;text-align: center;width: 100%;height: 100%;line-height: 100%; background: #999">Пример рекламы 300x50</div>
+					</div>
+				</div>
 				<p class="articleTxt">«Это мой последний матч за «Шахтер», я покидаю команду. Очень благодарен клубу, болельщикам. С «Шахтером» я выиграл и Кубок и чемпионство, очень счастлив из-за этого. Но у меня есть другие предложения. Сейчас хочу немного отдохнуть.Мне нравятся чемпионаты Испании и Италии, хотел бы играть там. Сейчас идут переговоры, пока не могу назвать клубы», – сказал Феррейра. Ранее сообщалось, что «Торино» и «Андерлехт» интересуются Феррейрой. Португальские СМИ сообщают, что аргентинец подпишет контракт с «Бенфикой». Всего за «Шахтер» 27-летний форвард провел 115 матчей, забил 59 голов и сделал 12 ассистов. Полная статистика выступлений доступна здесь. «Это мой последний матч за «Шахтер», я покидаю команду.</p>
 				<div class="article__more">
 					<h6 class="articleMore__head">Читайте также:</h6>
@@ -346,6 +357,22 @@
 		</section>
 
 		<aside class="main__aside">
+
+			<div class="aside__wrap">
+				<div class="blurb blurb_300x250 blurb_aside">
+					<div class="blurb__wrap">
+						<div class="blurb__pattern" style="color: #fff;border:1px solid #fff;text-align: center;width: 100%;height: 100%;line-height: 100%; background: #999">Пример рекламы 300x250</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="aside__wrap">
+				<div class="blurb blurb_300x600 blurb_aside">
+					<div class="blurb__wrap">
+						<div class="blurb__pattern" style="color: #fff;border:1px solid #fff;text-align: center;width: 100%;height: 100%;line-height: 100%; background: #999">Пример рекламы 300x600</div>
+					</div>
+				</div>
+			</div>
 
 			<div class="aside__wrap aside__wrap_fb">
 				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FShakhtarFun%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
@@ -767,9 +794,30 @@
 				$('aside').show();
 				$('.loader').hide();
 				$('.container').addClass('container_loaded');
+				var viewWidth = $(window).width();
+				if (viewWidth < 1200) {
+					$('.blurb_300x50').show();
+					$('.blurb_1200x90').hide();
+				} else {
+					$('.blurb_1200x90').show();
+					$('.blurb_300x50').hide();
+				}
 			}, 1500);
 
 		}, time);
+
+		$(window).resize(function () {
+			var viewWidth = $(window).width();
+			if (viewWidth < 1200) {
+				$('body').addClass('loaded_mob');
+				$('.blurb_300x50').show();
+				$('.blurb_1200x90').hide();
+			} else {
+				$('body').removeClass('loaded_mob');
+				$('.blurb_1200x90').show();
+				$('.blurb_300x50').hide();
+			}
+		});
 
 	</script>
 	<script type="text/javascript" src="js/bgInit.js"></script>
