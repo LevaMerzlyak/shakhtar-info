@@ -1,6 +1,6 @@
 function Gallery(sSelector) {
 
-	g = this;
+	let g = this;
 
 	g.gallery = $(sSelector);
 	g.preview = g.gallery.find('.galleryPreview__img');
