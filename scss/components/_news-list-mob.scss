@@ -7,6 +7,7 @@
 	}
 	.news__dateTime {
 		display: flex;
+		align-items: center;
 		width: 70%;
 		padding-left: 1.3em;
 		box-sizing: border-box;
@@ -26,8 +27,8 @@
 		    &:before {
 		    	content: "";
 		    	display: block;
-		    	width: 4px;
-		    	height: 0.9em;
+		    	width: 3px;
+		    	height: 0.6em;
 		    	position: absolute;
 		    	left: 0;
 				top: 50%;
@@ -52,9 +53,10 @@
 	}
 	.news__views {
 		display: flex;
+		align-items: center;
 		margin-left: 1em;
 		.icon {
-			height: 1.35em;
+			height: 1em;
 			margin-right: 0.5em;
 		}
 	}

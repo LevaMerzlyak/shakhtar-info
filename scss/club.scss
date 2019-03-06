@@ -14,6 +14,8 @@ footer {
 @import 'global/header';
 
 // Aside
+@import 'components/videos-list';
+@import 'components/news-list';
 @import 'components/match-tables';
 @import 'components/main-aside';
 
@@ -25,6 +27,8 @@ footer {
 @import 'global/header-mob';
 
 // Aside Mobile
+@import 'components/videos-list-mob';
+@import 'components/news-list-mob';
 @import 'components/match-tables-mob';
 @import 'components/main-aside-mob';
 

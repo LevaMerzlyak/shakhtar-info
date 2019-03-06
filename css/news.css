@@ -1365,6 +1365,9 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 70%;
     height: auto;
     padding-left: 1.3em;
@@ -1389,8 +1392,8 @@ footer {
       .news__dateTime time:before {
         content: "";
         display: block;
-        width: 4px;
-        height: 0.9em;
+        width: 3px;
+        height: 0.6em;
         position: absolute;
         left: 0;
         top: 50%;
@@ -1413,9 +1416,12 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin-left: 1em; }
     .news__views .icon {
-      height: 1.35em;
+      height: 1em;
       margin-right: 0.5em; }
   .newsImg {
     width: 30%;

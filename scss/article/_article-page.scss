@@ -321,7 +321,7 @@
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
 	width: 80%;
-	color: #fff;
+	color: $clr-comment;
 	font-size: 1em;
 	@extend %proxi-reg;
 	line-height: 1.5em;
@@ -350,23 +350,4 @@
 	color: #fff;
 }
 /*-- /Article Comments --*/
-/*-----------------------------------------------------------------*/
-/*-- Article See Also --*/
-.seeAlso {
-	width: 100%;
-	margin-top: 10vh;
-	.sectionHead__wrap {
-		margin-bottom: 5vh;
-	}
-	.news__dateTime {
-		width: 10%;
-	}
-	.newsImg {
-		width: 8%;
-	}
-	.news__head {
-		width: 82%;
-	}
-}
-/*-- /Article See Also --*/
 /*-- /Article Page Block --*/
