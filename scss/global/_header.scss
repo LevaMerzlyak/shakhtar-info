@@ -362,7 +362,7 @@
 		&[type=email],
 		&[type=password] {
 			width: 100%;
-			padding: 0.5em 1.25em;
+			padding: 0.8em 1.25em;
 			margin-bottom: 1em;
 			box-sizing: border-box;
 			color: #fff;
@@ -389,7 +389,7 @@
 .loginMenu__link {
 	color: #fff;
 	@extend %proxi-reg;
-	font-size: 1em;
+	font-size: 1.2em;
 	transform: translateY(100%);/* login menu close */
 	opacity: 0;/* login menu close */
 	transition: transform 0.5s $ttf 0s, opacity 0.5s $ttf 0s;
