@@ -6,7 +6,7 @@
 	transition: height 0.5s $ttf;
 }
 .main {
-	height: 100vh;
+	height: 60vh;
 	padding-top: 20vh;
 	padding-left: 4.88%;
 	padding-right: 4.88%;
@@ -25,7 +25,7 @@
 /*-- Loaded State --*/
 .loaded {
 	.main__wrap {
-		height: 100vh;
+		height: 60vh;
 	}
 }
 /*-- /Loaded State --*/

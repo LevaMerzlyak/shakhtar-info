@@ -828,7 +828,7 @@ footer {
   transition: height 0.5s cubic-bezier(0.5, 0, 0.5, 1); }
 
 .main {
-  height: 100vh;
+  height: 60vh;
   padding-top: 20vh;
   padding-left: 4.88%;
   padding-right: 4.88%;
@@ -846,7 +846,7 @@ footer {
 /*-----------------------------------------------------------------*/
 /*-- Loaded State --*/
 .loaded .main__wrap {
-  height: 100vh; }
+  height: 60vh; }
 
 /*-- /Loaded State --*/
 /*-- /Main Block Style --*/
