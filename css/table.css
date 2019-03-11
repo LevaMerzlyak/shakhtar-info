@@ -863,6 +863,9 @@ footer {
       padding-left: 1.25em;
       text-align: left;
       line-height: 1em; }
+    .tableBig th.shakhtar,
+    .tableBig td.shakhtar {
+      color: #fa4616; }
   .tableBig thead {
     background-color: #2c2c2e; }
   .tableBig tbody .tableBig__club {

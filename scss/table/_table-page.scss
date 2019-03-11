@@ -36,6 +36,9 @@
 			text-align: left;
 			line-height: 1em;
 		}
+		&.shakhtar {
+			color: $clr-orange;
+		}
 	}
 	thead {
 		background-color: $clr-match;
