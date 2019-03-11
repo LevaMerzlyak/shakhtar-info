@@ -100,15 +100,19 @@
 	text-align: center;
 	background-color: $clr-matchNext;
 }
+.mainHead {
+	display: block;
+	margin-top: 20vh;
+	text-decoration: none;
+	transform: scale(0.8);/* unloaded state */
+	opacity: 0;/* unloaded state */
+	transition: transform 0.1s $ttf 0.4s, opacity 0.5s $ttf 0.4s;
+}
 .main__head {
 	color: #fff;
 	font-size: 3.5em;
 	@extend %proxi-eXbld;
 	line-height: 1em;
-	margin-top: 20vh;
-	transform: scale(0.8);/* unloaded state */
-	opacity: 0;/* unloaded state */
-	transition: transform 0.1s $ttf 0.4s, opacity 0.5s $ttf 0.4s;
 }
 /*-- /Highlight Block --*/
 /*-----------------------------------------------------------------*/
@@ -228,7 +232,7 @@
 	.highlightVideo {
 		opacity: 1;
 	}
-	.main__head {
+	.mainHead {
 		transform: scale(1);
 		opacity: 1;
 	}

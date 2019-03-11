@@ -1301,11 +1301,10 @@ footer {
   text-align: center;
   background-color: #252528; }
 
-.main__head {
-  color: #fff;
-  font-size: 3.5em;
-  line-height: 1em;
+.mainHead {
+  display: block;
   margin-top: 20vh;
+  text-decoration: none;
   -webkit-transform: scale(0.8);
   -ms-transform: scale(0.8);
   transform: scale(0.8);
@@ -1317,6 +1316,11 @@ footer {
   -o-transition: transform 0.1s cubic-bezier(0.5, 0, 0.5, 1) 0.4s, opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.4s;
   transition: transform 0.1s cubic-bezier(0.5, 0, 0.5, 1) 0.4s, opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.4s;
   transition: transform 0.1s cubic-bezier(0.5, 0, 0.5, 1) 0.4s, opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1) 0.4s, -webkit-transform 0.1s cubic-bezier(0.5, 0, 0.5, 1) 0.4s; }
+
+.main__head {
+  color: #fff;
+  font-size: 3.5em;
+  line-height: 1em; }
 
 /*-- /Highlight Block --*/
 /*-----------------------------------------------------------------*/
@@ -1465,7 +1469,7 @@ footer {
 .loaded .highlightVideo {
   opacity: 1; }
 
-.loaded .main__head {
+.loaded .mainHead {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -2223,7 +2227,7 @@ footer {
     width: 100%; }
   .highligh__info {
     display: none; }
-  .main__head {
+  .mainHead {
     margin-bottom: 5vh; }
   .main__news {
     width: 100%; }
@@ -2249,20 +2253,22 @@ footer {
     width: 80%; } }
 
 @media only screen and (max-width: 1023px) and (orientation: landscape) {
-  .main__head {
-    font-size: 2.5em;
+  .mainHead {
     margin-bottom: 0; }
+  .main__head {
+    font-size: 2.5em; }
   .loaded .main__wrap {
     margin-bottom: 150vh; } }
 
 @media only screen and (max-width: 500px) and (orientation: portrait) {
-  .main__head {
+  .mainHead {
     margin-bottom: 0; } }
 
 @media only screen and (max-width: 370px) and (orientation: portrait) {
+  .mainHead {
+    margin-bottom: 0; }
   .main__head {
-    font-size: 3em;
-    margin-bottom: 0; } }
+    font-size: 3em; } }
 
 @media only screen and (max-width: 330px) and (orientation: portrait) {
   .main__head {

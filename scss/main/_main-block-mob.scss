@@ -15,7 +15,7 @@
 	.highligh__info {
 		display: none;
 	}
-	.main__head {
+	.mainHead {
 		margin-bottom: 5vh;
 	}
 	.main__news {
@@ -62,9 +62,11 @@
 	}
 }
 @media only screen and (max-width: 1023px) and (orientation: landscape) {
+	.mainHead {
+		margin-bottom: 0;		
+	}
 	.main__head {
 		font-size: 2.5em;
-		margin-bottom: 0;
 	}
 	.loaded {
 		.main__wrap {
@@ -73,14 +75,16 @@
 	}
 }
 @media only screen and (max-width: 500px) and (orientation: portrait) {
-	.main__head {
+	.mainHead {
 		margin-bottom: 0;
 	}
 }
 @media only screen and (max-width: 370px) and (orientation: portrait) {
+	.mainHead {
+		margin-bottom: 0;		
+	}
 	.main__head {
 		font-size: 3em;
-		margin-bottom: 0;
 	}
 }
 @media only screen and (max-width: 330px) and (orientation: portrait) {
