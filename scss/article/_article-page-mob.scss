@@ -176,6 +176,14 @@
 	.comment {
 		justify-content: flex-start;
 		flex-wrap: wrap;
+		align-items: center;
+	}
+	.comment__data {
+		position: relative;
+		left: 0;
+	}
+	.comment__userName {
+		margin-bottom: 0;
 	}
 	.commentTxt {
 		width: 100%;
@@ -191,6 +199,9 @@
 		.commentTxt {
 			margin-top: 0.5em;
 		}
+	}
+	.comment__answerTo {
+		margin-bottom: 0;
 	}
 }
 @media only screen and (max-width: 350px) and (orientation: portrait) {

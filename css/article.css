@@ -2560,7 +2560,15 @@ footer {
     -ms-flex-pack: start;
     justify-content: flex-start;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .comment__data {
+    position: relative;
+    left: 0; }
+  .comment__userName {
+    margin-bottom: 0; }
   .commentTxt {
     width: 100%;
     margin-top: 0.5em; }
@@ -2569,7 +2577,9 @@ footer {
   .comment_answer .comment__userImg {
     width: 12%; }
   .comment_answer .commentTxt {
-    margin-top: 0.5em; } }
+    margin-top: 0.5em; }
+  .comment__answerTo {
+    margin-bottom: 0; } }
 
 @media only screen and (max-width: 350px) and (orientation: portrait) {
   .articleShare {
