@@ -2515,6 +2515,14 @@ footer {
   .container {
     padding-top: calc(44px + (2vh * 2)); } }
 
+@media only screen and (max-width: 1100px) and (orientation: landscape) {
+  .comment_answer .comment__userImg {
+    width: 12%; } }
+
+@media only screen and (max-width: 800px) and (orientation: portrait) {
+  .comment_answer .comment__userImg {
+    width: 10%; } }
+
 @media only screen and (max-width: 500px) {
   .articleShare {
     -webkit-box-pack: justify;
@@ -2532,7 +2540,9 @@ footer {
   .articleTags__list {
     width: 80%; }
   .articleShare__item:not(:last-child) {
-    margin-right: 0; } }
+    margin-right: 0; }
+  .comment_answer .comment__userImg {
+    width: 12%; } }
 
 @media only screen and (max-width: 350px) and (orientation: portrait) {
   .articleShare {
