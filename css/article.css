@@ -1575,7 +1575,8 @@ footer {
   display: flex;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  position: relative; }
 
 .comment__userImg {
   width: 12%;
@@ -1604,34 +1605,44 @@ footer {
     left: 0;
     background-size: cover; }
 
-.commentTxt {
+.comment__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 86%;
-  position: relative; }
+  position: absolute;
+  left: 14%;
+  top: 0; }
 
 .comment__date {
-  position: absolute;
-  top: 0;
-  right: 0;
   color: #888888;
-  font-size: 0.9em; }
+  font-size: 0.9em;
+  position: relative; }
   .comment__date:before {
     content: "";
     display: block;
-    height: 100%;
-    width: 0.3em;
+    height: 1em;
+    width: 3px;
     position: absolute;
     left: -1em;
     top: 0;
     background-color: #fa4616; }
 
 .comment__userName {
-  width: 80%;
   margin-bottom: 0.5em;
   color: #fff;
   font-size: 1.2em; }
 
+.commentTxt {
+  width: 86%;
+  margin-top: 2em; }
+
 .comment__txt {
-  margin-top: 0.5em;
   margin-bottom: 0.5em;
   width: 80%;
   color: #aaa;
@@ -1644,18 +1655,21 @@ footer {
 
 .comment_answer {
   margin-top: 2em; }
+  .comment_answer .commentTxt {
+    margin-top: 4em; }
   .comment_answer .comment__userImg {
     width: 8%; }
 
 .comment__answerTo {
-  width: 80%;
+  width: 100%;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   color: #888888;
   font-size: 0.9em; }
 
 .comment__answerToUser {
-  color: #fff; }
+  color: #fff;
+  text-decoration: none; }
 
 /*-- /Article Comments --*/
 /*-- /Article Page Block --*/
@@ -2541,8 +2555,21 @@ footer {
     width: 80%; }
   .articleShare__item:not(:last-child) {
     margin-right: 0; }
+  .comment {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .commentTxt {
+    width: 100%;
+    margin-top: 0.5em; }
+  .comment__txt {
+    width: 100%; }
   .comment_answer .comment__userImg {
-    width: 12%; } }
+    width: 12%; }
+  .comment_answer .commentTxt {
+    margin-top: 0.5em; } }
 
 @media only screen and (max-width: 350px) and (orientation: portrait) {
   .articleShare {

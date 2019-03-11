@@ -260,6 +260,7 @@
 .comment {
 	display: flex;
 	justify-content: flex-end;
+	position: relative;
 }
 .comment__userImg {
 	width: 12%;
@@ -288,22 +289,25 @@
 		background-size: cover;
 	}
 }
-.commentTxt {
+.comment__data {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 	width: 86%;
-	position: relative;
+	position: absolute;
+	left: 14%;
+	top: 0;
 }
 .comment__date {
-	position: absolute;
-	top: 0;
-	right: 0;
 	color: $clr-sectionHead;
 	font-size: 0.9em;
 	@extend %proxi-bld;
+	position: relative;
 	&:before {
 		content: "";
 		display: block;
-		height: 100%;
-		width: 0.3em;
+		height: 1em;
+		width: 3px;
 		position: absolute;
 		left: -1em;
 		top: 0;
@@ -311,14 +315,16 @@
 	}
 }
 .comment__userName {
-	width: 80%;
 	margin-bottom: 0.5em;
 	color: #fff;
 	font-size: 1.2em;
 	@extend %proxi-bld;
 }
+.commentTxt {
+	width: 86%;
+	margin-top: 2em;
+}
 .comment__txt {
-	margin-top: 0.5em;
 	margin-bottom: 0.5em;
 	width: 80%;
 	color: $clr-comment;
@@ -333,12 +339,15 @@
 }
 .comment_answer {
 	margin-top: 2em;
+	.commentTxt {
+		margin-top: 4em;
+	}
 	.comment__userImg {
 		width: 8%;
 	}
 }
 .comment__answerTo {
-	width: 80%;
+	width: 100%;
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
 	color: $clr-sectionHead;
@@ -348,6 +357,7 @@
 .comment__answerToUser {
 	@extend %proxi-bld;
 	color: #fff;
+	text-decoration: none;
 }
 /*-- /Article Comments --*/
 /*-- /Article Page Block --*/

@@ -173,9 +173,23 @@
 			margin-right: 0;
 		}
 	}
+	.comment {
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+	.commentTxt {
+		width: 100%;
+		margin-top: 0.5em;
+	}
+	.comment__txt {
+		width: 100%;
+	}
 	.comment_answer {
 		.comment__userImg {
 			width: 12%;
+		}
+		.commentTxt {
+			margin-top: 0.5em;
 		}
 	}
 }
